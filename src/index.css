@@ -1,0 +1,87 @@
+:root {
+  /* Premium Luxury Light Theme Theme Variables */
+  --bg-primary: #FAF9F6;      /* Off-white / Warm Alabaster */
+  --bg-secondary: #F5F4F0;    /* Soft beige sand */
+  --text-primary: #241D1A;    /* Deep Bronze Charcoal */
+  --text-gold: #B89765;       /* Editorial Gold / Accent */
+  --accent-bronze: #8D7257;   /* Bronze descriptor color */
+  --border-light: rgba(141, 114, 87, 0.15);
+  
+  --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-medium: all 0.4s ease;
+  --transition-fast: all 0.2s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--text-gold);
+  border-radius: 3px;
+}
+
+/* Heading styles with Corporate A simulated using Playfair Display */
+h1, h2, h3, h4, h5, h6, .font-corporate-a {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input, textarea, button, select {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Parallax Frame Container */
+.parallax-frame {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.parallax-img {
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  position: absolute;
+  top: -10%;
+  left: 0;
+  transition: transform 0.1s ease-out;
+  transform: scale(1.1); /* Pre-zoomed to prevent edge clipping */
+}
+
+/* Scroll Fade In utility */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
