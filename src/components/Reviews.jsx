@@ -44,7 +44,7 @@ function Reviews() {
               <div className="quote-mark">“</div>
               <p className="review-quote">{t.quote}</p>
               <div className="client-profile">
-                <img src={t.img} alt={t.name} className="client-avatar" />
+                <img src={t.img} alt={t.name} className="client-avatar" loading="lazy" />
                 <div className="client-meta">
                   <h4>{t.name}</h4>
                   <span>{t.role}</span>

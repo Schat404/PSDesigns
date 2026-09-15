@@ -59,19 +59,10 @@ function App() {
     return () => clearInterval(timer);
   }, [currentPage, testimonials.length]);
 
-  // Scroll progress event tracking (progress bar only, header is always visible)
+  // Auto scroll to top on mount and page transition
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-      if (totalHeight > 0) {
-        setScrollProgress((currentScrollY / totalHeight) * 100);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, [currentPage]);
 
   const navigateTo = (page, data = null) => {
     setCurrentPage(page);
@@ -227,7 +218,13 @@ function App() {
         )}
         {currentPage === 'about' && <About onNavigate={navigateTo} />}
         {currentPage === 'projects' && <PastProjects onSelectProject={(p) => navigateTo('project-detail', p)} />}
-        {currentPage === 'project-detail' && <ProjectDetail project={selectedProject} onBack={() => navigateTo('projects')} />}
+        {currentPage === 'project-detail' && (
+          <ProjectDetail 
+            project={selectedProject} 
+            onBack={() => navigateTo('projects')} 
+            onNavigate={navigateTo} 
+          />
+        )}
         {currentPage === 'press-detail' && <PressDetail article={selectedPress} onBack={() => navigateTo('home')} />}
         {currentPage === 'reviews' && <Reviews />}
         {currentPage === 'contact' && <Contact />}

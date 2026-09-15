@@ -1,49 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight, FileText, PenTool, Hammer, Key } from 'lucide-react';
 import { motion, useTransform, useScroll } from 'framer-motion';
+import { projectsData } from '../data/projectsData';
 
 function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handlePrevSlide, handleNextSlide }) {
   const horizontalSectionRef = useRef(null);
-
-  // 6 featured projects
-  const featuredProjects = [
-    {
-      id: "drawing-room",
-      name: "Drawing Room",
-      location: "DELHI / NCR",
-      image: "/brochure-1.jpeg"
-    },
-    {
-      id: "common-washroom",
-      name: "Common Washroom",
-      location: "GURUGRAM",
-      image: "/brochure-2.jpeg"
-    },
-    {
-      id: "kitchen",
-      name: "Kitchen",
-      location: "NEW DELHI",
-      image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      id: "room-1",
-      name: "Room 1",
-      location: "NOIDA",
-      image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      id: "room-2",
-      name: "Room 2",
-      location: "DELHI",
-      image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      id: "room-3",
-      name: "Room 3",
-      location: "ROHINI",
-      image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=800"
-    }
-  ];
 
   // Awards/Press data
   const pressArticles = [
@@ -157,14 +118,14 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
 
           <div className="horizontal-scroll-viewport">
             <motion.div style={{ x: xTranslate }} className="horizontal-scroll-container">
-              {featuredProjects.map((p) => (
+              {projectsData.map((p) => (
                 <div 
                   key={p.id} 
                   className="horizontal-project-card"
-                  onClick={() => onNavigate('projects')}
+                  onClick={() => onNavigate('project-detail', p)}
                 >
                   <div className="horizontal-frame">
-                    <img src={p.image} alt={p.name} />
+                    <img src={p.image} alt={p.name} loading="lazy" />
                   </div>
                   <div className="horizontal-info">
                     <h3 className="horizontal-name">{p.name}</h3>
@@ -190,7 +151,7 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
       <section className="viewport-section">
         <div className="about-snip-grid">
           <div className="about-snip-image-wrapper parallax-frame scroll-reveal">
-            <img src="/brochure-4.jpeg" alt="PS Designs Studio" className="parallax-img" />
+            <img src="/brochure-4.jpeg" alt="PS Designs Studio" className="parallax-img" loading="lazy" />
           </div>
           <div className="about-snip-content scroll-reveal">
             <h2>ABOUT US</h2>
@@ -295,7 +256,7 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
                   <div key={idx} className="carousel-slide">
                     <p className="testi-quote">"{t.quote}"</p>
                     <div className="testi-author">
-                      <img src={t.img} alt={t.name} className="testi-img" />
+                      <img src={t.img} alt={t.name} className="testi-img" loading="lazy" />
                       <div className="testi-meta">
                         <h4>{t.name}</h4>
                         <span>{t.role}</span>
@@ -328,7 +289,7 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
                 onClick={() => onNavigate('press-detail', article)}
               >
                 <div className="press-image-frame">
-                  <img src={article.image} alt={article.title} />
+                  <img src={article.image} alt={article.title} loading="lazy" />
                 </div>
                 <span className="press-date">{article.date}</span>
                 <h4 className="press-title-card">{article.title}</h4>

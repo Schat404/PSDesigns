@@ -20,7 +20,7 @@ function PressDetail({ article, onBack }) {
 
       <div className="detail-image-gallery" style={{ marginTop: '3rem' }}>
         <div className="gallery-main-frame">
-          <img src={article.image} alt={article.title} className="gallery-hero-img" />
+          <img src={article.image} alt={article.title} className="gallery-hero-img" loading="lazy" />
         </div>
         <div className="detail-description-box" style={{ maxWidth: '800px', margin: '2rem auto 0' }}>
           <p style={{ fontSize: '1.1rem', lineHeight: '2', color: 'var(--text-primary)' }}>

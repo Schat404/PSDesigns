@@ -16,7 +16,7 @@ function About({ onNavigate }) {
         <div className="story-grid">
           <div className="story-image-side">
             <div className="story-img-wrapper">
-              <img src="/brochure-4.jpeg" alt="Preti Sethi Principal Designer" className="designer-portrait" />
+              <img src="/brochure-4.jpeg" alt="Preti Sethi Principal Designer" className="designer-portrait" loading="lazy" />
               <div className="portrait-badge">
                 <Award size={20} />
                 <span>ESTABLISHED STUDIO</span>
