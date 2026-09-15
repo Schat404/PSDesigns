@@ -15,8 +15,7 @@ import {
   MapPin, 
   Calendar, 
   Layers, 
-  ShieldCheck,
-  ChevronRight
+  ArrowUpRight
 } from 'lucide-react';
 
 function ProjectDetail({ project, onBack, onNavigate }) {
@@ -26,17 +25,16 @@ function ProjectDetail({ project, onBack, onNavigate }) {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [progress, setProgress] = useState(0);
-  const [showControls, setShowControls] = useState(true);
-  const controlsTimeoutRef = useRef(null);
 
   if (!project) return null;
+
+  const videoSource = project.video || "/compressed-sec22.mp4";
 
   // Handle Autoplay & Scroll Observer
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
-    // Try starting autoplay muted
     video.muted = true;
     const playPromise = video.play();
     if (playPromise !== undefined) {
@@ -64,7 +62,6 @@ function ProjectDetail({ project, onBack, onNavigate }) {
 
     return () => {
       observer.disconnect();
-      if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current);
     };
   }, [project]);
 
@@ -231,13 +228,8 @@ function ProjectDetail({ project, onBack, onNavigate }) {
         </div>
       </section>
 
-      {/* 3. SECTION: WHAT WE DELIVERED */}
+      {/* 3. SECTION: WHAT WE DELIVERED (Execution badge removed as requested) */}
       <section className="detail-narrative-section what-delivered-section">
-        <div className="narrative-badge-row">
-          <span className="narrative-pill delivered-pill">
-            <ShieldCheck size={14} /> PS DESIGNS EXECUTION
-          </span>
-        </div>
         <h2 className="narrative-heading">What We Delivered</h2>
 
         <div className="narrative-content-card delivered-card">
@@ -278,7 +270,7 @@ function ProjectDetail({ project, onBack, onNavigate }) {
           <div className="video-viewport-wrapper">
             <video
               ref={videoRef}
-              src={project.video || "/hero-video.mp4"}
+              src={videoSource}
               playsInline
               muted={isMuted}
               loop
@@ -288,7 +280,7 @@ function ProjectDetail({ project, onBack, onNavigate }) {
               onClick={togglePlay}
             />
 
-            {/* Tap-to-play overlay icon on mobile or pause */}
+            {/* Tap-to-play overlay icon on pause */}
             {!isPlaying && (
               <div className="video-paused-overlay" onClick={togglePlay}>
                 <div className="play-icon-circle">
@@ -441,6 +433,76 @@ function ProjectDetail({ project, onBack, onNavigate }) {
                 VIEW ALL PROJECTS
               </button>
             </div>
+          </div>
+        </div>
+
+        {/* 6. FOUNDER SOCIALS CONNECT SECTION */}
+        <div className="founder-socials-connect-card">
+          <div className="socials-connect-header">
+            <span className="socials-badge">CONNECT & FOLLOW</span>
+            <h3 className="socials-title">Follow Preti Sethi & PS Designs</h3>
+            <p className="socials-sub">Stay updated with our newest design walkthroughs, interior transformations, and behind-the-scenes stories.</p>
+          </div>
+
+          <div className="socials-buttons-grid">
+            {/* Instagram */}
+            <a 
+              href="https://www.instagram.com/preetisethidesigns/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="social-platform-card instagram-card"
+            >
+              <div className="social-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                </svg>
+              </div>
+              <div className="social-text-box">
+                <span className="social-platform-name">Instagram</span>
+                <span className="social-handle">@preetisethidesigns</span>
+              </div>
+              <ArrowUpRight size={18} className="social-arrow-icon" />
+            </a>
+
+            {/* Threads */}
+            <a 
+              href="https://www.threads.com/@preetisethidesigns?xmt=AQG0pjPRTbLIsdHqNzWFU5NGoLSzIJ_XHp46IlGdY_Q4HGg" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="social-platform-card threads-card"
+            >
+              <div className="social-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 5.068 3.774 9.256 8.654 9.882v-6.99H8.197v-2.892h2.457V9.799c0-2.425 1.446-3.766 3.655-3.766 1.058 0 2.164.189 2.164.189v2.38h-1.219c-1.202 0-1.577.746-1.577 1.512v1.885h2.684l-.429 2.892h-2.255v6.99C18.226 21.256 22 17.068 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+              </div>
+              <div className="social-text-box">
+                <span className="social-platform-name">Threads</span>
+                <span className="social-handle">@preetisethidesigns</span>
+              </div>
+              <ArrowUpRight size={18} className="social-arrow-icon" />
+            </a>
+
+            {/* Facebook */}
+            <a 
+              href="https://www.facebook.com/people/PSdisenos/100093298519140/?rdid=MXIcwbfLuhT1EWbj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16FVh5xVsoV%2F" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="social-platform-card facebook-card"
+            >
+              <div className="social-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </div>
+              <div className="social-text-box">
+                <span className="social-platform-name">Facebook</span>
+                <span className="social-handle">PS Designs Studio</span>
+              </div>
+              <ArrowUpRight size={18} className="social-arrow-icon" />
+            </a>
           </div>
         </div>
       </section>

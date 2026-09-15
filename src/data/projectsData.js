@@ -7,7 +7,7 @@ export const projectsData = [
     location: "SECTOR 22, ROHINI, DELHI",
     area: "3,200 sq. ft.",
     image: "/brochure-1.jpeg",
-    video: "/hero-video.mp4",
+    video: "/compressed-sec22.mp4",
     tagline: "Paradise for those who connect through bespoke grandeur.",
     description: "A luxury penthouse combining golden ambient lighting, bespoke plush velvet seating, and custom architectural ceiling work designed to invoke warmth and regal hospitality.",
     clientExpectations: {
@@ -39,7 +39,7 @@ export const projectsData = [
     location: "SECTOR 24, ROHINI, DELHI",
     area: "4,100 sq. ft.",
     image: "/brochure-2.jpeg",
-    video: "/hero-video.mp4",
+    video: "/compressed-sec22.mp4",
     tagline: "Quiet luxury defined by clean geometry and textured serenity.",
     description: "Featuring floating custom marble vanities, deep bronze accents, and clean concealed ambient lines that elevate private living quarters into boutique hotel luxury.",
     clientExpectations: {
@@ -71,7 +71,7 @@ export const projectsData = [
     location: "SECTOR 25, ROHINI, DELHI",
     area: "2,600 sq. ft.",
     image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1200",
-    video: "/hero-video.mp4",
+    video: "/compressed-sec22.mp4",
     tagline: "Artful harmony of bespoke materials and warm contemporary elegance.",
     description: "An innovative residential transformation featuring customized walnut wall paneling, champagne gold trims, and tailored culinary and living environments.",
     clientExpectations: {
@@ -103,7 +103,7 @@ export const projectsData = [
     location: "RAJOURI GARDEN, WEST DELHI",
     area: "5,500 sq. ft.",
     image: "/brochure-3.jpeg",
-    video: "/hero-video.mp4",
+    video: "/compressed-sec22.mp4",
     tagline: "Regal neo-classical heritage reimagined for high-profile modern luxury.",
     description: "A monumental residence boasting intricate classical mouldings, grand crystal chandelier centerpieces, customized gold leafing, and rich velvet suites.",
     clientExpectations: {
@@ -135,7 +135,7 @@ export const projectsData = [
     location: "DELHI NCR",
     area: "6,000 sq. ft.",
     image: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&q=80&w=1200",
-    video: "/hero-video.mp4",
+    video: "/compressed-sec22.mp4",
     tagline: "High-octane luxury fitness and recovery hub with futuristic wellness design.",
     description: "A state-of-the-art commercial gym and wellness club with acoustic isolation, dynamic neon-gold ambient lines, bio-metric juice lounge, and luxury locker suites.",
     clientExpectations: {
