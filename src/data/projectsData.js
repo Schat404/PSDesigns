@@ -199,43 +199,43 @@ export const projectsData = [
     year: "2025",
     location: "RAJOURI GARDEN, WEST DELHI",
     area: "5,500 sq. ft.",
-    image: "/rajouri/living.webp",
+    image: "/rajouri/living.jpeg",
     video: "/compressed-sec22.mp4",
     tagline: "Regal neo-classical heritage reimagined for high-profile modern luxury.",
     description: "A monumental residence boasting intricate classical mouldings, grand crystal chandelier centerpieces, customized gold leafing, and rich velvet suites.",
     gallery: [
       {
-        src: "/rajouri/living.webp",
+        src: "/rajouri/living.jpeg",
         title: "Palatial Drawing Room",
         caption: "Classical French boiserie paneling with delicate gold foil accents, crystal chandelier centerpieces, and custom velvet seating.",
         category: "DRAWING ROOM"
       },
       {
-        src: "/rajouri/dining-hall.webp",
+        src: "/rajouri/dining-hall.jpeg",
         title: "Grand Dining Hall & Double-Height Foyer",
         caption: "Opulent honey onyx dining centerpiece surrounded by bespoke royal velvet chairs and double-height architectural lighting.",
         category: "DINING & FOYER"
       },
       {
-        src: "/rajouri/sitting.webp",
+        src: "/rajouri/sitting.jpeg",
         title: "Royal Velvet Lounge",
         caption: "Tailored high-back velvet lounge seating paired with classical boiserie and bespoke brushed bronze accents.",
         category: "LOUNGE"
       },
       {
-        src: "/rajouri/tv-console.webp",
+        src: "/rajouri/tv-console.jpeg",
         title: "Classical Boiserie TV Console",
         caption: "Ornate wall mouldings framing a modern media console with ambient backlight integration and brass inlays.",
         category: "ENTERTAINMENT"
       },
       {
-        src: "/rajouri/mandir.webp",
+        src: "/rajouri/mandir.jpeg",
         title: "Sacred Temple Sanctuary",
         caption: "Ornate traditional home mandir with intricate carvings, brass bells, and warm spiritual illumination.",
         category: "SANCTUARY"
       },
       {
-        src: "/rajouri/buddha-sculpture.webp",
+        src: "/rajouri/buddha-sculpture.jpeg",
         title: "Heritage Sculptural Wall Feature",
         caption: "Zen-inspired backlit stone carving creating a serene focal point within the palatial hallway.",
         category: "HERITAGE ACCENT"
