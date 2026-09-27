@@ -83,7 +83,7 @@ function Contact() {
               <div className="success-message animate-fade-in">
                 <Check size={48} className="success-icon" />
                 <h3>Thank You!</h3>
-                <p>Your message has been sent successfully. Preti Sethi or one of our design executives will contact you shortly.</p>
+                <p>Your message has been sent successfully. Preeti Sethi or one of our design executives will contact you shortly.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="premium-form">
@@ -170,7 +170,7 @@ function Contact() {
             style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) grayscale(80%)' }} 
             allowFullScreen="" 
             loading="lazy"
-            title="PS Designs Delhi Studio Map"
+            title="Preeti Sethi Designs Delhi Studio Map"
           ></iframe>
         </div>
       </section>

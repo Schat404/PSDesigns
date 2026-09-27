@@ -171,7 +171,7 @@ function ProjectDetail({ project, onBack, onNavigate }) {
             <h1 className="detail-hero-title">{project.name}</h1>
             <p className="detail-hero-tagline">{project.tagline}</p>
           </div>
-          <div className="detail-watermark-stamp">PS DESIGNS</div>
+          <div className="detail-watermark-stamp">PREETI SETHI DESIGNS</div>
         </div>
 
         {/* Project Key Specifications Strip */}
@@ -372,59 +372,51 @@ function ProjectDetail({ project, onBack, onNavigate }) {
         </div>
       </section>
 
-      {/* 5. SECTION: ABOUT THE FOUNDER */}
+      {/* 5. SECTION: ABOUT THE FOUNDERS */}
       <section className="detail-founder-section">
+        <div className="section-header-center" style={{ marginBottom: '3rem' }}>
+          <span className="section-eyebrow">LEADERSHIP</span>
+          <h2 className="section-title">The Vision Behind Preeti Sethi Designs</h2>
+          <div className="accent-line-small"></div>
+        </div>
+
+        {/* Founder 1: Preeti Sethi */}
         <div className="founder-card-inner">
           <div className="founder-image-side">
             <div className="founder-img-wrapper">
               <img 
-                src="/brochure-4.jpeg" 
-                alt="Preti Sethi Principal Designer" 
+                src="/preetisethi.png" 
+                alt="Preeti Sethi Founder & Creative Director" 
                 className="founder-portrait-img" 
                 loading="lazy" 
               />
               <div className="founder-award-badge">
                 <Award size={18} />
-                <span>FOUNDER & VISIONARY</span>
+                <span>FOUNDER & CREATIVE DIRECTOR</span>
               </div>
             </div>
           </div>
 
           <div className="founder-bio-side">
-            <span className="founder-sub-label">LEAD PRINCIPAL DESIGNER</span>
-            <h2 className="founder-name-heading">Preti Sethi</h2>
+            <span className="founder-sub-label">FOUNDER & CREATIVE DIRECTOR</span>
+            <h2 className="founder-name-heading">Preeti Sethi</h2>
             
             <p className="founder-bio-p">
-              Preti Sethi is the founder and lead visionary of <strong>PS Designs</strong>. The name of our studio is not just a brand; it is a direct reflection of her identity, meticulous eye for luxury, and dedication to high-craft architecture.
+              Preeti leads the creative vision of <strong>Preeti Sethi Designs</strong>. Her approach begins with understanding the client—their personality, lifestyle, aspirations, and the way they want their space to feel.
             </p>
             <p className="founder-bio-p">
-              When she began this journey, it was marked by limited resources but boundless enthusiasm—operating from a time with no office of our own to scaling into a premier <strong>team of ten design experts</strong> in Delhi Rohini.
+              What started with a 13-year-old girl designing her home has blossomed into an established design studio built around the core belief that a space should not just look beautiful; it should feel like it belongs to the people who live in it.
             </p>
             <p className="founder-bio-p">
-              Her design philosophy ensures every project balances serene functional ergonomics with unmistakable regal artistry, tailored to how clients connect, live, and host.
+              Together with co-founder Shivam Nagpal, Preeti continues to craft residential sanctuaries offering design consultation, bespoke furniture, turnkey execution, and site supervision.
             </p>
-
-            <div className="founder-metrics-row">
-              <div className="f-metric">
-                <span className="f-metric-val">10+</span>
-                <span className="f-metric-lbl">Design Experts</span>
-              </div>
-              <div className="f-metric">
-                <span className="f-metric-val">100%</span>
-                <span className="f-metric-lbl">Client Trust</span>
-              </div>
-              <div className="f-metric">
-                <span className="f-metric-val">Delhi</span>
-                <span className="f-metric-lbl">Design Studio</span>
-              </div>
-            </div>
 
             <div className="founder-cta-row">
               <button 
                 className="cta-gold-btn" 
                 onClick={() => onNavigate && onNavigate('contact')}
               >
-                CONNECT WITH PRETI
+                CONNECT WITH PREETI
               </button>
               <button 
                 className="back-to-projects-btn"
@@ -436,11 +428,59 @@ function ProjectDetail({ project, onBack, onNavigate }) {
           </div>
         </div>
 
+        {/* Founder 2: Shivam Nagpal */}
+        <div className="founder-card-inner" style={{ marginTop: '3rem' }}>
+          <div className="founder-image-side">
+            <div className="founder-img-wrapper">
+              <img 
+                src="/shivamnagpal.jpeg" 
+                alt="Shivam Nagpal Co-Founder" 
+                className="founder-portrait-img" 
+                loading="lazy" 
+              />
+              <div className="founder-award-badge">
+                <Award size={18} />
+                <span>CO-FOUNDER & MANAGEMENT</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="founder-bio-side">
+            <span className="founder-sub-label">CO-FOUNDER</span>
+            <h2 className="founder-name-heading">Shivam Nagpal</h2>
+            
+            <p className="founder-bio-p">
+              <strong>Shivam Nagpal</strong> is the Co-Founder of <strong>Preeti Sethi Designs</strong>, bringing together a strong understanding of design, materials, execution, and the business of creating exceptional spaces.
+            </p>
+            <p className="founder-bio-p">
+              His design philosophy is rooted in clarity, functionality, craftsmanship, and attention to detail. He believes that truly impactful interiors are created when aesthetics and practicality work seamlessly together.
+            </p>
+            <p className="founder-bio-p">
+              From concept development and material exploration to detailing, execution, and final delivery, Shivam takes a hands-on approach to ensure that every element contributes to the overall vision of a project.
+            </p>
+
+            <div className="founder-cta-row">
+              <button 
+                className="cta-gold-btn" 
+                onClick={() => onNavigate && onNavigate('contact')}
+              >
+                CONNECT WITH SHIVAM
+              </button>
+              <button 
+                className="back-to-projects-btn"
+                onClick={() => onNavigate && onNavigate('about')}
+              >
+                READ OUR FULL STORY
+              </button>
+            </div>
+          </div>
+        </div>
+
         {/* 6. FOUNDER SOCIALS CONNECT SECTION */}
         <div className="founder-socials-connect-card">
           <div className="socials-connect-header">
             <span className="socials-badge">CONNECT & FOLLOW</span>
-            <h3 className="socials-title">Follow Preti Sethi & PS Designs</h3>
+            <h3 className="socials-title">Follow Preeti Sethi Designs</h3>
             <p className="socials-sub">Stay updated with our newest design walkthroughs, interior transformations, and behind-the-scenes stories.</p>
           </div>
 
@@ -499,7 +539,7 @@ function ProjectDetail({ project, onBack, onNavigate }) {
               </div>
               <div className="social-text-box">
                 <span className="social-platform-name">Facebook</span>
-                <span className="social-handle">PS Designs Studio</span>
+                <span className="social-handle">Preeti Sethi Designs Studio</span>
               </div>
               <ArrowUpRight size={18} className="social-arrow-icon" />
             </a>

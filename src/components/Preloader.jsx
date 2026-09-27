@@ -37,7 +37,7 @@ function Preloader({ onComplete }) {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <img src="/logo.png" alt="PS Designs" className="preloader-logo-img" />
+          <img src="/logo.png" alt="Preeti Sethi Designs" className="preloader-logo-img" />
         </motion.div>
 
         <motion.div 
@@ -46,7 +46,7 @@ function Preloader({ onComplete }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          <h2>PS DESIGNS</h2>
+          <h2>PREETI SETHI DESIGNS</h2>
           <p>PARADISE FOR THOSE WHO CONNECT</p>
         </motion.div>
 

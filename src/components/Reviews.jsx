@@ -7,7 +7,7 @@ function Reviews() {
       name: "Rishi & Neha Kapoor",
       role: "Merlon Residence Owner",
       img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
-      quote: "PS Designs transformed our empty villa into a warm, gorgeous sanctuary. Preti Sethi's eye for detailing is matchless. The custom bespoke furniture feels incredibly premium and aligns beautifully with our lifestyle."
+      quote: "Preeti Sethi Designs transformed our empty villa into a warm, gorgeous sanctuary. Preeti Sethi's eye for detailing is matchless. The custom bespoke furniture feels incredibly premium and aligns beautifully with our lifestyle."
     },
     {
       name: "Ananya Malhotra",

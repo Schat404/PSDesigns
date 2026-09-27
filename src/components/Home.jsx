@@ -12,24 +12,24 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
       id: "award-1",
       title: "Luxurious Interior Designer of the Year",
       date: "OCTOBER 2025",
-      excerpt: "PS Designs bags the top spot in premium residential planning at the National Architecture Conclave...",
-      fullText: "At the National Architecture Conclave 2025, PS Designs was awarded 'Luxurious Interior Designer of the Year' for their masterwork in Delhi NCR residences. Preti Sethi highlighted her belief that every space is a canvas, and detailing is what separates quality from luxury. The jury praised the seamless balance of deep bronze tones and bespoke custom elements.",
+      excerpt: "Preeti Sethi Designs bags the top spot in premium residential planning at the National Architecture Conclave...",
+      fullText: "At the National Architecture Conclave 2025, Preeti Sethi Designs was awarded 'Luxurious Interior Designer of the Year' for their masterwork in Delhi NCR residences. Preeti Sethi highlighted her belief that every space is a canvas, and detailing is what separates quality from luxury. The jury praised the seamless balance of deep bronze tones and bespoke custom elements.",
       image: "/brochure-3.jpeg"
     },
     {
       id: "award-2",
       title: "Empowering Women Leaders in Design",
       date: "MARCH 2026",
-      excerpt: "Sharing the journey of Preti Sethi from a home studio to leading a prominent design lab of ten experts...",
-      fullText: "A feature article in Design Digest celebrating the story of Preti Sethi, who started PS Designs with limited resources but high goals. From a time with no office to a team of ten design experts operating in Sector 24, Rohini. Her journey illustrates the strength of female-led studio representation in Delhi.",
+      excerpt: "Sharing the journey of Preeti Sethi from designing her first home to building a premier design studio...",
+      fullText: "A feature article celebrating the story of Preeti Sethi, who founded Preeti Sethi Designs with passion, perseverance, and dedication. Together with co-founder Shivam Nagpal, the studio delivers design consultation, bespoke furniture, turnkey execution, and site supervision with an unwavering commitment to craftsmanship.",
       image: "/brochure-4.jpeg"
     },
     {
       id: "press-1",
       title: "Bespoke Modern Living Trends",
       date: "JUNE 2026",
-      excerpt: "Exploring the drawing room, modular kitchen and premium washroom layout solutions designed by PS Designs...",
-      fullText: "Modern trends are pivoting back to warmth, custom textures, and quiet luxury. In this press feature, PS Designs shares tips on how to balance functional spaces (such as kitchens and storage units) with high-end gold accents and stone styling to make everyday living feel regal.",
+      excerpt: "Exploring the drawing room, modular kitchen and premium washroom layout solutions designed by Preeti Sethi Designs...",
+      fullText: "Modern trends are pivoting back to warmth, custom textures, and quiet luxury. In this press feature, Preeti Sethi Designs shares insights on how to balance functional spaces with refined finishes, custom fabrication, and modern design solutions to make everyday living feel like paradise.",
       image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=800"
     }
   ];
@@ -103,7 +103,7 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
           <div className="brand-intro-content">
             <h2 className="brand-intro-title">AWARD WINNING PERFECTION IN EVERY DETAIL</h2>
             <p className="brand-intro-body">
-              PS Designs is an elite interior architecture house specializing in bespoke premium residential environments. We orchestrate materials, styling, and custom furniture layout overlays to elevate spaces into architectural poetry.
+              Preeti Sethi Designs is an elite interior architecture house specializing in bespoke premium residential environments. We orchestrate materials, styling, and custom furniture layout overlays to elevate spaces into architectural poetry.
             </p>
           </div>
         </div>
@@ -151,13 +151,13 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
       <section className="viewport-section">
         <div className="about-snip-grid">
           <div className="about-snip-image-wrapper parallax-frame scroll-reveal">
-            <img src="/brochure-4.jpeg" alt="PS Designs Studio" className="parallax-img" loading="lazy" />
+            <img src="/preetisethi.png" alt="Preeti Sethi Designs Studio" className="parallax-img" loading="lazy" />
           </div>
           <div className="about-snip-content scroll-reveal">
             <h2>ABOUT US</h2>
-            <h3>THE TEAM OF TEN LEADERS</h3>
+            <h3>PARADISE FOR THOSE WHO CONNECT</h3>
             <p>
-              Under the visionary direction of Preti Sethi, PS Designs has transitioned from a modest personal endeavor to a state-of-the-art office studio in Delhi Rohini. We craft luxury interiors that are deeply reflective of our clients' unique identity.
+              Founded by Preeti Sethi and Shivam Nagpal, Preeti Sethi Designs was built with a shared vision—to create spaces that are beautiful, functional, personal, and deeply connected to the people who experience them.
             </p>
             <button className="know-more-btn" onClick={() => onNavigate('about')}>
               KNOW MORE
@@ -341,7 +341,7 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
               style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) grayscale(80%)' }} 
               allowFullScreen="" 
               loading="lazy"
-              title="PS Designs Delhi Studio Map"
+              title="Preeti Sethi Designs Delhi Studio Map"
             ></iframe>
           </div>
         </div>

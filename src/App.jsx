@@ -28,7 +28,7 @@ function App() {
       name: "Rishi & Neha Kapoor",
       role: "Merlon Residence Owner",
       img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
-      quote: "PS Designs transformed our empty villa into a warm, gorgeous sanctuary. Preti Sethi's eye for detailing is matchless. The custom bespoke furniture feels incredibly premium and aligns beautifully with our lifestyle."
+      quote: "Preeti Sethi Designs transformed our empty villa into a warm, gorgeous sanctuary. Preeti Sethi's eye for detailing is matchless. The custom bespoke furniture feels incredibly premium and aligns beautifully with our lifestyle."
     },
     {
       name: "Ananya Malhotra",
@@ -146,9 +146,9 @@ function App() {
             </button>
           </nav>
 
-          {/* Centered Logo (No text or subtitle) */}
+          {/* Centered Logo (No text or subtitle - Logo only) */}
           <div className="header-logo-center" onClick={() => navigateTo('home')}>
-            <img src="/logo.png" alt="PS Designs Logo" className="brand-logo-img" />
+            <img src="/logo.png" alt="Preeti Sethi Designs Logo" className="brand-logo-img" />
           </div>
 
           {/* Right Nav & Icons */}
@@ -239,9 +239,9 @@ function App() {
       <footer className="regal-footer">
         <div className="footer-grid">
           <div className="footer-brand-col">
-            <img src="/logo.png" alt="PS Designs" className="footer-logo" />
-            <h3 className="footer-brand-title">PS DESIGNS</h3>
-            <p className="footer-tagline">Paradise for those who connect..</p>
+            <img src="/logo.png" alt="Preeti Sethi Designs" className="footer-logo" />
+            <h3 className="footer-brand-title">PREETI SETHI DESIGNS</h3>
+            <p className="footer-tagline">Paradise for those who connect</p>
           </div>
           <div className="footer-links-col">
             <h4>EXPLORE</h4>
@@ -261,7 +261,7 @@ function App() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} PS Designs. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Preeti Sethi Designs. All rights reserved.</p>
         </div>
       </footer>
     </div>

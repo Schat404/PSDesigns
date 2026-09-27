@@ -12,7 +12,7 @@ export const projectsData = [
     description: "A luxury penthouse combining golden ambient lighting, bespoke plush velvet seating, and custom architectural ceiling work designed to invoke warmth and regal hospitality.",
     clientExpectations: {
       headline: "A sanctuary designed for effortless family connection and elite evening hosting.",
-      scenario: "The homeowner approached PS Designs with an ambitious vision for their multi-generational duplex penthouse. They sought a seamless bridge between modern minimalism and timeless Indian royal hospitality. Their primary mandate was to eliminate heavy partitioning to let abundant morning sunlight flood the living lounge, while maintaining discrete zones for quiet reading, formal dinner hosting, and entertainment. They emphasized acoustic comfort, child-friendly rounded corners, concealed smart lighting that shifts with the circadian rhythm, and bespoke materials that feel opulent without being overly gaudy.",
+      scenario: "The homeowner approached Preeti Sethi Designs with an ambitious vision for their multi-generational duplex penthouse. They sought a seamless bridge between modern minimalism and timeless Indian royal hospitality. Their primary mandate was to eliminate heavy partitioning to let abundant morning sunlight flood the living lounge, while maintaining discrete zones for quiet reading, formal dinner hosting, and entertainment. They emphasized acoustic comfort, child-friendly rounded corners, concealed smart lighting that shifts with the circadian rhythm, and bespoke materials that feel opulent without being overly gaudy.",
       requirements: [
         "Unobstructed open-plan living and dining transitions with concealed sliding panels.",
         "Custom ambient lighting integration with zero exposed wiring and circadian dimming.",
@@ -22,7 +22,7 @@ export const projectsData = [
     },
     whatWeDelivered: {
       headline: "An architectural symphony of Statuario marble, bronze profiles, and customized velvet seating.",
-      scenario: "PS Designs re-engineered the entire floor plan by removing structural non-loadbearing partitions and integrating floor-to-ceiling fluted glass and brushed champagne brass dividers. We sourced book-matched Italian marble, customized a floating false ceiling with warm 2700K recessed architectural cove illumination, and hand-tailored plush emerald velvet sofas with brushed gold framing. Every piece of millwork—from the concealed bar console to the cantilevered display shelves—was manufactured bespoke in our Delhi studio workshops, culminating in a turnkey handover delivered precisely on time.",
+      scenario: "Preeti Sethi Designs re-engineered the entire floor plan by removing structural non-loadbearing partitions and integrating floor-to-ceiling fluted glass and brushed champagne brass dividers. We sourced book-matched Italian marble, customized a floating false ceiling with warm 2700K recessed architectural cove illumination, and hand-tailored plush emerald velvet sofas with brushed gold framing. Every piece of millwork—from the concealed bar console to the cantilevered display shelves—was manufactured bespoke in our Delhi studio workshops, culminating in a turnkey handover delivered precisely on time.",
       deliverables: [
         "Turnkey spatial restructuring and load redistribution for an open-concept layout.",
         "Custom handcrafted furniture suite featuring brushed brass and velvet upholstery.",
@@ -86,7 +86,7 @@ export const projectsData = [
     },
     whatWeDelivered: {
       headline: "Precision modular carpentry, sintered stone finishes, and tailored master suites.",
-      scenario: "PS Designs executed a complete turnkey overhaul. We engineered a sleek culinary island with Italian sintered stone surfaces and concealed push-to-open German hardware. In the master suite, we fabricated an 11-foot wide velvet-and-bronze fluted headboard accent wall paired with dimmable gooseneck reading fixtures. The children's zone received an ergonomic custom study station with built-in book niches. Every inch was calibrated for maximum utility, refined proportion, and visual elegance.",
+      scenario: "Preeti Sethi Designs executed a complete turnkey overhaul. We engineered a sleek culinary island with Italian sintered stone surfaces and concealed push-to-open German hardware. In the master suite, we fabricated an 11-foot wide velvet-and-bronze fluted headboard accent wall paired with dimmable gooseneck reading fixtures. The children's zone received an ergonomic custom study station with built-in book niches. Every inch was calibrated for maximum utility, refined proportion, and visual elegance.",
       deliverables: [
         "Custom culinary island with integrated induction, wine cellar niche, and breakfast bar.",
         "Full-height acoustic upholstered headboards and custom walnut accent walls.",
@@ -118,7 +118,7 @@ export const projectsData = [
     },
     whatWeDelivered: {
       headline: "European classical boiserie, gold-accented plasterwork, and palatial stone halls.",
-      scenario: "PS Designs combined artisanal heritage craftsmanship with modern engineering. Our artisans spent weeks crafting hand-carved classical moulding profiles, crowned with subtle 24k gold leafing. We installed an opulent backlit honey onyx dining centerpiece surrounded by custom velvet high-back chairs. The master suite features an expansive walk-in dressing salon with tinted bronze glass wardrobes, velvet jewelry drawers, and perimeter warm uplighting, creating a regal lifestyle experience.",
+      scenario: "Preeti Sethi Designs combined artisanal heritage craftsmanship with modern engineering. Our artisans spent weeks crafting hand-carved classical moulding profiles, crowned with subtle 24k gold leafing. We installed an opulent backlit honey onyx dining centerpiece surrounded by custom velvet high-back chairs. The master suite features an expansive walk-in dressing salon with tinted bronze glass wardrobes, velvet jewelry drawers, and perimeter warm uplighting, creating a regal lifestyle experience.",
       deliverables: [
         "Handcrafted classical boiserie paneling with subtle champagne gold leaf accents.",
         "Custom 14-seater honey onyx dining table with bespoke brushed bronze base.",
@@ -150,7 +150,7 @@ export const projectsData = [
     },
     whatWeDelivered: {
       headline: "High-performance acoustic engineering, dynamic architectural lighting, and 5-star wellness suites.",
-      scenario: "PS Designs delivered a turnkey commercial masterpiece. We installed 25mm high-density dual-layered rubber acoustic sub-floors to eliminate structural vibrations. The ceiling was transformed with custom geometric black baffles and recessed controllable linear lighting that transitions from energizing morning cool tones to sunset golden recovery modes. The locker rooms were clad in textured charcoal slate tiles with cedar wood saunas and brass fixture accents, establishing Elite Fitness as Delhi's most prestigious fitness sanctuary.",
+      scenario: "Preeti Sethi Designs delivered a turnkey commercial masterpiece. We installed 25mm high-density dual-layered rubber acoustic sub-floors to eliminate structural vibrations. The ceiling was transformed with custom geometric black baffles and recessed controllable linear lighting that transitions from energizing morning cool tones to sunset golden recovery modes. The locker rooms were clad in textured charcoal slate tiles with cedar wood saunas and brass fixture accents, establishing Elite Fitness as Delhi's most prestigious fitness sanctuary.",
       deliverables: [
         "Acoustic floor and ceiling engineering with multi-zone sound isolation.",
         "Programmable architectural circadian lighting grids customized for high-energy workouts.",
