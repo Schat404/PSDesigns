@@ -15,7 +15,12 @@ import {
   MapPin, 
   Calendar, 
   Layers, 
-  ArrowUpRight
+  ArrowUpRight,
+  X,
+  ZoomIn,
+  ChevronLeft,
+  ChevronRight,
+  Camera
 } from 'lucide-react';
 
 function ProjectDetail({ project, onBack, onNavigate }) {
@@ -25,6 +30,7 @@ function ProjectDetail({ project, onBack, onNavigate }) {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [progress, setProgress] = useState(0);
+  const [activeImageIndex, setActiveImageIndex] = useState(null);
 
   if (!project) return null;
 
@@ -256,7 +262,46 @@ function ProjectDetail({ project, onBack, onNavigate }) {
         </div>
       </section>
 
-      {/* 4. SECTION: AUTOPLAYING VIDEO WITH INTERACTIVE CONTROLS */}
+      {/* 4. SECTION: PROJECT SPACES & ARCHITECTURAL PHOTOGRAPHY (If Gallery exists) */}
+      {project.gallery && project.gallery.length > 0 && (
+        <section className="detail-narrative-section detail-gallery-section">
+          <div className="narrative-badge-row">
+            <span className="narrative-pill gallery-pill">
+              <Camera size={14} /> CURATED SPACES & PHOTOGRAPHY
+            </span>
+          </div>
+          <h2 className="narrative-heading">Architectural Spaces & Detailing</h2>
+          <p className="detail-gallery-sub">
+            Explore high-resolution photography showcasing the handpicked materials, bespoke millwork, and lighting design crafted for {project.name}. Click any space to expand.
+          </p>
+
+          <div className="project-gallery-grid">
+            {project.gallery.map((item, idx) => (
+              <div 
+                key={idx} 
+                className="gallery-item-card"
+                onClick={() => setActiveImageIndex(idx)}
+              >
+                <div className="gallery-item-image-box">
+                  <img src={item.src} alt={item.title} loading="lazy" />
+                  <div className="gallery-item-hover-overlay">
+                    <span className="gallery-zoom-badge">
+                      <ZoomIn size={16} /> VIEW FULL PHOTO
+                    </span>
+                  </div>
+                  <span className="gallery-item-tag">{item.category}</span>
+                </div>
+                <div className="gallery-item-meta">
+                  <h4 className="gallery-item-title">{item.title}</h4>
+                  <p className="gallery-item-caption">{item.caption}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* 5. SECTION: AUTOPLAYING VIDEO WITH INTERACTIVE CONTROLS */}
       <section className="detail-video-showcase-section">
         <div className="video-section-header">
           <span className="narrative-pill video-pill">CINEMATIC WALKTHROUGH</span>
@@ -546,6 +591,56 @@ function ProjectDetail({ project, onBack, onNavigate }) {
           </div>
         </div>
       </section>
+
+      {/* 7. FULLSCREEN PHOTO LIGHTBOX MODAL */}
+      {project.gallery && activeImageIndex !== null && (
+        <div className="gallery-lightbox-backdrop" onClick={() => setActiveImageIndex(null)}>
+          <div className="gallery-lightbox-container" onClick={(e) => e.stopPropagation()}>
+            <button 
+              className="lightbox-close-btn" 
+              onClick={() => setActiveImageIndex(null)}
+              aria-label="Close photo modal"
+            >
+              <X size={24} />
+            </button>
+
+            {/* Prev Image Button */}
+            <button 
+              className="lightbox-nav-btn prev-btn"
+              onClick={() => setActiveImageIndex((prev) => (prev > 0 ? prev - 1 : project.gallery.length - 1))}
+              aria-label="Previous space photo"
+            >
+              <ChevronLeft size={28} />
+            </button>
+
+            {/* Image Frame */}
+            <div className="lightbox-image-wrapper">
+              <img 
+                src={project.gallery[activeImageIndex].src} 
+                alt={project.gallery[activeImageIndex].title} 
+                className="lightbox-active-img"
+              />
+              <div className="lightbox-caption-bar">
+                <div className="lightbox-meta">
+                  <span className="lightbox-badge">{project.gallery[activeImageIndex].category}</span>
+                  <span className="lightbox-counter">{activeImageIndex + 1} / {project.gallery.length}</span>
+                </div>
+                <h3 className="lightbox-img-title">{project.gallery[activeImageIndex].title}</h3>
+                <p className="lightbox-img-desc">{project.gallery[activeImageIndex].caption}</p>
+              </div>
+            </div>
+
+            {/* Next Image Button */}
+            <button 
+              className="lightbox-nav-btn next-btn"
+              onClick={() => setActiveImageIndex((prev) => (prev < project.gallery.length - 1 ? prev + 1 : 0))}
+              aria-label="Next space photo"
+            >
+              <ChevronRight size={28} />
+            </button>
+          </div>
+        </div>
+      )}
 
     </div>
   );

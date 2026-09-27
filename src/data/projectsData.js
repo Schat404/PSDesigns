@@ -6,28 +6,75 @@ export const projectsData = [
     year: "2026",
     location: "SECTOR 22, ROHINI, DELHI",
     area: "3,200 sq. ft.",
-    image: "/brochure-1.jpeg",
+    image: "/sec22/living.webp",
     video: "/compressed-sec22.mp4",
     tagline: "Paradise for those who connect through bespoke grandeur.",
-    description: "A luxury penthouse combining golden ambient lighting, bespoke plush velvet seating, and custom architectural ceiling work designed to invoke warmth and regal hospitality.",
+    description: "A luxury penthouse combining golden ambient lighting, bespoke plush velvet seating, an architectural sacred mandir, and custom master suites designed to invoke warmth and regal hospitality.",
+    gallery: [
+      {
+        src: "/sec22/living.webp",
+        title: "Grand Drawing Lounge",
+        caption: "Open-plan living lounge featuring Italian Statuario marble flooring, 2700K warm architectural cove ceiling, and custom brushed champagne brass profiles.",
+        category: "LIVING ROOM"
+      },
+      {
+        src: "/sec22/sofa.webp",
+        title: "Bespoke Velvet Seating",
+        caption: "Handcrafted plush emerald velvet sofa suite with brushed gold framing and custom marble-top center table.",
+        category: "FURNITURE & LOUNGE"
+      },
+      {
+        src: "/sec22/tv.webp",
+        title: "Architectural TV Unit Wall",
+        caption: "Custom fluted walnut acoustic paneling with backlit translucent stone and concealed cable management.",
+        category: "ENTERTAINMENT"
+      },
+      {
+        src: "/sec22/mandir.webp",
+        title: "Sacred Temple Sanctuary",
+        caption: "Serene home mandir featuring traditional brass hanging bells, warm indirect ambient illumination, and bespoke carved stone backdrop.",
+        category: "SANCTUARY"
+      },
+      {
+        src: "/sec22/bedroom.webp",
+        title: "Master Suite Sanctuary",
+        caption: "Full-height vertical fluted headboard accent wall with warm brass reading pendants and plush neutral bedding.",
+        category: "MASTER BEDROOM"
+      },
+      {
+        src: "/sec22/bedroom2.webp",
+        title: "Contemporary Guest Bedroom",
+        caption: "Modern geometric textured feature wall with integrated perimeter cove lighting and tailored bedside millwork.",
+        category: "BEDROOM"
+      },
+      {
+        src: "/sec22/bathroom.webp",
+        title: "Italian Marble Ensuite Washroom",
+        caption: "Floating Statuario marble vanity with concealed drainage, anti-fog smart LED mirror, and frameless glass shower chamber.",
+        category: "WASHROOM"
+      }
+    ],
     clientExpectations: {
-      headline: "A sanctuary designed for effortless family connection and elite evening hosting.",
-      scenario: "The homeowner approached Preeti Sethi Designs with an ambitious vision for their multi-generational duplex penthouse. They sought a seamless bridge between modern minimalism and timeless Indian royal hospitality. Their primary mandate was to eliminate heavy partitioning to let abundant morning sunlight flood the living lounge, while maintaining discrete zones for quiet reading, formal dinner hosting, and entertainment. They emphasized acoustic comfort, child-friendly rounded corners, concealed smart lighting that shifts with the circadian rhythm, and bespoke materials that feel opulent without being overly gaudy.",
+      headline: "A multi-generational sanctuary designed for effortless family connection and elite evening hosting.",
+      scenario: "The homeowner approached Preeti Sethi Designs with an ambitious vision for their multi-generational duplex penthouse. They sought a seamless bridge between modern minimalism and timeless Indian royal hospitality. Their mandate encompassed a grand drawing lounge with acoustic comfort, a dedicated serene home mandir with brass bell details, plush master bedrooms with fluted acoustic paneling, and a boutique-hotel style marble washroom.",
       requirements: [
-        "Unobstructed open-plan living and dining transitions with concealed sliding panels.",
-        "Custom ambient lighting integration with zero exposed wiring and circadian dimming.",
-        "Acoustically treated drawing lounge capable of hosting 20+ guests with plush seating.",
-        "Italian Statuario marble flooring with brass inlay borders and custom millwork."
+        "Unobstructed open-plan living lounge with custom velvet seating and cove lighting.",
+        "A dedicated sacred mandir sanctuary featuring traditional brass hanging bells and warm indirect lighting.",
+        "Architectural TV console wall with fluted wood paneling and smart media integration.",
+        "Master suite with full-height acoustic headboard accent wall and designer reading sconces.",
+        "Spa-grade ensuite washroom clad in Italian marble with floating double vanity."
       ]
     },
     whatWeDelivered: {
-      headline: "An architectural symphony of Statuario marble, bronze profiles, and customized velvet seating.",
-      scenario: "Preeti Sethi Designs re-engineered the entire floor plan by removing structural non-loadbearing partitions and integrating floor-to-ceiling fluted glass and brushed champagne brass dividers. We sourced book-matched Italian marble, customized a floating false ceiling with warm 2700K recessed architectural cove illumination, and hand-tailored plush emerald velvet sofas with brushed gold framing. Every piece of millwork—from the concealed bar console to the cantilevered display shelves—was manufactured bespoke in our Delhi studio workshops, culminating in a turnkey handover delivered precisely on time.",
+      headline: "An architectural symphony of Statuario marble, bronze profiles, sacred sanctum, and tailored suites.",
+      scenario: "Preeti Sethi Designs re-engineered the entire floor plan. We installed book-matched Italian marble, customized a floating false ceiling with warm 2700K recessed architectural cove illumination, and hand-tailored plush velvet sofas with brushed gold framing. We crafted a dedicated peaceful mandir sanctuary with hanging brass bells, an architectural fluted TV wall, tailored master suites, and an Italian marble ensuite washroom with a floating vanity.",
       deliverables: [
-        "Turnkey spatial restructuring and load redistribution for an open-concept layout.",
+        "Turnkey spatial restructuring and load redistribution for an open-concept living lounge.",
         "Custom handcrafted furniture suite featuring brushed brass and velvet upholstery.",
-        "Architectural false ceiling with layered cove lighting and integrated smart scene controls.",
-        "Precision joinery and concealed storage systems finished in natural walnut veneer."
+        "Bespoke sacred mandir sanctuary with traditional brass hanging bells and custom illumination.",
+        "Architectural fluted TV wall paneling and concealed smart media wireway systems.",
+        "Master bedroom suite with full-height acoustic fluted headboard wall and bedside lighting.",
+        "Luxury marble ensuite washroom with floating stone vanity and anti-fog LED smart mirrors."
       ]
     }
   },

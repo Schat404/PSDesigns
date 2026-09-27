@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight, FileText, PenTool, Hammer, Key } from 'lucide-react';
-import { motion, useTransform, useScroll } from 'framer-motion';
 import { projectsData } from '../data/projectsData';
 
 function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handlePrevSlide, handleNextSlide }) {
-  const horizontalSectionRef = useRef(null);
+  // Take top 4 featured projects for the home grid
+  const featuredProjects = projectsData.slice(0, 4);
 
   // Awards/Press data
   const pressArticles = [
@@ -34,12 +34,6 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
     }
   ];
 
-  const { scrollYProgress } = useScroll({
-    target: horizontalSectionRef
-  });
-
-  const xTranslate = useTransform(scrollYProgress, [0, 1], ["0%", "-58%"]);
-
   useEffect(() => {
     const handleScrollEffects = () => {
       // Zoom and Blur hero video on scroll
@@ -51,18 +45,6 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
         heroVideo.style.transform = `scale(${scaleVal})`;
         heroVideo.style.filter = `blur(${blurVal}px)`;
       }
-
-      // Parallax images
-      const parallaxImages = document.querySelectorAll('.parallax-img');
-      parallaxImages.forEach(img => {
-        const bounding = img.parentElement.getBoundingClientRect();
-        const elementVisible = bounding.top < window.innerHeight && bounding.bottom > 0;
-        if (elementVisible) {
-          const scrollPct = (window.innerHeight - bounding.top) / (window.innerHeight + bounding.height);
-          const shift = (scrollPct - 0.5) * 40;
-          img.style.transform = `scale(1.1) translateY(${shift}px)`;
-        }
-      });
 
       // Scroll reveals
       const reveals = document.querySelectorAll('.scroll-reveal');
@@ -109,34 +91,32 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
         </div>
       </section>
 
-      {/* SECTION 2: Featured projects (Scroll Driven Horizontal Scroll) */}
-      <section className="featured-projects-section" ref={horizontalSectionRef}>
-        <div className="sticky-horizontal-wrapper">
+      {/* SECTION 2: Featured Projects (Clean Responsive Grid, No Horizontal Scroll) */}
+      <section className="featured-projects-section">
+        <div className="featured-projects-container">
           <div className="section-hdr-container scroll-reveal">
             <h2 className="section-title">FEATURED PROJECTS</h2>
           </div>
 
-          <div className="horizontal-scroll-viewport">
-            <motion.div style={{ x: xTranslate }} className="horizontal-scroll-container">
-              {projectsData.map((p) => (
-                <div 
-                  key={p.id} 
-                  className="horizontal-project-card"
-                  onClick={() => onNavigate('project-detail', p)}
-                >
-                  <div className="horizontal-frame">
-                    <img src={p.image} alt={p.name} loading="lazy" />
-                  </div>
-                  <div className="horizontal-info">
-                    <h3 className="horizontal-name">{p.name}</h3>
-                    <p className="horizontal-location">{p.location}</p>
-                  </div>
+          <div className="featured-projects-grid">
+            {featuredProjects.map((p) => (
+              <div 
+                key={p.id} 
+                className="featured-project-card scroll-reveal"
+                onClick={() => onNavigate('project-detail', p)}
+              >
+                <div className="featured-card-frame">
+                  <img src={p.image} alt={p.name} loading="lazy" />
                 </div>
-              ))}
-            </motion.div>
+                <div className="featured-card-info">
+                  <h3 className="featured-card-name">{p.name}</h3>
+                  <p className="featured-card-location">{p.location}</p>
+                </div>
+              </div>
+            ))}
           </div>
 
-          {/* View all past projects button positioned below the horizontal track */}
+          {/* View all past projects button positioned below the grid */}
           <div className="view-all-projects-wrapper scroll-reveal">
             <button className="view-all-btn" onClick={() => onNavigate('projects')}>
               VIEW ALL PAST PROJECTS <ArrowRight size={16} />
@@ -147,11 +127,11 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
 
       <div className="section-separator"></div>
 
-      {/* SECTION 3: About Us Snippet */}
+      {/* SECTION 3: About Us Snippet (Proper head visibility) */}
       <section className="viewport-section">
         <div className="about-snip-grid">
-          <div className="about-snip-image-wrapper parallax-frame scroll-reveal">
-            <img src="/preetisethi.png" alt="Preeti Sethi Designs Studio" className="parallax-img" loading="lazy" />
+          <div className="about-snip-image-wrapper scroll-reveal">
+            <img src="/preetisethi.png" alt="Preeti Sethi Designs Studio" className="about-snip-img" loading="lazy" />
           </div>
           <div className="about-snip-content scroll-reveal">
             <h2>ABOUT US</h2>
