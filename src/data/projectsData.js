@@ -1,54 +1,54 @@
 export const projectsData = [
   {
-    id: "sector-22",
-    name: "Sector 22",
+    id: "sector-24",
+    name: "Sector 24",
     category: "LUXURY PENTHOUSE",
     year: "2026",
-    location: "SECTOR 22, ROHINI, DELHI",
+    location: "SECTOR 24, ROHINI, DELHI",
     area: "3,200 sq. ft.",
-    image: "/sec22/living.webp",
+    image: "/sec24/living.webp",
     video: "/compressed-sec22.mp4",
     tagline: "Paradise for those who connect through bespoke grandeur.",
     description: "A luxury penthouse combining golden ambient lighting, bespoke plush velvet seating, an architectural sacred mandir, and custom master suites designed to invoke warmth and regal hospitality.",
     gallery: [
       {
-        src: "/sec22/living.webp",
+        src: "/sec24/living.webp",
         title: "Grand Drawing Lounge",
         caption: "Open-plan living lounge featuring Italian Statuario marble flooring, 2700K warm architectural cove ceiling, and custom brushed champagne brass profiles.",
         category: "LIVING ROOM"
       },
       {
-        src: "/sec22/sofa.webp",
+        src: "/sec24/sofa.webp",
         title: "Bespoke Velvet Seating",
         caption: "Handcrafted plush emerald velvet sofa suite with brushed gold framing and custom marble-top center table.",
         category: "FURNITURE & LOUNGE"
       },
       {
-        src: "/sec22/tv.webp",
+        src: "/sec24/tv.webp",
         title: "Architectural TV Unit Wall",
         caption: "Custom fluted walnut acoustic paneling with backlit translucent stone and concealed cable management.",
         category: "ENTERTAINMENT"
       },
       {
-        src: "/sec22/mandir.webp",
+        src: "/sec24/mandir.webp",
         title: "Sacred Temple Sanctuary",
         caption: "Serene home mandir featuring traditional brass hanging bells, warm indirect ambient illumination, and bespoke carved stone backdrop.",
         category: "SANCTUARY"
       },
       {
-        src: "/sec22/bedroom.webp",
+        src: "/sec24/bedroom.webp",
         title: "Master Suite Sanctuary",
         caption: "Full-height vertical fluted headboard accent wall with warm brass reading pendants and plush neutral bedding.",
         category: "MASTER BEDROOM"
       },
       {
-        src: "/sec22/bedroom2.webp",
+        src: "/sec24/bedroom2.webp",
         title: "Contemporary Guest Bedroom",
         caption: "Modern geometric textured feature wall with integrated perimeter cove lighting and tailored bedside millwork.",
         category: "BEDROOM"
       },
       {
-        src: "/sec22/bathroom.webp",
+        src: "/sec24/bathroom.webp",
         title: "Italian Marble Ensuite Washroom",
         caption: "Floating Statuario marble vanity with concealed drainage, anti-fog smart LED mirror, and frameless glass shower chamber.",
         category: "WASHROOM"
@@ -56,7 +56,7 @@ export const projectsData = [
     ],
     clientExpectations: {
       headline: "A multi-generational sanctuary designed for effortless family connection and elite evening hosting.",
-      scenario: "The homeowner approached Preeti Sethi Designs with an ambitious vision for their multi-generational duplex penthouse. They sought a seamless bridge between modern minimalism and timeless Indian royal hospitality. Their mandate encompassed a grand drawing lounge with acoustic comfort, a dedicated serene home mandir with brass bell details, plush master bedrooms with fluted acoustic paneling, and a boutique-hotel style marble washroom.",
+      scenario: "The homeowner approached Preeti Sethi Designs with an ambitious vision for their multi-generational duplex penthouse in Sector 24. They sought a seamless bridge between modern minimalism and timeless Indian royal hospitality. Their mandate encompassed a grand drawing lounge with acoustic comfort, a dedicated serene home mandir with brass bell details, plush master bedrooms with fluted acoustic paneling, and a boutique-hotel style marble washroom.",
       requirements: [
         "Unobstructed open-plan living lounge with custom velvet seating and cove lighting.",
         "A dedicated sacred mandir sanctuary featuring traditional brass hanging bells and warm indirect lighting.",
@@ -67,7 +67,7 @@ export const projectsData = [
     },
     whatWeDelivered: {
       headline: "An architectural symphony of Statuario marble, bronze profiles, sacred sanctum, and tailored suites.",
-      scenario: "Preeti Sethi Designs re-engineered the entire floor plan. We installed book-matched Italian marble, customized a floating false ceiling with warm 2700K recessed architectural cove illumination, and hand-tailored plush velvet sofas with brushed gold framing. We crafted a dedicated peaceful mandir sanctuary with hanging brass bells, an architectural fluted TV wall, tailored master suites, and an Italian marble ensuite washroom with a floating vanity.",
+      scenario: "Preeti Sethi Designs re-engineered the entire floor plan for this Sector 24 residence. We installed book-matched Italian marble, customized a floating false ceiling with warm 2700K recessed architectural cove illumination, and hand-tailored plush velvet sofas with brushed gold framing. We crafted a dedicated peaceful mandir sanctuary with hanging brass bells, an architectural fluted TV wall, tailored master suites, and an Italian marble ensuite washroom with a floating vanity.",
       deliverables: [
         "Turnkey spatial restructuring and load redistribution for an open-concept living lounge.",
         "Custom handcrafted furniture suite featuring brushed brass and velvet upholstery.",
@@ -79,19 +79,69 @@ export const projectsData = [
     }
   },
   {
-    id: "sector-24",
-    name: "Sector 24",
+    id: "sector-22",
+    name: "Sector 22",
     category: "MODERN MINIMALIST VILLA",
     year: "2025",
-    location: "SECTOR 24, ROHINI, DELHI",
+    location: "SECTOR 22, ROHINI, DELHI",
     area: "4,100 sq. ft.",
-    image: "/brochure-2.jpeg",
+    image: "/sec22/hero.jpg",
     video: "/compressed-sec22.mp4",
-    tagline: "Quiet luxury defined by clean geometry and textured serenity.",
-    description: "Featuring floating custom marble vanities, deep bronze accents, and clean concealed ambient lines that elevate private living quarters into boutique hotel luxury.",
+    tagline: "Quiet luxury defined by clean geometry, textured warmth, and monolithic finishes.",
+    description: "Featuring bespoke floating marble elements, deep bronze accents, and clean ambient lines that elevate private living quarters into boutique hotel luxury.",
+    gallery: [
+      {
+        src: "/sec22/hero.jpg",
+        title: "Signature Living Lounge",
+        caption: "Expansive drawing area with layered architectural ceiling cove lights and monolithic marble accents.",
+        category: "LIVING ROOM"
+      },
+      {
+        src: "/sec22/living.jpg",
+        title: "Open Plan Drawing & Dining",
+        caption: "Seamless open-concept transition connecting the formal drawing lounge with warm dining spaces.",
+        category: "LIVING ROOM"
+      },
+      {
+        src: "/sec22/lounge.jpg",
+        title: "Textured Ambient Lounge",
+        caption: "Bespoke wall treatments and warm layered lighting designed to foster calmness and family gathering.",
+        category: "LOUNGE"
+      },
+      {
+        src: "/sec22/dining.jpg",
+        title: "Bespoke Dining Suite",
+        caption: "Custom handcrafted dining table with bronze profiles and plush ergonomic chairs.",
+        category: "DINING"
+      },
+      {
+        src: "/sec22/bedroom.jpg",
+        title: "Master Bedroom Suite",
+        caption: "Full-height vertical fluted headboard accent wall with warm brass reading fixtures and neutral tones.",
+        category: "BEDROOM"
+      },
+      {
+        src: "/sec22/kitchen.jpg",
+        title: "Gourmet Modular Culinary Zone",
+        caption: "Matte anti-fingerprint Italian laminate cabinetry with quartz countertops and concealed appliances.",
+        category: "KITCHEN"
+      },
+      {
+        src: "/sec22/entry.jpg",
+        title: "Grand Entrance Foyer",
+        caption: "Welcoming foyer with bespoke stone detailing, ambient backlit wall paneling, and warm uplighting.",
+        category: "FOYER"
+      },
+      {
+        src: "/sec22/accent.png",
+        title: "Custom Millwork & Joinery",
+        caption: "Precision millwork and concealed storage elements manufactured in our Delhi studio workshops.",
+        category: "MILLWORK"
+      }
+    ],
     clientExpectations: {
       headline: "An uncluttered sanctuary emphasizing tactile serenity and intuitive spatial efficiency.",
-      scenario: "The client—a prominent creative entrepreneur and family—desired a contemporary villa with a strong emphasis on Japanese-Scandinavian ('Japandi') calmness merged with modern luxury. They wanted each room to feel serene, uncluttered, and expansive. Key expectations included floating vanities with backlit onyx stones, concealed walk-in wardrobes with soft-touch automated sensors, an open-concept gourmet kitchen with quartz countertops, and dedicated wellness corners that foster mindfulness after high-stress workdays.",
+      scenario: "The client in Sector 22 desired a contemporary villa with a strong emphasis on Japanese-Scandinavian ('Japandi') calmness merged with modern luxury. They wanted each room to feel serene, uncluttered, and expansive. Key expectations included floating vanities, concealed walk-in wardrobes with soft-touch automated sensors, an open-concept gourmet kitchen with quartz countertops, and dedicated wellness corners that foster mindfulness.",
       requirements: [
         "Neutral earthy color palette (warm taupe, almond beige, champagne bronze, and charcoal).",
         "Floating custom vanities with concealed plumbing and anti-fog LED smart mirrors.",
@@ -101,7 +151,7 @@ export const projectsData = [
     },
     whatWeDelivered: {
       headline: "Bespoke stone craftsmanship, integrated bio-courtyards, and minimalist luxury cabinetry.",
-      scenario: "Our design team curated a palette of textured limewash walls, warm almond oak veneers, and monolithic grey Armani marble. In the primary washroom suite, we installed custom floating marble double vanities with concealed drainage and ambient backlighting. We designed floor-to-ceiling flush-fit wardrobes with acoustic soft-closing mechanisms and integrated linear profile lights. A central skylight courtyard was added to funnel daylight deep into the interior, turning the villa into a peaceful, sun-kissed haven.",
+      scenario: "Our design team curated a palette of textured limewash walls, warm almond oak veneers, and monolithic grey Armani marble for this Sector 22 residence. In the primary washroom suite, we installed custom floating marble double vanities with concealed drainage and ambient backlighting. We designed floor-to-ceiling flush-fit wardrobes with acoustic soft-closing mechanisms and integrated linear profile lights.",
       deliverables: [
         "Monolithic Armani marble flooring and bespoke floating stone washroom vanities.",
         "Flush-fit handleless cabinetry with matte anti-fingerprint Italian laminate finishes.",
@@ -149,10 +199,48 @@ export const projectsData = [
     year: "2025",
     location: "RAJOURI GARDEN, WEST DELHI",
     area: "5,500 sq. ft.",
-    image: "/brochure-3.jpeg",
+    image: "/rajouri/living.webp",
     video: "/compressed-sec22.mp4",
     tagline: "Regal neo-classical heritage reimagined for high-profile modern luxury.",
     description: "A monumental residence boasting intricate classical mouldings, grand crystal chandelier centerpieces, customized gold leafing, and rich velvet suites.",
+    gallery: [
+      {
+        src: "/rajouri/living.webp",
+        title: "Palatial Drawing Room",
+        caption: "Classical French boiserie paneling with delicate gold foil accents, crystal chandelier centerpieces, and custom velvet seating.",
+        category: "DRAWING ROOM"
+      },
+      {
+        src: "/rajouri/dining-hall.webp",
+        title: "Grand Dining Hall & Double-Height Foyer",
+        caption: "Opulent honey onyx dining centerpiece surrounded by bespoke royal velvet chairs and double-height architectural lighting.",
+        category: "DINING & FOYER"
+      },
+      {
+        src: "/rajouri/sitting.webp",
+        title: "Royal Velvet Lounge",
+        caption: "Tailored high-back velvet lounge seating paired with classical boiserie and bespoke brushed bronze accents.",
+        category: "LOUNGE"
+      },
+      {
+        src: "/rajouri/tv-console.webp",
+        title: "Classical Boiserie TV Console",
+        caption: "Ornate wall mouldings framing a modern media console with ambient backlight integration and brass inlays.",
+        category: "ENTERTAINMENT"
+      },
+      {
+        src: "/rajouri/mandir.webp",
+        title: "Sacred Temple Sanctuary",
+        caption: "Ornate traditional home mandir with intricate carvings, brass bells, and warm spiritual illumination.",
+        category: "SANCTUARY"
+      },
+      {
+        src: "/rajouri/buddha-sculpture.webp",
+        title: "Heritage Sculptural Wall Feature",
+        caption: "Zen-inspired backlit stone carving creating a serene focal point within the palatial hallway.",
+        category: "HERITAGE ACCENT"
+      }
+    ],
     clientExpectations: {
       headline: "An opulent mansion with royal classical flair, bespoke grandeur, and stately entertainment halls.",
       scenario: "The client—a prominent business family in Rajouri Garden—wished to create a generational family residence that radiates heritage grandeur, classical European proportions, and luxury craftsmanship. They requested ornate wall mouldings, French boiserie detailing, custom gold leaf accents, double-height chandelier anchor points, and a palatial dining salon capable of seating 14 guests with custom-carved luxury chairs and polished marble flooring.",

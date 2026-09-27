@@ -114,49 +114,22 @@ function About({ onNavigate }) {
               
               <div className="founder-story-paragraphs">
                 <p>
-                  Design was never just a career choice for me — it was something I had always been drawn to.
+                  <strong>Preeti Sethi</strong> is the Founder & Creative Director of Preeti Sethi Designs. Her love for design began early—at just 13, she designed her family’s entire home, discovering a natural instinct for transforming spaces.
                 </p>
                 <p>
-                  Since my school days, I knew I wanted to be in the design field. I was just 13 when my family moved into a new home, and I ended up designing the entire space myself. I had an instinct for visualising spaces and figuring out how things could come together. It was around that time that my father also realised that I had a natural inclination towards design.
+                  Though she initially completed a degree in engineering, she chose to follow her true calling, enrolling in Interior Design and gaining valuable industry experience as a drafting designer in Gurgaon.
                 </p>
                 <p>
-                  But, like many young people, I was encouraged to choose a more conventional and secure career path. I took admission into an engineering college and eventually got placed through my B.Tech.
-                </p>
-                <p className="emphasis-quote-line">
-                  <em>But I never joined that job.</em>
+                  Taking the leap into independent practice, Preeti built the studio from the ground up through dedication, craftsmanship, and word-of-mouth trust across Delhi NCR.
                 </p>
                 <p>
-                  I knew deep down that engineering wasn’t where my heart was. I decided to take a chance on what I had always wanted to do and enrolled in a course in Interior Design.
+                  Her design philosophy centers on creating environments that are not only aesthetically breathtaking, but deeply personal, functional, and reflective of the people who live in them.
                 </p>
                 <p>
-                  During the course, my teacher told me about a job opportunity at a design company in Gurgaon. I remember telling him that I wanted to build something of my own. He encouraged me to simply attend the interview and see where the opportunity took me.
+                  Today, alongside co-founder <strong>Shivam Nagpal</strong>, she leads the studio delivering bespoke luxury residences, custom furniture manufacturing, and turnkey architectural execution.
                 </p>
                 <p>
-                  I joined the company as a Drafting Designer and spent a year working in Gurgaon. That year became an important part of my journey. It gave me my first real experience of working in the design industry and taught me how much there is to learn beyond the classroom.
-                </p>
-                <p>
-                  Eventually, I decided it was time to take the leap and start working independently.
-                </p>
-                <p>
-                  My first project came through someone in my family. Then a friend reached out and asked me to help with their space. One project led to another, and slowly, through word of mouth, trust and the work I put into every project, Preeti Sethi Designs began to grow.
-                </p>
-                <p>
-                  There was no roadmap to follow. I was building something in a field where I didn’t have a family background or an existing network of people who could guide me. I had to learn by doing — understanding clients, drawings, materials, vendors, execution, site management and everything in between.
-                </p>
-                <p>
-                  The journey has been a roller coaster.
-                </p>
-                <p>
-                  There have been long days, countless late nights and moments when things didn’t go according to plan. There were times when I had to figure things out on my own, but every challenge taught me something and made me better at what I do.
-                </p>
-                <p>
-                  What started with a 13-year-old girl designing her home eventually became a design studio built around the same belief I had back then — that a space should not just look beautiful; it should feel like it belongs to the people who live in it.
-                </p>
-                <p>
-                  Today, together with my husband and co-founder, <strong>Shivam Nagpal</strong>, I continue to build Preeti Sethi Designs with the same passion — offering design consultation, bespoke furniture, turnkey projects and site supervision.
-                </p>
-                <p>
-                  For us, every project is an opportunity to understand our client’s vision and turn it into a space they can truly connect with.
+                  For Preeti, every project is a heartfelt canvas—crafting timeless sanctuaries where people truly feel connected and at home.
                 </p>
               </div>
 
