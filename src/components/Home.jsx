@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight, FileText, PenTool, Hammer, Key } from 'lucide-react';
 import { projectsData } from '../data/projectsData';
 
 function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handlePrevSlide, handleNextSlide }) {
+  // Mobile carousel state for awards & press (auto advances every 5s)
+  const [currentPressSlide, setCurrentPressSlide] = useState(0);
   // Take top 4 featured projects for the home grid
   const featuredProjects = projectsData.slice(0, 4);
 
@@ -33,6 +35,24 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
       image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=800"
     }
   ];
+
+  // Auto-scroll press carousel on mobile every 5 seconds
+  useEffect(() => {
+    const pressTimer = setInterval(() => {
+      setCurrentPressSlide((prev) => (prev + 1) % pressArticles.length);
+    }, 5000);
+    return () => clearInterval(pressTimer);
+  }, [pressArticles.length]);
+
+  const handlePrevPress = (e) => {
+    e?.stopPropagation();
+    setCurrentPressSlide((prev) => (prev - 1 + pressArticles.length) % pressArticles.length);
+  };
+
+  const handleNextPress = (e) => {
+    e?.stopPropagation();
+    setCurrentPressSlide((prev) => (prev + 1) % pressArticles.length);
+  };
 
   useEffect(() => {
     const handleScrollEffects = () => {
@@ -261,7 +281,8 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
         <div className="press-section">
           <h2 className="section-title text-center scroll-reveal">AWARDS & PRESS</h2>
           
-          <div className="press-grid">
+          {/* Desktop Grid Layout */}
+          <div className="press-grid press-desktop-only">
             {pressArticles.map((article) => (
               <div 
                 key={article.id} 
@@ -276,6 +297,63 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
                 <p className="press-excerpt">{article.excerpt}</p>
               </div>
             ))}
+          </div>
+
+          {/* Mobile Interactive Carousel (Left/Right + 5s Auto Transition) */}
+          <div className="press-mobile-carousel-wrapper">
+            <button 
+              className="press-carousel-arrow left" 
+              onClick={handlePrevPress} 
+              aria-label="Previous press card"
+            >
+              <ChevronLeft size={20} />
+            </button>
+            
+            <div className="press-carousel-viewport">
+              <div 
+                className="press-carousel-track" 
+                style={{ transform: `translateX(-${currentPressSlide * 100}%)` }}
+              >
+                {pressArticles.map((article) => (
+                  <div key={article.id} className="press-mobile-slide">
+                    <div 
+                      className="press-card"
+                      onClick={() => onNavigate('press-detail', article)}
+                    >
+                      <div className="press-image-frame">
+                        <img src={article.image} alt={article.title} loading="lazy" />
+                      </div>
+                      <span className="press-date">{article.date}</span>
+                      <h4 className="press-title-card">{article.title}</h4>
+                      <p className="press-excerpt">{article.excerpt}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <button 
+              className="press-carousel-arrow right" 
+              onClick={handleNextPress} 
+              aria-label="Next press card"
+            >
+              <ChevronRight size={20} />
+            </button>
+
+            {/* Indicator Dots */}
+            <div className="press-carousel-dots">
+              {pressArticles.map((_, idx) => (
+                <button
+                  key={idx}
+                  className={`press-dot ${currentPressSlide === idx ? 'active' : ''}`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setCurrentPressSlide(idx);
+                  }}
+                  aria-label={`Go to slide ${idx + 1}`}
+                />
+              ))}
+            </div>
           </div>
 
           <div className="view-more-container scroll-reveal">
