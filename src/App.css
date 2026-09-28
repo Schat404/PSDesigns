@@ -500,15 +500,25 @@
   letter-spacing: 0.12em;
   border-radius: 8px;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
 }
 
+.view-all-btn svg {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 .view-all-btn:hover {
   background-color: var(--text-gold);
   color: var(--bg-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(184, 151, 101, 0.25);
+}
+
+.view-all-btn:hover svg {
+  transform: translateX(4px);
 }
 
 /* ==========================================
@@ -589,18 +599,33 @@
 .know-more-btn {
   background-color: var(--text-primary);
   color: var(--bg-primary);
-  border: none;
+  border: 1px solid transparent;
   padding: 0.9rem 2.2rem;
   font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   border-radius: 8px;
   cursor: pointer;
-  transition: var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.know-more-btn svg {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .know-more-btn:hover {
   background-color: var(--text-gold);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(184, 151, 101, 0.3);
+}
+
+.know-more-btn:hover svg {
+  transform: translateX(4px);
 }
 
 /* Compact sections (Home) */
@@ -1439,6 +1464,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(36, 29, 26, 0.08);
+  border-color: rgba(184, 151, 101, 0.4);
 }
 
 .quote-mark {
@@ -1708,14 +1740,15 @@
 .gsap-card-grid {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
-  align-items: center;
+  align-items: stretch;
 }
 
 .gsap-card-visual {
-  height: 500px;
+  height: 100%;
+  min-height: 500px;
   position: relative;
   overflow: hidden;
-  border-radius: 14px 0 0 14px;
+  border-radius: 17px 0 0 17px;
   cursor: pointer;
 }
 
@@ -1723,12 +1756,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 14px 0 0 14px;
-  transition: transform var(--transition-fast);
+  border-radius: 17px 0 0 17px;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .gsap-card-visual:hover img {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 .gsap-card-badge {
@@ -2876,6 +2909,11 @@
 
   .gsap-card-visual {
     height: 340px;
+    border-radius: 17px 17px 0 0;
+  }
+
+  .gsap-card-visual img {
+    border-radius: 17px 17px 0 0;
   }
 
   .gsap-card-content {
@@ -3015,7 +3053,8 @@
     transform: none !important;
     opacity: 1 !important;
     box-shadow: 0 6px 20px rgba(36, 29, 26, 0.05);
-    border-radius: 4px;
+    border-radius: 14px;
+    overflow: hidden;
   }
 
   .gsap-card-grid {
@@ -3024,6 +3063,11 @@
 
   .gsap-card-visual {
     height: 240px;
+    border-radius: 13px 13px 0 0;
+  }
+
+  .gsap-card-visual img {
+    border-radius: 13px 13px 0 0;
   }
 
   .gsap-card-content {

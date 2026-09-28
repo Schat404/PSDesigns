@@ -58,7 +58,6 @@ function PastProjects({ onSelectProject }) {
     <div className="projects-page-wrapper" ref={containerRef}>
       {/* Compact past projects hero */}
       <section className="projects-hero-compact">
-        <span className="projects-badge-top">OUR PORTFOLIO</span>
         <h1 className="projects-title-small">PAST PROJECTS</h1>
         <p className="projects-subtitle-small">
           Explore our signature residential and commercial transformations across Delhi NCR.

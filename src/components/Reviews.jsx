@@ -16,10 +16,10 @@ function Reviews() {
       quote: "From our first consultation to hand-over, the journey was stress-free and exciting. The blend of deep bronze aesthetics and gold trim gives our drawing room a regal feel. Truly paradise for those who connect!"
     },
     {
-      name: "Kabir Shergill",
-      role: "Homeowner, Modern Washroom & Gym Project",
+      name: "Mr Akaash",
+      role: "Founder & Owner, Elite Fitness",
       img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
-      quote: "Exceptional space utilization. They designed both our state-of-the-art home gym and guest washroom using gorgeous luxury marble overlays. Subtle, high-end designs without unnecessary clutter."
+      quote: "Preeti Sethi Designs brought our vision for Elite Fitness to life beyond our highest expectations. From the heavy-duty acoustic sub-flooring and dynamic circadian lighting tracks to the luxury locker suites, every detail feels world-class. Our members constantly praise the luxurious ambiance."
     },
     {
       name: "Dr. Shruti Sen",

@@ -194,7 +194,7 @@ export const projectsData = [
   },
   {
     id: "rajouri",
-    name: "Rajouri",
+    name: "Rajouri Garden",
     category: "NEO-CLASSICAL MANSION",
     year: "2025",
     location: "RAJOURI GARDEN, WEST DELHI",
@@ -264,15 +264,47 @@ export const projectsData = [
   },
   {
     id: "elite-fitness",
-    name: "Elite Fitness",
+    name: "Elite Fitness Gym",
     category: "COMMERCIAL WELLNESS STUDIO",
     year: "2026",
     location: "DELHI NCR",
     area: "6,000 sq. ft.",
-    image: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&q=80&w=1200",
+    image: "/elite/DSC09847.JPG",
     video: "/compressed-sec22.mp4",
     tagline: "High-octane luxury fitness and recovery hub with futuristic wellness design.",
     description: "A state-of-the-art commercial gym and wellness club with acoustic isolation, dynamic neon-gold ambient lines, bio-metric juice lounge, and luxury locker suites.",
+    gallery: [
+      {
+        src: "/elite/DSC09847.JPG",
+        title: "Main Strength & Cardio Floor",
+        caption: "Expansive training arena featuring heavy-duty acoustic rubber sub-flooring, bespoke equipment layouts, and dynamic ambient illumination.",
+        category: "MAIN ARENA"
+      },
+      {
+        src: "/elite/DSC09850.JPG",
+        title: "Functional & Performance Zone",
+        caption: "State-of-the-art functional fitness floor with precision shock-absorbent surfaces and integrated motivational lighting.",
+        category: "FUNCTIONAL ZONE"
+      },
+      {
+        src: "/elite/DSC09854.JPG",
+        title: "Bespoke Equipment & Lighting Grid",
+        caption: "Architectural linear ceiling lighting tracks calibrated for workout intensity, framing premium commercial fitness suites.",
+        category: "FITNESS SUITE"
+      },
+      {
+        src: "/elite/DSC09858.JPG",
+        title: "Strength Conditioning Arena",
+        caption: "Custom black baffle ceiling with glare-free recessed task lighting and premium free-weight racks.",
+        category: "STRENGTH AREA"
+      },
+      {
+        src: "/elite/DSC09861.JPG",
+        title: "Elite Reception & Member Lounge",
+        caption: "Welcoming reception and member lounge with luxury architectural detailing, bespoke counter millwork, and warm gold accents.",
+        category: "RECEPTION & LOUNGE"
+      }
+    ],
     clientExpectations: {
       headline: "A boutique fitness destination that marries high-performance energy with 5-star hotel luxury.",
       scenario: "The founders of Elite Fitness envisioned a premier luxury training facility that sets a new national standard. They wanted to move away from conventional industrial gyms and instead create a high-end wellness sanctuary. Key demands included high-impact shock-absorbent shock flooring, soundproof studio chambers for spin and pilates, dynamic linear LED lighting that syncs to workout rhythms, and spa-grade locker rooms with steam showers, saunas, and a luxury recovery lounge.",

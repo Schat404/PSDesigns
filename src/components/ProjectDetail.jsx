@@ -203,11 +203,6 @@ function ProjectDetail({ project, onBack, onNavigate }) {
 
       {/* 2. SECTION: WHAT THE CLIENT EXPECTED */}
       <section className="detail-narrative-section client-expected-section">
-        <div className="narrative-badge-row">
-          <span className="narrative-pill client-pill">
-            <Sparkles size={14} /> CLIENT BRIEF & VISION
-          </span>
-        </div>
         <h2 className="narrative-heading">What The Client Expected</h2>
         
         <div className="narrative-content-card">
@@ -265,11 +260,6 @@ function ProjectDetail({ project, onBack, onNavigate }) {
       {/* 4. SECTION: PROJECT SPACES & ARCHITECTURAL PHOTOGRAPHY (If Gallery exists) */}
       {project.gallery && project.gallery.length > 0 && (
         <section className="detail-narrative-section detail-gallery-section">
-          <div className="narrative-badge-row">
-            <span className="narrative-pill gallery-pill">
-              <Camera size={14} /> CURATED SPACES & PHOTOGRAPHY
-            </span>
-          </div>
           <h2 className="narrative-heading">Architectural Spaces & Detailing</h2>
           <p className="detail-gallery-sub">
             Explore high-resolution photography showcasing the handpicked materials, bespoke millwork, and lighting design crafted for {project.name}. Click any space to expand.
