@@ -1724,6 +1724,7 @@
 .gsap-card-inner {
   width: 100%;
   max-width: 1200px;
+  height: 520px;
   background-color: var(--bg-primary);
   border: 1px solid var(--border-light);
   box-shadow: 0 12px 35px rgba(36, 29, 26, 0.06);
@@ -1731,6 +1732,7 @@
   overflow: hidden;
   transform-origin: center top;
   will-change: transform, opacity;
+  transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .gsap-card:nth-child(even) .gsap-card-inner {
@@ -1740,12 +1742,13 @@
 .gsap-card-grid {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
+  height: 100%;
   align-items: stretch;
 }
 
 .gsap-card-visual {
   height: 100%;
-  min-height: 500px;
+  width: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 17px 0 0 17px;
@@ -1753,6 +1756,9 @@
 }
 
 .gsap-card-visual img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1777,13 +1783,16 @@
   font-weight: 500;
   border: 1px solid var(--border-light);
   border-radius: 8px;
+  z-index: 2;
 }
 
 .gsap-card-content {
-  padding: 3rem 3.5rem;
+  padding: 2.5rem 3.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .gsap-meta-row {
@@ -2907,12 +2916,26 @@
     padding: 2rem 1rem;
   }
 
+  .gsap-card-inner {
+    height: auto;
+  }
+
+  .gsap-card-grid {
+    height: auto;
+  }
+
   .gsap-card-visual {
     height: 340px;
     border-radius: 17px 17px 0 0;
   }
 
   .gsap-card-visual img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 17px 17px 0 0;
   }
 
@@ -3050,6 +3073,7 @@
   }
 
   .gsap-card-inner {
+    height: auto !important;
     transform: none !important;
     opacity: 1 !important;
     box-shadow: 0 6px 20px rgba(36, 29, 26, 0.05);
@@ -3059,6 +3083,7 @@
 
   .gsap-card-grid {
     grid-template-columns: 1fr;
+    height: auto !important;
   }
 
   .gsap-card-visual {
@@ -3067,6 +3092,12 @@
   }
 
   .gsap-card-visual img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 13px 13px 0 0;
   }
 
