@@ -243,11 +243,6 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
                   className="awards-main-photo" 
                   loading="lazy" 
                 />
-                <div className="awards-image-glow-overlay"></div>
-                <div className="awards-floating-badge">
-                  <Trophy size={16} />
-                  <span>INTERNATIONAL DAZZLING AWARDS</span>
-                </div>
               </div>
             </div>
 
