@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { 
-  ArrowLeft, 
   Award, 
   CheckCircle2, 
   Compass, 
@@ -15,7 +14,7 @@ import {
   FileText
 } from 'lucide-react';
 
-function ProjectDetail({ project, onBack, onNavigate }) {
+function ProjectDetail({ project, onNavigate }) {
   const [activeImageIndex, setActiveImageIndex] = useState(null);
   const [isFloorPlanModalOpen, setIsFloorPlanModalOpen] = useState(false);
 
@@ -23,13 +22,6 @@ function ProjectDetail({ project, onBack, onNavigate }) {
 
   return (
     <div className="project-detail-wrapper animate-fade-in">
-      
-      {/* Top Back Navigation Bar */}
-      <div className="detail-top-nav-bar">
-        <button className="back-btn" onClick={onBack}>
-          <ArrowLeft size={16} /> BACK TO PAST PROJECTS
-        </button>
-      </div>
 
       {/* 1. TOP HERO IMAGE & HEADER SPECIFICATION */}
       <section className="detail-hero-showcase">

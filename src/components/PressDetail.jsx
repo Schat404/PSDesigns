@@ -1,14 +1,10 @@
 import React from 'react';
-import { ArrowLeft } from 'lucide-react';
 
-function PressDetail({ article, onBack }) {
+function PressDetail({ article }) {
   if (!article) return null;
 
   return (
     <div className="press-page-container animate-fade-in">
-      <button className="back-btn" onClick={onBack}>
-        <ArrowLeft size={16} /> BACK TO HOME
-      </button>
 
       <div className="detail-header-grid">
         <div className="detail-title-col">

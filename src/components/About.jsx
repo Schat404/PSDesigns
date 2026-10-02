@@ -147,7 +147,7 @@ function About({ onNavigate }) {
             <div className="founder-visual-col">
               <div className="founder-image-frame">
                 <img 
-                  src="/shivamnagpal.jpeg" 
+                  src="/shivam nagpal.jpeg" 
                   alt="Shivam Nagpal Co-Founder" 
                   className="founder-main-photo" 
                   loading="lazy" 

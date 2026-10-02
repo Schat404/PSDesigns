@@ -60,7 +60,27 @@ function App() {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, [currentPage]);
 
+  // Support browser Back / Forward navigation
+  useEffect(() => {
+    window.history.replaceState({ page: 'home', data: null }, '');
+
+    const handlePopState = (e) => {
+      if (e.state && e.state.page) {
+        setCurrentPage(e.state.page);
+        if (e.state.page === 'project-detail') {
+          setSelectedProject(e.state.data);
+        } else if (e.state.page === 'press-detail') {
+          setSelectedPress(e.state.data);
+        }
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
   const navigateTo = (page, data = null) => {
+    window.history.pushState({ page, data }, '');
     setCurrentPage(page);
     if (page === 'project-detail') {
       setSelectedProject(data);
@@ -96,7 +116,7 @@ function App() {
           </>
         ) : currentPage === 'press-detail' ? (
           <>
-            <span onClick={() => navigateTo('home')} className="breadcrumb-link">Home</span>
+            <span onClick={() => navigateTo('home')} className="breadcrumb-link">{pathMap['press-detail']}</span>
             <ChevronRight size={14} className="breadcrumb-separator" />
             <span className="breadcrumb-current">{selectedPress?.title}</span>
           </>
@@ -165,14 +185,14 @@ function App() {
             </nav>
 
             <div className="header-socials">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">
+              <a href="https://www.instagram.com/preetisethidesigns/" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                   <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
                 </svg>
               </a>
-              <a href="mailto:p.s.disenos13@gmail.com" className="social-icon" aria-label="Email">
+              <a href="mailto:admin@preetisethidesigns.com" className="social-icon" aria-label="Email">
                 <Mail size={18} />
               </a>
             </div>
@@ -251,8 +271,8 @@ function App() {
           </div>
           <div className="footer-contact-col">
             <h4>CONNECT WITH US</h4>
-            <p><strong>Phone:</strong> +91 9971891303</p>
-            <p><strong>Email:</strong> p.s.disenos13@gmail.com</p>
+            <p><strong>Phone:</strong> +91 92110 40483, +91 99718 91303</p>
+            <p><strong>Email:</strong> <a href="mailto:admin@preetisethidesigns.com" style={{ color: 'inherit', textDecoration: 'none' }}>admin@preetisethidesigns.com</a></p>
             <p><strong>Studio:</strong> 23, Pocket 19, Sector 24, Rohini - 110085</p>
           </div>
         </div>

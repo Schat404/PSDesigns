@@ -55,14 +55,17 @@ function Contact() {
                 <Phone className="info-icon" size={24} />
                 <div>
                   <h4>Call Us</h4>
-                  <p>+91 9971891303</p>
+                  <p>+91 92110 40483</p>
+                  <p>+91 99718 91303</p>
                 </div>
               </div>
               <div className="info-item">
-                <Mail className="info-icon" size={24} />
+                <a href="mailto:admin@preetisethidesigns.com" className="info-icon" aria-label="Email Us" style={{ display: 'inline-flex', color: 'inherit', textDecoration: 'none' }}>
+                  <Mail size={24} />
+                </a>
                 <div>
                   <h4>Email Us</h4>
-                  <p>p.s.disenos13@gmail.com</p>
+                  <p><a href="mailto:admin@preetisethidesigns.com" style={{ color: 'inherit', textDecoration: 'none' }}>admin@preetisethidesigns.com</a></p>
                 </div>
               </div>
               <div className="info-item">
