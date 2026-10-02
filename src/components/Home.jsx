@@ -1,58 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { ArrowRight, ChevronLeft, ChevronRight, FileText, PenTool, Hammer, Key } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { ArrowRight, ChevronLeft, ChevronRight, FileText, PenTool, Hammer, Key, Award, Sparkles, Trophy } from 'lucide-react';
 import { projectsData } from '../data/projectsData';
 
 function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handlePrevSlide, handleNextSlide }) {
-  // Mobile carousel state for awards & press (auto advances every 5s)
-  const [currentPressSlide, setCurrentPressSlide] = useState(0);
   // Take top 4 featured projects for the home grid
   const featuredProjects = projectsData.slice(0, 4);
-
-  // Awards/Press data
-  const pressArticles = [
-    {
-      id: "award-1",
-      title: "Luxurious Interior Designer of the Year",
-      date: "OCTOBER 2025",
-      excerpt: "Preeti Sethi Designs bags the top spot in premium residential planning at the National Architecture Conclave...",
-      fullText: "At the National Architecture Conclave 2025, Preeti Sethi Designs was awarded 'Luxurious Interior Designer of the Year' for their masterwork in Delhi NCR residences. Preeti Sethi highlighted her belief that every space is a canvas, and detailing is what separates quality from luxury. The jury praised the seamless balance of deep bronze tones and bespoke custom elements.",
-      image: "/brochure-3.jpeg"
-    },
-    {
-      id: "award-2",
-      title: "Empowering Women Leaders in Design",
-      date: "MARCH 2026",
-      excerpt: "Sharing the journey of Preeti Sethi from designing her first home to building a premier design studio...",
-      fullText: "A feature article celebrating the story of Preeti Sethi, who founded Preeti Sethi Designs with passion, perseverance, and dedication. Together with co-founder Shivam Nagpal, the studio delivers design consultation, bespoke furniture, turnkey execution, and site supervision with an unwavering commitment to craftsmanship.",
-      image: "/brochure-4.jpeg"
-    },
-    {
-      id: "press-1",
-      title: "Bespoke Modern Living Trends",
-      date: "JUNE 2026",
-      excerpt: "Exploring the drawing room, modular kitchen and premium washroom layout solutions designed by Preeti Sethi Designs...",
-      fullText: "Modern trends are pivoting back to warmth, custom textures, and quiet luxury. In this press feature, Preeti Sethi Designs shares insights on how to balance functional spaces with refined finishes, custom fabrication, and modern design solutions to make everyday living feel like paradise.",
-      image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=800"
-    }
-  ];
-
-  // Auto-scroll press carousel on mobile every 5 seconds
-  useEffect(() => {
-    const pressTimer = setInterval(() => {
-      setCurrentPressSlide((prev) => (prev + 1) % pressArticles.length);
-    }, 5000);
-    return () => clearInterval(pressTimer);
-  }, [pressArticles.length]);
-
-  const handlePrevPress = (e) => {
-    e?.stopPropagation();
-    setCurrentPressSlide((prev) => (prev - 1 + pressArticles.length) % pressArticles.length);
-  };
-
-  const handleNextPress = (e) => {
-    e?.stopPropagation();
-    setCurrentPressSlide((prev) => (prev + 1) % pressArticles.length);
-  };
 
   useEffect(() => {
     const handleScrollEffects = () => {
@@ -276,90 +228,71 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
 
       <div className="section-separator"></div>
 
-      {/* SECTION 6: Awards and Press Articles */}
+      {/* SECTION 6: Awards */}
       <section className="home-compact-section">
-        <div className="press-section">
-          <h2 className="section-title text-center scroll-reveal">AWARDS & PRESS</h2>
+        <div className="awards-section-wrapper">
+          <h2 className="section-title text-center scroll-reveal">AWARDS</h2>
           
-          {/* Desktop Grid Layout */}
-          <div className="press-grid press-desktop-only">
-            {pressArticles.map((article) => (
-              <div 
-                key={article.id} 
-                className="press-card scroll-reveal"
-                onClick={() => onNavigate('press-detail', article)}
-              >
-                <div className="press-image-frame">
-                  <img src={article.image} alt={article.title} loading="lazy" />
+          <div className="awards-feature-grid scroll-reveal">
+            {/* Photo on Left (Desktop) / Top (Mobile) */}
+            <div className="awards-image-column">
+              <div className="awards-image-frame">
+                <img 
+                  src="/awardphoto.png" 
+                  alt="Preeti Sethi Designs awarded by Shilpa Shetty at International Dazzling Awards" 
+                  className="awards-main-photo" 
+                  loading="lazy" 
+                />
+                <div className="awards-image-glow-overlay"></div>
+                <div className="awards-floating-badge">
+                  <Trophy size={16} />
+                  <span>INTERNATIONAL DAZZLING AWARDS</span>
                 </div>
-                <span className="press-date">{article.date}</span>
-                <h4 className="press-title-card">{article.title}</h4>
-                <p className="press-excerpt">{article.excerpt}</p>
               </div>
-            ))}
-          </div>
+            </div>
 
-          {/* Mobile Interactive Carousel (Left/Right + 5s Auto Transition) */}
-          <div className="press-mobile-carousel-wrapper">
-            <button 
-              className="press-carousel-arrow left" 
-              onClick={handlePrevPress} 
-              aria-label="Previous press card"
-            >
-              <ChevronLeft size={20} />
-            </button>
-            
-            <div className="press-carousel-viewport">
-              <div 
-                className="press-carousel-track" 
-                style={{ transform: `translateX(-${currentPressSlide * 100}%)` }}
-              >
-                {pressArticles.map((article) => (
-                  <div key={article.id} className="press-mobile-slide">
-                    <div 
-                      className="press-card"
-                      onClick={() => onNavigate('press-detail', article)}
-                    >
-                      <div className="press-image-frame">
-                        <img src={article.image} alt={article.title} loading="lazy" />
-                      </div>
-                      <span className="press-date">{article.date}</span>
-                      <h4 className="press-title-card">{article.title}</h4>
-                      <p className="press-excerpt">{article.excerpt}</p>
+            {/* Text on Right (Desktop) / Below (Mobile) */}
+            <div className="awards-content-column">
+              <div className="awards-content-card">
+                <div className="awards-eyebrow">
+                  <Sparkles size={16} />
+                  <span>PRESTIGIOUS INDUSTRY RECOGNITION</span>
+                </div>
+                <h3 className="awards-headline">
+                  Winner of Best Interior Design Award
+                </h3>
+                <div className="awards-accent-divider"></div>
+                <p className="awards-description-lead">
+                  Preeti Sethi Designs won the prestigious <strong>International Dazzling Awards</strong> in the <strong>Best Interior Design Award</strong> category, and were proudly awarded and felicitated by acclaimed Bollywood actress and wellness icon <strong>Shilpa Shetty</strong>.
+                </p>
+                <p className="awards-description-sub">
+                  This distinguished national honor recognizes our studio's unwavering commitment to architectural innovation, artisanal craftsmanship, and bespoke luxury interior environments crafted across Delhi NCR.
+                </p>
+
+                <div className="awards-highlights-grid">
+                  <div className="award-highlight-pill">
+                    <Award size={18} className="award-pill-icon" />
+                    <div className="award-pill-text">
+                      <span className="pill-title">Best Interior Design Category</span>
+                      <span className="pill-desc">International Dazzling Awards</span>
                     </div>
                   </div>
-                ))}
+                  <div className="award-highlight-pill">
+                    <Sparkles size={18} className="award-pill-icon" />
+                    <div className="award-pill-text">
+                      <span className="pill-title">Felicitated by Shilpa Shetty</span>
+                      <span className="pill-desc">Celebrity Recognition & Honor</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="awards-cta-row">
+                  <button className="know-more-btn" onClick={() => onNavigate('projects')}>
+                    EXPLORE AWARD-WINNING PROJECTS <ArrowRight size={15} style={{ marginLeft: '6px' }} />
+                  </button>
+                </div>
               </div>
             </div>
-
-            <button 
-              className="press-carousel-arrow right" 
-              onClick={handleNextPress} 
-              aria-label="Next press card"
-            >
-              <ChevronRight size={20} />
-            </button>
-
-            {/* Indicator Dots */}
-            <div className="press-carousel-dots">
-              {pressArticles.map((_, idx) => (
-                <button
-                  key={idx}
-                  className={`press-dot ${currentPressSlide === idx ? 'active' : ''}`}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setCurrentPressSlide(idx);
-                  }}
-                  aria-label={`Go to slide ${idx + 1}`}
-                />
-              ))}
-            </div>
-          </div>
-
-          <div className="view-more-container scroll-reveal">
-            <button className="know-more-btn" onClick={() => onNavigate('projects')}>
-              VIEW ALL PROJECTS
-            </button>
           </div>
         </div>
       </section>
