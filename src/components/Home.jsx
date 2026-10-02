@@ -204,18 +204,22 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
                 className="carousel-track" 
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
               >
-                {testimonials.map((t, idx) => (
-                  <div key={idx} className="carousel-slide">
-                    <p className="testi-quote">"{t.quote}"</p>
-                    <div className="testi-author">
-                      <img src={t.img} alt={t.name} className="testi-img" loading="lazy" />
-                      <div className="testi-meta">
-                        <h4>{t.name}</h4>
-                        <span>{t.role}</span>
+                {testimonials.map((t, idx) => {
+                  const initial = (t.name.replace(/^Mr\.?\s+/i, '').trim() || t.name).charAt(0).toUpperCase();
+                  return (
+                    <div key={idx} className="carousel-slide">
+                      <p className="testi-quote">"{t.quote}"</p>
+                      <div className="testi-author">
+                        <div className="testi-avatar-initial" aria-label={t.name}>
+                          {initial}
+                        </div>
+                        <div className="testi-meta">
+                          <h4>{t.name}</h4>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
 
