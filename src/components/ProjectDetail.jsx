@@ -273,7 +273,7 @@ function ProjectDetail({ project, onNavigate }) {
 
             <div className="founder-cta-row">
               <button 
-                className="contact-founder-btn"
+                className="cta-gold-btn"
                 onClick={() => onNavigate && onNavigate('contact')}
               >
                 CONNECT WITH PREETI
@@ -321,7 +321,7 @@ function ProjectDetail({ project, onNavigate }) {
 
             <div className="founder-cta-row">
               <button 
-                className="contact-founder-btn"
+                className="cta-gold-btn"
                 onClick={() => onNavigate && onNavigate('contact')}
               >
                 CONNECT WITH SHIVAM

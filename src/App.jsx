@@ -271,7 +271,7 @@ function App() {
           </div>
           <div className="footer-contact-col">
             <h4>CONNECT WITH US</h4>
-            <p><strong>Phone:</strong> +91 92110 40483, +91 99718 91303</p>
+            <p><strong>Phone:</strong> +91 92110 40483</p>
             <p><strong>Email:</strong> <a href="mailto:admin@preetisethidesigns.com" style={{ color: 'inherit', textDecoration: 'none' }}>admin@preetisethidesigns.com</a></p>
             <p><strong>Studio:</strong> 23, Pocket 19, Sector 24, Rohini - 110085</p>
           </div>

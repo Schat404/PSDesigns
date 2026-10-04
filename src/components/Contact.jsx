@@ -56,7 +56,6 @@ function Contact() {
                 <div>
                   <h4>Call Us</h4>
                   <p>+91 92110 40483</p>
-                  <p>+91 99718 91303</p>
                 </div>
               </div>
               <div className="info-item">
@@ -138,6 +137,8 @@ function Contact() {
                     <option value="Commercial">Commercial Design</option>
                     <option value="Bespoke Furniture">Bespoke Furniture</option>
                     <option value="Renovation">Renovation & Consultation</option>
+                    <option value="3D Visualisation">3D Visualisation</option>
+                    <option value="Space Planning">Space Planning</option>
                   </select>
                 </div>
                 <div className="form-group">
