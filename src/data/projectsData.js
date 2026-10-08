@@ -80,6 +80,243 @@ export const projectsData = [
     }
   },
   {
+    id: "elite-fitness",
+    name: "Elite Fitness Gym",
+    category: "Gym project",
+    year: "2026",
+    location: "DELHI NCR",
+    area: "5,000 sq. ft.",
+    image: "/elite/DSC09847.JPG",
+    videoUrl: "https://drive.google.com/file/d/1_my4zUyHORXQN5ERDciHEYvQ2YJVJl-z/view?usp=share_link",
+    videoEmbedUrl: "https://drive.google.com/file/d/1_my4zUyHORXQN5ERDciHEYvQ2YJVJl-z/preview",
+    floorPlanPdf: "/elite/elite_fitness_floorplan_bw.pdf",
+    floorPlanImg: "/elite/elite_fitness_floorplan_bw.png",
+    tagline: "High-octane luxury fitness and recovery hub with futuristic wellness design.",
+    description: "A state-of-the-art commercial gym and wellness club with acoustic isolation, dynamic neon-gold ambient lines, bio-metric juice lounge, and luxury locker suites.",
+    gallery: [
+      {
+        src: "/elite/DSC09847.JPG",
+        title: "Main Strength & Cardio Floor",
+        caption: "Expansive training arena featuring heavy-duty acoustic rubber sub-flooring, bespoke equipment layouts, and dynamic ambient illumination.",
+        category: "MAIN ARENA"
+      },
+      {
+        src: "/elite/DSC09850.JPG",
+        title: "Functional & Performance Zone",
+        caption: "State-of-the-art functional fitness floor with precision shock-absorbent surfaces and integrated motivational lighting.",
+        category: "FUNCTIONAL ZONE"
+      },
+      {
+        src: "/elite/DSC09854.JPG",
+        title: "Bespoke Equipment & Lighting Grid",
+        caption: "Architectural linear ceiling lighting tracks calibrated for workout intensity, framing premium commercial fitness suites.",
+        category: "FITNESS SUITE"
+      },
+      {
+        src: "/elite/DSC09858.JPG",
+        title: "Strength Conditioning Arena",
+        caption: "Custom black baffle ceiling with glare-free recessed task lighting and premium free-weight racks.",
+        category: "STRENGTH AREA"
+      },
+      {
+        src: "/elite/DSC09861.JPG",
+        title: "Elite Reception & Member Lounge",
+        caption: "Welcoming reception and member lounge with luxury architectural detailing, bespoke counter millwork, and warm gold accents.",
+        category: "RECEPTION & LOUNGE"
+      }
+    ],
+    clientExpectations: {
+      headline: "A boutique fitness destination that marries high-performance energy with 5-star hotel luxury.",
+      scenario: "The founders of Elite Fitness envisioned a premier luxury training facility that sets a new national standard. They wanted to move away from conventional industrial gyms and instead create a high-end wellness sanctuary. Key demands included high-impact shock-absorbent shock flooring, soundproof studio chambers for spin and pilates, dynamic linear LED lighting that syncs to workout rhythms, and spa-grade locker rooms with steam showers, saunas, and a luxury recovery lounge.",
+      requirements: [
+        "Heavy-duty vibration damping and acoustic soundproofing across all free-weight zones.",
+        "Dynamic programmable RGBW + 3000K warm gold LED linear ceiling light tracks.",
+        "Boutique hotel caliber locker rooms with private steam suites, rain showers, and dry saunas.",
+        "Ergonomic shake and nutrition bar lounge with luxury booth seating and brass trims."
+      ]
+    },
+    whatWeDelivered: {
+      headline: "High-performance acoustic engineering, dynamic architectural lighting, and 5-star wellness suites.",
+      scenario: "Preeti Sethi Designs delivered a turnkey commercial masterpiece. We installed 25mm high-density dual-layered rubber acoustic sub-floors to eliminate structural vibrations. The ceiling was transformed with custom geometric black baffles and recessed controllable linear lighting that transitions from energizing morning cool tones to sunset golden recovery modes. The locker rooms were clad in textured charcoal slate tiles with cedar wood saunas and brass fixture accents, establishing Elite Fitness as Delhi's most prestigious fitness sanctuary.",
+      deliverables: [
+        "Acoustic floor and ceiling engineering with multi-zone sound isolation.",
+        "Programmable architectural circadian lighting grids customized for high-energy workouts.",
+        "Spa-level locker rooms equipped with cedar wood saunas, steam rooms, and vanity stations.",
+        "Bespoke reception and wellness juice bar lounge featuring ribbed terrazzo counters and bronze barstools."
+      ]
+    }
+  },
+  {
+    id: "rajouri",
+    name: "Rajouri Garden",
+    category: "NEO-CLASSICAL MANSION",
+    year: "2025",
+    location: "RAJOURI GARDEN, WEST DELHI",
+    area: "5,500 sq. ft.",
+    image: "/rajouri/living.jpeg",
+    videoUrl: "https://drive.google.com/file/d/1vkgOaPftVjVHEeBEfVE-9206pjpvblSM/view?usp=share_link",
+    videoEmbedUrl: "https://drive.google.com/file/d/1vkgOaPftVjVHEeBEfVE-9206pjpvblSM/preview",
+    floorPlanPdf: "/rajouri/rajourifloor.pdf",
+    floorPlanImg: "/rajouri/rajourifloor.png",
+    tagline: "Regal neo-classical heritage reimagined for high-profile modern luxury.",
+    description: "A monumental residence boasting intricate classical mouldings, grand crystal chandelier centerpieces, customized gold leafing, and rich velvet suites.",
+    gallery: [
+      {
+        src: "/rajouri/living.jpeg",
+        title: "Palatial Drawing Room",
+        caption: "Classical French boiserie paneling with delicate gold foil accents, crystal chandelier centerpieces, and custom velvet seating.",
+        category: "DRAWING ROOM"
+      },
+      {
+        src: "/rajouri/dining-hall.jpeg",
+        title: "Grand Dining Hall & Double-Height Foyer",
+        caption: "Opulent honey onyx dining centerpiece surrounded by bespoke royal velvet chairs and double-height architectural lighting.",
+        category: "DINING & FOYER"
+      },
+      {
+        src: "/rajouri/sitting.jpeg",
+        title: "Royal Velvet Lounge",
+        caption: "Tailored high-back velvet lounge seating paired with classical boiserie and bespoke brushed bronze accents.",
+        category: "LOUNGE"
+      },
+      {
+        src: "/rajouri/tv-console.jpeg",
+        title: "Classical Boiserie TV Console",
+        caption: "Ornate wall mouldings framing a modern media console with ambient backlight integration and brass inlays.",
+        category: "ENTERTAINMENT"
+      },
+      {
+        src: "/rajouri/mandir.jpeg",
+        title: "Sacred Temple Sanctuary",
+        caption: "Ornate traditional home mandir with intricate carvings, brass bells, and warm spiritual illumination.",
+        category: "SANCTUARY"
+      },
+      {
+        src: "/rajouri/buddha-sculpture.jpeg",
+        title: "Heritage Sculptural Wall Feature",
+        caption: "Zen-inspired backlit stone carving creating a serene focal point within the palatial hallway.",
+        category: "HERITAGE ACCENT"
+      }
+    ],
+    clientExpectations: {
+      headline: "An opulent mansion with royal classical flair, bespoke grandeur, and stately entertainment halls.",
+      scenario: "The client—a prominent business family in Rajouri Garden—wished to create a generational family residence that radiates heritage grandeur, classical European proportions, and luxury craftsmanship. They requested ornate wall mouldings, French boiserie detailing, custom gold leaf accents, double-height chandelier anchor points, and a palatial dining salon capable of seating 14 guests with custom-carved luxury chairs and polished marble flooring.",
+      requirements: [
+        "Authentic neo-classical wall paneling (Boiserie) with hand-applied gold foil accents.",
+        "Grand double-height foyer with structural reinforcement for monumental chandeliers.",
+        "Stately 14-seater dining hall featuring customized onyx tabletop and royal velvet seating.",
+        "Private royal master dressing room with backlit glass wardrobes and jewelry island."
+      ]
+    },
+    whatWeDelivered: {
+      headline: "European classical boiserie, gold-accented plasterwork, and palatial stone halls.",
+      scenario: "Preeti Sethi Designs combined artisanal heritage craftsmanship with modern engineering. Our artisans spent weeks crafting hand-carved classical moulding profiles, crowned with subtle 24k gold leafing. We installed an opulent backlit honey onyx dining centerpiece surrounded by custom velvet high-back chairs. The master suite features an expansive walk-in dressing salon with tinted bronze glass wardrobes, velvet jewelry drawers, and perimeter warm uplighting, creating a regal lifestyle experience.",
+      deliverables: [
+        "Handcrafted classical boiserie paneling with subtle champagne gold leaf accents.",
+        "Custom 14-seater honey onyx dining table with bespoke brushed bronze base.",
+        "High-capacity master walk-in wardrobe with climate control and security vaults.",
+        "Double-height foyer crystal chandelier installation with smart architectural dimming."
+      ]
+    }
+  },
+  {
+    id: "la-makeup-academy",
+    name: "LA Makeup Academy",
+    category: "Commercial Studio",
+    year: "2026",
+    location: "DELHI NCR",
+    area: "2,500 sq. ft.",
+    image: "/la_makeup/masterclass.jpeg",
+    tagline: "Haute couture beauty academy uniting high-CRI shadowless illumination and bespoke vanity craftsmanship.",
+    description: "A state-of-the-art beauty academy featuring professional 95+ CRI daylight-balanced vanity stations, curved fluted reception architecture, a tiered masterclass auditorium, and dedicated student training suites.",
+    gallery: [
+      {
+        src: "/la_makeup/masterclass.jpeg",
+        title: "Masterclass Demonstration Arena",
+        caption: "Tiered auditorium arena calibrated with glare-free overhead studio lighting tracks and acoustic baffles for live demonstrations.",
+        category: "MASTERCLASS ARENA"
+      },
+      {
+        src: "/la_makeup/reception.jpeg",
+        title: "Editorial Reception & Lounge",
+        caption: "Sculptural reception foyer featuring curved fluted paneling, warm champagne bronze accents, and indirect architectural cove lighting.",
+        category: "RECEPTION & FOYER"
+      },
+      {
+        src: "/la_makeup/studio.jpeg",
+        title: "Bespoke Styling & Vanity Studio",
+        caption: "Full-height vanity mirrors with shadowless 4000K neutral daylight illumination and ergonomic custom seating for precision application.",
+        category: "STYLING STUDIO"
+      },
+      {
+        src: "/la_makeup/training.jpeg",
+        title: "Student Practical Training Stations",
+        caption: "Individual workstations featuring stain-resistant sintered stone countertops, integrated cosmetic organizers, and personalized task lighting.",
+        category: "TRAINING ZONE"
+      },
+      {
+        src: "/la_makeup/display.jpeg",
+        title: "Cosmetic Showcase & Retail Gallery",
+        caption: "Custom backlit display niches showcasing luxury cosmetic lines with concealed linear LED profiles and satin brass framing.",
+        category: "PRODUCT GALLERY"
+      }
+    ],
+    clientExpectations: {
+      headline: "A cutting-edge commercial beauty sanctuary combining editorial luxury with academy-grade training precision.",
+      scenario: "The visionary founders of LA Makeup Academy approached Preeti Sethi Designs to engineer an international-standard beauty and cosmetology academy in Delhi NCR. Their mandate demanded a space that immediately inspires confidence and creative glamour. Critical requirements included true-to-life color rendering with 95+ CRI studio lighting across all stations, heavy-duty stain-resistant materials capable of withstanding cosmetic pigments and daily sanitization, acoustic sound absorption for live seminar recordings, and an unforgettable reception area that sets a high-fashion editorial tone.",
+      requirements: [
+        "Calibrated shadowless vanity lighting (4000K neutral daylight, CRI 95+) for true pigment accuracy.",
+        "Acoustically treated tiered masterclass auditorium for live video broadcasts and demonstrations.",
+        "Custom curved reception desk with fluted millwork, champagne brass profiles, and ambient coves.",
+        "Stain-resistant sintered stone makeup surfaces and organized storage for cosmetology equipment.",
+        "Architectural display shelving with concealed backlighting for luxury cosmetics and certifications."
+      ]
+    },
+    whatWeDelivered: {
+      headline: "Color-calibrated studio illumination, custom fluted millwork, and high-durability luxury finishes.",
+      scenario: "Preeti Sethi Designs delivered a turnkey commercial transformation that sets a new benchmark for professional beauty academies. We engineered optical-grade lighting grids that eliminate harsh shadows and skin color distortions. Each vanity station was custom-built with satin brass mirror frames, push-to-open acoustic drawers, and non-porous sintered stone tops impervious to oils and pigments. The reception foyer was transformed into an editorial showpiece with curved textured fluted walls and warm indirect backlighting, creating a truly magnetic first impression.",
+      deliverables: [
+        "Custom shadowless high-CRI vanity illumination engineered for professional color calibration.",
+        "Turnkey spatial layout separating reception lounge, training floor, and masterclass studio.",
+        "Bespoke curved fluted reception desk with champagne gold brushed accents and concealed LEDs.",
+        "Stain-resistant sintered stone countertops and custom modular storage cabinetry.",
+        "Acoustic ceiling treatments and sound-dampening wall panels for masterclass recordings.",
+        "Architectural backlit cosmetic display walls with integrated satin brass profiles."
+      ]
+    }
+  },
+  {
+    id: "sector-25",
+    name: "Sector 25",
+    category: "CONTEMPORARY RESIDENCE",
+    year: "2026",
+    location: "SECTOR 25, ROHINI, DELHI",
+    area: "2,600 sq. ft.",
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1200",
+    tagline: "Artful harmony of bespoke materials and warm contemporary elegance.",
+    description: "An innovative residential transformation featuring customized walnut wall paneling, champagne gold trims, and tailored culinary and living environments.",
+    clientExpectations: {
+      headline: "A vibrant yet sophisticated urban apartment designed for multi-functional modern living.",
+      scenario: "The homeowners wanted to transform their newly acquired apartment into an upscale modern home that balances intimate family evenings with vibrant social gatherings. They requested an open culinary island that doubles as a breakfast bar, high-durability luxury finishes that resist wear from young children, and custom master bedrooms that evoke the ambiance of a 5-star presidential suite with layered textures, headboard paneling, and warm illumination.",
+      requirements: [
+        "Multi-functional open-plan kitchen with sintered stone breakfast island and concealed appliances.",
+        "Master bedroom suite with bespoke acoustic headboard wall and reading sconces.",
+        "Durable, stain-resistant luxury fabrics and scratch-resistant matte floor treatments.",
+        "Dedicated children's study niche with ergonomic posture-friendly modular furniture."
+      ]
+    },
+    whatWeDelivered: {
+      headline: "Precision modular carpentry, sintered stone finishes, and tailored master suites.",
+      scenario: "Preeti Sethi Designs executed a complete turnkey overhaul. We engineered a sleek culinary island with Italian sintered stone surfaces and concealed push-to-open German hardware. In the master suite, we fabricated an 11-foot wide velvet-and-bronze fluted headboard accent wall paired with dimmable gooseneck reading fixtures. The children's zone received an ergonomic custom study station with built-in book niches. Every inch was calibrated for maximum utility, refined proportion, and visual elegance.",
+      deliverables: [
+        "Custom culinary island with integrated induction, wine cellar niche, and breakfast bar.",
+        "Full-height acoustic upholstered headboards and custom walnut accent walls.",
+        "Smart ergonomics throughout work-from-home and children study zones.",
+        "Ambient multi-layer lighting with accent downlights and brass wall sconces."
+      ]
+    }
+  },
+  {
     id: "sector-22",
     name: "Sector 22",
     category: "Builder Floor",
@@ -161,177 +398,6 @@ export const projectsData = [
         "Flush-fit handleless cabinetry with matte anti-fingerprint Italian laminate finishes.",
         "Architectural skylight courtyard with low-maintenance exotic indoor botanical accents.",
         "Complete smart automation for lighting, motorized sheers, and ambient audio."
-      ]
-    }
-  },
-  {
-    id: "sector-25",
-    name: "Sector 25",
-    category: "CONTEMPORARY RESIDENCE",
-    year: "2026",
-    location: "SECTOR 25, ROHINI, DELHI",
-    area: "2,600 sq. ft.",
-    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1200",
-    tagline: "Artful harmony of bespoke materials and warm contemporary elegance.",
-    description: "An innovative residential transformation featuring customized walnut wall paneling, champagne gold trims, and tailored culinary and living environments.",
-    clientExpectations: {
-      headline: "A vibrant yet sophisticated urban apartment designed for multi-functional modern living.",
-      scenario: "The homeowners wanted to transform their newly acquired apartment into an upscale modern home that balances intimate family evenings with vibrant social gatherings. They requested an open culinary island that doubles as a breakfast bar, high-durability luxury finishes that resist wear from young children, and custom master bedrooms that evoke the ambiance of a 5-star presidential suite with layered textures, headboard paneling, and warm illumination.",
-      requirements: [
-        "Multi-functional open-plan kitchen with sintered stone breakfast island and concealed appliances.",
-        "Master bedroom suite with bespoke acoustic headboard wall and reading sconces.",
-        "Durable, stain-resistant luxury fabrics and scratch-resistant matte floor treatments.",
-        "Dedicated children's study niche with ergonomic posture-friendly modular furniture."
-      ]
-    },
-    whatWeDelivered: {
-      headline: "Precision modular carpentry, sintered stone finishes, and tailored master suites.",
-      scenario: "Preeti Sethi Designs executed a complete turnkey overhaul. We engineered a sleek culinary island with Italian sintered stone surfaces and concealed push-to-open German hardware. In the master suite, we fabricated an 11-foot wide velvet-and-bronze fluted headboard accent wall paired with dimmable gooseneck reading fixtures. The children's zone received an ergonomic custom study station with built-in book niches. Every inch was calibrated for maximum utility, refined proportion, and visual elegance.",
-      deliverables: [
-        "Custom culinary island with integrated induction, wine cellar niche, and breakfast bar.",
-        "Full-height acoustic upholstered headboards and custom walnut accent walls.",
-        "Smart ergonomics throughout work-from-home and children study zones.",
-        "Ambient multi-layer lighting with accent downlights and brass wall sconces."
-      ]
-    }
-  },
-  {
-    id: "rajouri",
-    name: "Rajouri Garden",
-    category: "NEO-CLASSICAL MANSION",
-    year: "2025",
-    location: "RAJOURI GARDEN, WEST DELHI",
-    area: "5,500 sq. ft.",
-    image: "/rajouri/living.jpeg",
-    videoUrl: "https://drive.google.com/file/d/1vkgOaPftVjVHEeBEfVE-9206pjpvblSM/view?usp=share_link",
-    videoEmbedUrl: "https://drive.google.com/file/d/1vkgOaPftVjVHEeBEfVE-9206pjpvblSM/preview",
-    floorPlanPdf: "/rajouri/rajourifloor.pdf",
-    floorPlanImg: "/rajouri/rajourifloor.png",
-    tagline: "Regal neo-classical heritage reimagined for high-profile modern luxury.",
-    description: "A monumental residence boasting intricate classical mouldings, grand crystal chandelier centerpieces, customized gold leafing, and rich velvet suites.",
-    gallery: [
-      {
-        src: "/rajouri/living.jpeg",
-        title: "Palatial Drawing Room",
-        caption: "Classical French boiserie paneling with delicate gold foil accents, crystal chandelier centerpieces, and custom velvet seating.",
-        category: "DRAWING ROOM"
-      },
-      {
-        src: "/rajouri/dining-hall.jpeg",
-        title: "Grand Dining Hall & Double-Height Foyer",
-        caption: "Opulent honey onyx dining centerpiece surrounded by bespoke royal velvet chairs and double-height architectural lighting.",
-        category: "DINING & FOYER"
-      },
-      {
-        src: "/rajouri/sitting.jpeg",
-        title: "Royal Velvet Lounge",
-        caption: "Tailored high-back velvet lounge seating paired with classical boiserie and bespoke brushed bronze accents.",
-        category: "LOUNGE"
-      },
-      {
-        src: "/rajouri/tv-console.jpeg",
-        title: "Classical Boiserie TV Console",
-        caption: "Ornate wall mouldings framing a modern media console with ambient backlight integration and brass inlays.",
-        category: "ENTERTAINMENT"
-      },
-      {
-        src: "/rajouri/mandir.jpeg",
-        title: "Sacred Temple Sanctuary",
-        caption: "Ornate traditional home mandir with intricate carvings, brass bells, and warm spiritual illumination.",
-        category: "SANCTUARY"
-      },
-      {
-        src: "/rajouri/buddha-sculpture.jpeg",
-        title: "Heritage Sculptural Wall Feature",
-        caption: "Zen-inspired backlit stone carving creating a serene focal point within the palatial hallway.",
-        category: "HERITAGE ACCENT"
-      }
-    ],
-    clientExpectations: {
-      headline: "An opulent mansion with royal classical flair, bespoke grandeur, and stately entertainment halls.",
-      scenario: "The client—a prominent business family in Rajouri Garden—wished to create a generational family residence that radiates heritage grandeur, classical European proportions, and luxury craftsmanship. They requested ornate wall mouldings, French boiserie detailing, custom gold leaf accents, double-height chandelier anchor points, and a palatial dining salon capable of seating 14 guests with custom-carved luxury chairs and polished marble flooring.",
-      requirements: [
-        "Authentic neo-classical wall paneling (Boiserie) with hand-applied gold foil accents.",
-        "Grand double-height foyer with structural reinforcement for monumental chandeliers.",
-        "Stately 14-seater dining hall featuring customized onyx tabletop and royal velvet seating.",
-        "Private royal master dressing room with backlit glass wardrobes and jewelry island."
-      ]
-    },
-    whatWeDelivered: {
-      headline: "European classical boiserie, gold-accented plasterwork, and palatial stone halls.",
-      scenario: "Preeti Sethi Designs combined artisanal heritage craftsmanship with modern engineering. Our artisans spent weeks crafting hand-carved classical moulding profiles, crowned with subtle 24k gold leafing. We installed an opulent backlit honey onyx dining centerpiece surrounded by custom velvet high-back chairs. The master suite features an expansive walk-in dressing salon with tinted bronze glass wardrobes, velvet jewelry drawers, and perimeter warm uplighting, creating a regal lifestyle experience.",
-      deliverables: [
-        "Handcrafted classical boiserie paneling with subtle champagne gold leaf accents.",
-        "Custom 14-seater honey onyx dining table with bespoke brushed bronze base.",
-        "High-capacity master walk-in wardrobe with climate control and security vaults.",
-        "Double-height foyer crystal chandelier installation with smart architectural dimming."
-      ]
-    }
-  },
-  {
-    id: "elite-fitness",
-    name: "Elite Fitness Gym",
-    category: "Gym project",
-    year: "2026",
-    location: "DELHI NCR",
-    area: "5,000 sq. ft.",
-    image: "/elite/DSC09847.JPG",
-    videoUrl: "https://drive.google.com/file/d/1_my4zUyHORXQN5ERDciHEYvQ2YJVJl-z/view?usp=share_link",
-    videoEmbedUrl: "https://drive.google.com/file/d/1_my4zUyHORXQN5ERDciHEYvQ2YJVJl-z/preview",
-    floorPlanPdf: "/elite/elite_fitness_floorplan_bw.pdf",
-    floorPlanImg: "/elite/elite_fitness_floorplan_bw.png",
-    tagline: "High-octane luxury fitness and recovery hub with futuristic wellness design.",
-    description: "A state-of-the-art commercial gym and wellness club with acoustic isolation, dynamic neon-gold ambient lines, bio-metric juice lounge, and luxury locker suites.",
-    gallery: [
-      {
-        src: "/elite/DSC09847.JPG",
-        title: "Main Strength & Cardio Floor",
-        caption: "Expansive training arena featuring heavy-duty acoustic rubber sub-flooring, bespoke equipment layouts, and dynamic ambient illumination.",
-        category: "MAIN ARENA"
-      },
-      {
-        src: "/elite/DSC09850.JPG",
-        title: "Functional & Performance Zone",
-        caption: "State-of-the-art functional fitness floor with precision shock-absorbent surfaces and integrated motivational lighting.",
-        category: "FUNCTIONAL ZONE"
-      },
-      {
-        src: "/elite/DSC09854.JPG",
-        title: "Bespoke Equipment & Lighting Grid",
-        caption: "Architectural linear ceiling lighting tracks calibrated for workout intensity, framing premium commercial fitness suites.",
-        category: "FITNESS SUITE"
-      },
-      {
-        src: "/elite/DSC09858.JPG",
-        title: "Strength Conditioning Arena",
-        caption: "Custom black baffle ceiling with glare-free recessed task lighting and premium free-weight racks.",
-        category: "STRENGTH AREA"
-      },
-      {
-        src: "/elite/DSC09861.JPG",
-        title: "Elite Reception & Member Lounge",
-        caption: "Welcoming reception and member lounge with luxury architectural detailing, bespoke counter millwork, and warm gold accents.",
-        category: "RECEPTION & LOUNGE"
-      }
-    ],
-    clientExpectations: {
-      headline: "A boutique fitness destination that marries high-performance energy with 5-star hotel luxury.",
-      scenario: "The founders of Elite Fitness envisioned a premier luxury training facility that sets a new national standard. They wanted to move away from conventional industrial gyms and instead create a high-end wellness sanctuary. Key demands included high-impact shock-absorbent shock flooring, soundproof studio chambers for spin and pilates, dynamic linear LED lighting that syncs to workout rhythms, and spa-grade locker rooms with steam showers, saunas, and a luxury recovery lounge.",
-      requirements: [
-        "Heavy-duty vibration damping and acoustic soundproofing across all free-weight zones.",
-        "Dynamic programmable RGBW + 3000K warm gold LED linear ceiling light tracks.",
-        "Boutique hotel caliber locker rooms with private steam suites, rain showers, and dry saunas.",
-        "Ergonomic shake and nutrition bar lounge with luxury booth seating and brass trims."
-      ]
-    },
-    whatWeDelivered: {
-      headline: "High-performance acoustic engineering, dynamic architectural lighting, and 5-star wellness suites.",
-      scenario: "Preeti Sethi Designs delivered a turnkey commercial masterpiece. We installed 25mm high-density dual-layered rubber acoustic sub-floors to eliminate structural vibrations. The ceiling was transformed with custom geometric black baffles and recessed controllable linear lighting that transitions from energizing morning cool tones to sunset golden recovery modes. The locker rooms were clad in textured charcoal slate tiles with cedar wood saunas and brass fixture accents, establishing Elite Fitness as Delhi's most prestigious fitness sanctuary.",
-      deliverables: [
-        "Acoustic floor and ceiling engineering with multi-zone sound isolation.",
-        "Programmable architectural circadian lighting grids customized for high-energy workouts.",
-        "Spa-level locker rooms equipped with cedar wood saunas, steam rooms, and vanity stations.",
-        "Bespoke reception and wellness juice bar lounge featuring ribbed terrazzo counters and bronze barstools."
       ]
     }
   }

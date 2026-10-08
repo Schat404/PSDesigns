@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { projectsData } from '../data/projectsData';
-import { ArrowRight, MapPin, Calendar, Layers } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,12 +10,10 @@ function PastProjects({ onSelectProject }) {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    // Only apply GSAP scroll pinning and scale stacking on desktop/tablet devices (> 768px)
-    const isMobile = window.innerWidth <= 768;
-    if (isMobile) return;
+    // Responsive GSAP controller: ONLY run stacking and pinning on desktop (> 1024px)
+    const mm = gsap.matchMedia();
 
-    // Highly optimized CSS-transform based GSAP stacking for desktop
-    const ctx = gsap.context(() => {
+    mm.add("(min-width: 1025px)", () => {
       const cards = gsap.utils.toArray('.gsap-card');
 
       cards.forEach((card, i) => {
@@ -49,9 +47,9 @@ function PastProjects({ onSelectProject }) {
           });
         }
       });
-    }, containerRef);
+    });
 
-    return () => ctx.revert(); // cleanly revert all animations and triggers without memory leaks
+    return () => mm.revert(); // Cleanly revert all animations and triggers on unmount or screen resize
   }, []);
 
   return (
