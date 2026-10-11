@@ -242,7 +242,7 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
             <div className="awards-image-column">
               <div className="awards-image-frame">
                 <img 
-                  src="/awardphoto.png" 
+                  src="/awardphoto.JPG" 
                   alt="Preeti Sethi Designs awarded by Shilpa Shetty at International Dazzling Awards" 
                   className="awards-main-photo" 
                   loading="lazy" 
