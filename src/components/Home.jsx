@@ -55,7 +55,7 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
         {/* Brand statement overlapping the video at the bottom */}
         <div className="hero-statement-overlay">
           <div className="brand-intro-content">
-            <h2 className="brand-intro-title">AWARD WINNING PERFECTION IN EVERY DETAIL</h2>
+            <h2 className="brand-intro-title">Paradise for those who connect</h2>
             <p className="brand-intro-body">
               Preeti Sethi Designs is an elite interior design studio specializing in bespoke luxury homes and premium residential environments. We orchestrate materials, styling, and custom furniture layout overlays to elevate spaces into living poetry.
             </p>
