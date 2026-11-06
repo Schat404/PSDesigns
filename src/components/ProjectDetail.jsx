@@ -74,12 +74,12 @@ function ProjectDetail({ project, onNavigate }) {
               <div className="floorplan-card-frame" onClick={() => setIsFloorPlanModalOpen(true)}>
                 <div className="floorplan-badge-tag">
                   <Compass size={14} />
-                  <span>ARCHITECTURAL FLOOR PLAN</span>
+                  <span>FURNITURE & SPATIAL BLUEPRINT</span>
                 </div>
                 <div className="floorplan-image-viewport">
                   <img 
                     src={project.floorPlanImg} 
-                    alt={`${project.name} Architectural Floor Plan`} 
+                    alt={`${project.name} Interior Floor Plan`} 
                     className="floorplan-preview-img"
                     loading="lazy"
                   />
@@ -162,10 +162,10 @@ function ProjectDetail({ project, onNavigate }) {
         </div>
       </section>
 
-      {/* 4. SECTION: PROJECT SPACES & ARCHITECTURAL PHOTOGRAPHY (If Gallery exists) */}
+      {/* 4. SECTION: PROJECT SPACES & INTERIOR PHOTOGRAPHY (If Gallery exists) */}
       {project.gallery && project.gallery.length > 0 && (
         <section className="detail-narrative-section detail-gallery-section">
-          <h2 className="narrative-heading">Architectural Spaces & Detailing</h2>
+          <h2 className="narrative-heading">Signature Spaces & Interior Detailing</h2>
           <p className="detail-gallery-sub">
             Explore high-resolution photography showcasing the handpicked materials, bespoke millwork, and lighting design crafted for {project.name}. Click any space to expand.
           </p>
@@ -313,7 +313,7 @@ function ProjectDetail({ project, onNavigate }) {
               Shivam spearheads operations, execution, project management, and on-site engineering at <strong>Preeti Sethi Designs</strong>.
             </p>
             <p className="founder-bio-p">
-              With a sharp eye for structural integrity, materials engineering, and cost-effective execution, Shivam ensures that every architectural plan conceived on paper translates seamlessly into reality without compromise.
+              With a sharp eye for structural integrity, materials engineering, and cost-effective execution, Shivam ensures that every design plan conceived on paper translates seamlessly into reality without compromise.
             </p>
             <p className="founder-bio-p">
               His leadership across contractors, vendor networks, and master craftsmen ensures timely handover and unmatched quality standards.
@@ -472,12 +472,12 @@ function ProjectDetail({ project, onNavigate }) {
             <div className="lightbox-image-wrapper floorplan-modal-wrapper">
               <img 
                 src={project.floorPlanImg} 
-                alt={`${project.name} Architectural Blueprint`} 
+                alt={`${project.name} Interior Blueprint`} 
                 className="lightbox-active-img floorplan-modal-img"
               />
               <div className="lightbox-caption-bar">
                 <div className="lightbox-meta">
-                  <span className="lightbox-badge">ARCHITECTURAL BLUEPRINT</span>
+                  <span className="lightbox-badge">FURNITURE & SPATIAL BLUEPRINT</span>
                   <span className="lightbox-counter">{project.name}</span>
                 </div>
                 <h3 className="lightbox-img-title">{project.name} — Spatial Floor Layout</h3>

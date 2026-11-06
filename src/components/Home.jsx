@@ -57,7 +57,7 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
           <div className="brand-intro-content">
             <h2 className="brand-intro-title">AWARD WINNING PERFECTION IN EVERY DETAIL</h2>
             <p className="brand-intro-body">
-              Preeti Sethi Designs is an elite interior architecture house specializing in bespoke premium residential environments. We orchestrate materials, styling, and custom furniture layout overlays to elevate spaces into architectural poetry.
+              Preeti Sethi Designs is an elite interior design studio specializing in bespoke luxury homes and premium residential environments. We orchestrate materials, styling, and custom furniture layout overlays to elevate spaces into living poetry.
             </p>
           </div>
         </div>
@@ -152,7 +152,7 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
                 <h4 className="process-step-name">DESIGN</h4>
               </div>
               <p className="process-step-desc">
-                Translating the brief into 3D architectural blueprints, curated moodboards, and material selections. We design every single detail with precision.
+                Translating the brief into detailed 3D spatial blueprints, curated moodboards, and material selections. We design every single detail with precision.
               </p>
             </div>
 
@@ -265,7 +265,7 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
                   Preeti Sethi Designs won the prestigious <strong>International Dazzling Awards</strong> in the <strong>Best Interior Design Award</strong> category, and were proudly awarded and felicitated by acclaimed Bollywood actress and wellness icon <strong>Shilpa Shetty</strong>.
                 </p>
                 <p className="awards-description-sub">
-                  This distinguished national honor recognizes our studio's unwavering commitment to architectural innovation, artisanal craftsmanship, and bespoke luxury interior environments crafted across Delhi NCR.
+                  This distinguished national honor recognizes our studio's unwavering commitment to design innovation, artisanal craftsmanship, and bespoke luxury interior environments crafted across Delhi NCR.
                 </p>
 
                 <div className="awards-highlights-grid">

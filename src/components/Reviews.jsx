@@ -27,12 +27,12 @@ function Reviews() {
     {
       name: "Mr Abhishek",
       location: "Sector 24, Rohini",
-      quote: "The team delivered an architectural masterpiece for our Sector 24 residence. The open-plan drawing lounge, custom sacred temple sanctuary with hanging brass bells, and Italian Statuario marble make every evening spent hosting family truly memorable."
+      quote: "The team delivered a breathtaking luxury home for our Sector 24 residence. The open-plan curved drawing lounge, custom sacred arched temple sanctuary, and beautiful finishes make every evening spent hosting family truly memorable."
     },
     {
       name: "Mr Arun",
       location: "Rajouri Garden, West Delhi",
-      quote: "Preeti Sethi Designs combined authentic European classical boiserie with modern opulence for our Rajouri Garden home. The grand 14-seater honey onyx dining hall and bespoke gold foil accents radiate regal heritage and stately elegance."
+      quote: "Preeti Sethi Designs brought our vision for our Rajouri Garden residence to life with sheer elegance. The fluid curved living lounge, peacock mural, and two-tone split marble dining table create a modern palatial ambiance that our guests always admire."
     }
   ];
 
@@ -62,7 +62,7 @@ function Reviews() {
     <div className="reviews-container animate-fade-in">
       <section className="reviews-hero">
         <h1 className="reviews-title">CLIENT TESTIMONIES</h1>
-        <p className="reviews-subtitle">Real experiences shared by clients who value bespoke craftsmanship and architectural excellence.</p>
+        <p className="reviews-subtitle">Real experiences shared by clients who value bespoke craftsmanship and interior design excellence.</p>
         <div className="accent-line"></div>
       </section>
 

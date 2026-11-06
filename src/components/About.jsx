@@ -126,7 +126,7 @@ function About({ onNavigate }) {
                   Her design philosophy centers on creating environments that are not only aesthetically breathtaking, but deeply personal, functional, and reflective of the people who live in them.
                 </p>
                 <p>
-                  Today, alongside co-founder <strong>Shivam Nagpal</strong>, she leads the studio delivering bespoke luxury residences, custom furniture manufacturing, and turnkey architectural execution.
+                  Today, alongside co-founder <strong>Shivam Nagpal</strong>, she leads the studio delivering bespoke luxury residences, custom furniture manufacturing, and turnkey luxury interior execution.
                 </p>
                 <p>
                   For Preeti, every project is a heartfelt canvas—crafting timeless sanctuaries where people truly feel connected and at home.

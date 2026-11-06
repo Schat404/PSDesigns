@@ -2,348 +2,338 @@ export const projectsData = [
   {
     id: "sector-24",
     name: "Sector 24",
-    category: "Builder Floor",
+    category: "Luxury Builder Floor",
     year: "2026",
     location: "SECTOR 24, ROHINI, DELHI",
     area: "2,000 sq. ft.",
     image: "/sec24/living.webp",
     floorPlanPdf: "/sec24/ROHINI SEC-24.pdf",
     floorPlanImg: "/sec24/ROHINI_SEC-24_floor.png",
+    videoUrl: "https://drive.google.com/file/d/13dge3UX5htt4KD2h9B8CpZO_QiTPS7zp/view?usp=sharing",
+    videoEmbedUrl: "https://drive.google.com/file/d/13dge3UX5htt4KD2h9B8CpZO_QiTPS7zp/preview",
     tagline: "Paradise for those who connect through bespoke grandeur.",
-    description: "A luxury builder floor combining golden ambient lighting, bespoke plush velvet seating, an architectural sacred mandir, and custom master and kids suites designed to invoke warmth and regal hospitality.",
+    description: "A luxury builder floor combining warm ambient lighting, bespoke curved seating, a sacred arched mandir, and custom master and bedroom suites designed to invoke warmth and hospitality.",
     gallery: [
       {
         src: "/sec24/living.webp",
-        title: "Grand Drawing Lounge",
-        caption: "Open-plan living lounge featuring Italian Statuario marble flooring, 2700K warm architectural cove ceiling, and custom brushed champagne brass profiles.",
+        title: "Curved Living Lounge & Seating Suite",
+        caption: "Spacious drawing lounge featuring curved off-white modular sectional sofa, barrel armchairs, round ottomans, multi-tier brass coffee table with backlit marble top, and vertical gold wall sconces.",
         category: "LIVING ROOM"
       },
       {
         src: "/sec24/sofa.webp",
-        title: "Bespoke Velvet Seating",
-        caption: "Handcrafted plush emerald velvet sofa suite with brushed gold framing and custom marble-top center table.",
-        category: "FURNITURE & LOUNGE"
+        title: "Gourmet Modular Kitchen & Breakfast Island",
+        caption: "Contemporary white modular kitchen featuring classic shaker-style cabinetry with gold bar pulls, fluted glass upper cabinets, fluted island with quartz countertop, and built-in black glass hob and hood.",
+        category: "KITCHEN"
       },
       {
         src: "/sec24/tv.webp",
-        title: "Architectural TV Unit Wall",
-        caption: "Custom fluted walnut acoustic paneling with backlit translucent stone and concealed cable management.",
+        title: "Curved TV Console & Drapes",
+        caption: "Curved white media feature wall with floating fluted console drawer, floor-to-ceiling sheer and charcoal curtain drapes, and recessed cove ceiling.",
         category: "ENTERTAINMENT"
       },
       {
         src: "/sec24/mandir.webp",
-        title: "Sacred Temple Sanctuary",
-        caption: "Serene home mandir featuring traditional brass hanging bells, warm indirect ambient illumination, and bespoke carved stone backdrop.",
+        title: "Illuminated Arched Temple Mandir",
+        caption: "Dedicated home temple niche featuring concentric fluted arches with warm perimeter halo backlighting, marble Gayatri Mantra plaque, sacred deities, and curved storage credenza with brass knobs.",
         category: "SANCTUARY"
       },
       {
         src: "/sec24/bedroom2.webp",
-        title: "Master Bedroom Suite",
-        caption: "Sophisticated master bedroom suite showcasing a bespoke hand-sculpted rock accent wall with perimeter warm LED glow, tailored grey upholstered bed with matching bench, and arched entryway.",
+        title: "Master Suite & Sculpted Rock Feature Wall",
+        caption: "Luxury master bedroom suite showcasing a bespoke hand-sculpted 3D rock-face accent wall with warm undulating LED backlight, textured grey upholstered bed with matching curved bench, and fluted arched entryway.",
         category: "MASTER BEDROOM"
       },
       {
         src: "/sec24/bedroom.webp",
-        title: "Kids Bedroom Suite",
-        caption: "Vibrant pastel pink kids sanctuary featuring playful wave-contoured acoustic fluted paneling, warm ambient perimeter coves, and custom tinted glass wardrobe.",
-        category: "KIDS BEDROOM"
+        title: "Blush Pink Bedroom Suite & Glass Wardrobe",
+        caption: "Gentle pastel blush pink bedroom featuring vertical fluted wall paneling with an organic wavy acoustic overlay, upholstered bed, tinted glass wardrobe, and warm cove lighting.",
+        category: "BEDROOM"
       },
       {
         src: "/sec24/WhatsApp Image 2026-10-07 at 11.19.03 PM.webp",
-        title: "Master Suite Architectural View",
-        caption: "Expansive view of the master bedroom showcasing the sculpted stone feature wall, plush upholstered bed bench, and architectural arched passage.",
+        title: "Master Bedroom & Fluted Arched Portal",
+        caption: "Front perspective of the master bedroom suite highlighting the tailored curved foot bench, plush upholstered bed, illuminated organic rock wall, and fluted arch passage.",
         category: "MASTER BEDROOM"
       },
       {
         src: "/sec24/WhatsApp Image 2026-10-07 at 11.19.04 PM.webp",
-        title: "Master Bedroom Headboard & Ceiling Detail",
-        caption: "Bespoke backlit rock-face headboard design with layered organic ceiling soffits, warm reading lamps, and tailored bedside cabinetry.",
+        title: "Backlit Cave-Rock Headboard Detail",
+        caption: "Close-up detailing of the master bedroom's illuminated rock-face headboard with amber perimeter cove glow, tinted mirror inlay, and organic curved ceiling soffit.",
         category: "MASTER BEDROOM"
       },
       {
         src: "/sec24/bathroom.webp",
-        title: "Italian Marble Ensuite Washroom",
-        caption: "Floating Statuario marble vanity with concealed drainage, anti-fog smart LED mirror, and frameless glass shower chamber.",
-        category: "WASHROOM"
+        title: "Luxury Marble Vanity & Mirror Station",
+        caption: "Sophisticated dressing vanity station clad in dark grey veined marble tiles, fluted vanity console with black countertop, illuminated rounded smart LED mirrors, and cylinder pendant fixtures.",
+        category: "DRESSING & VANITY"
       }
     ],
     clientExpectations: {
       headline: "A multi-generational sanctuary designed for effortless family connection and elite evening hosting.",
-      scenario: "The homeowner approached Preeti Sethi Designs with an ambitious vision for their multi-generational builder floor residence in Sector 24. They sought a seamless bridge between modern minimalism and timeless Indian royal hospitality. Their mandate encompassed a grand drawing lounge with acoustic comfort, a dedicated serene home mandir with brass bell details, plush master bedrooms with sculpted rock accent paneling, a pastel pink kids room, and a boutique-hotel style marble washroom.",
+      scenario: "The homeowner approached Preeti Sethi Designs with an ambitious vision for their multi-generational builder floor residence in Sector 24. They sought a seamless bridge between modern minimalism and warm hospitality. Their mandate encompassed a grand drawing lounge with acoustic comfort, a dedicated serene home mandir with arched halo lighting, plush master bedrooms with sculpted rock accent paneling, a pastel pink bedroom, a gourmet shaker-style modular kitchen, and a luxury dressing vanity with illuminated smart mirrors.",
       requirements: [
-        "Unobstructed open-plan living lounge with custom velvet seating and cove lighting.",
-        "A dedicated sacred mandir sanctuary featuring traditional brass hanging bells and warm indirect lighting.",
-        "Architectural TV console wall with fluted wood paneling and smart media integration.",
+        "Unobstructed open-plan living lounge with custom curved modular seating and cove lighting.",
+        "A dedicated sacred mandir sanctuary featuring concentric fluted arches and warm halo illumination.",
+        "Curved TV console wall with floating fluted millwork and integrated drapery treatments.",
         "Master suite with bespoke sculpted stone feature wall, plush grey upholstered bed and matching bench.",
-        "Kids bedroom suite finished with pastel blush fluted millwork and integrated study wardrobe.",
-        "Spa-grade ensuite washroom clad in Italian marble with floating double vanity."
+        "Bedroom suite finished with pastel blush fluted millwork and integrated glass wardrobe.",
+        "Gourmet modular kitchen equipped with fluted quartz island and concealed extraction.",
+        "Luxury dressing vanity station clad in grey marble with rounded illuminated LED mirrors."
       ]
     },
     whatWeDelivered: {
-      headline: "An architectural symphony of Statuario marble, bronze profiles, sacred sanctum, and tailored suites.",
-      scenario: "Preeti Sethi Designs re-engineered the entire floor plan for this Sector 24 residence. We installed book-matched Italian marble, customized a floating false ceiling with warm 2700K recessed architectural cove illumination, and hand-tailored plush velvet sofas with brushed gold framing. We crafted a dedicated peaceful mandir sanctuary with hanging brass bells, an architectural fluted TV wall, tailored master and kids suites, and an Italian marble ensuite washroom with a floating vanity.",
+      headline: "A harmonious symphony of sculpted stone, bronze accents, sacred sanctum, and tailored suites.",
+      scenario: "Preeti Sethi Designs re-engineered the entire floor plan for this Sector 24 residence. We customized a floating false ceiling with warm 2700K recessed cove illumination and hand-tailored curved modular seating with brass accents. We crafted a dedicated peaceful mandir sanctuary with arched backlighting, an organic fluted TV wall, tailored master and guest suites, a shaker-style modular kitchen with breakfast island, and a luxury dressing vanity station.",
       deliverables: [
         "Turnkey spatial restructuring and load redistribution for an open-concept living lounge.",
-        "Custom handcrafted furniture suite featuring brushed brass and velvet upholstery.",
-        "Bespoke sacred mandir sanctuary with traditional brass hanging bells and custom illumination.",
-        "Architectural fluted TV wall paneling and concealed smart media wireway systems.",
+        "Custom handcrafted furniture suite featuring curved upholstery and brass framing.",
+        "Bespoke sacred mandir sanctuary with concentric fluted arches and halo backlighting.",
+        "Curved TV wall paneling with floating console and smart cable management.",
         "Grey master bedroom suite with hand-sculpted rock feature wall and integrated lighting.",
-        "Pink kids bedroom suite with fluted wall treatments and custom glass wardrobes.",
-        "Luxury marble ensuite washroom with floating stone vanity and anti-fog LED smart mirrors."
+        "Pastel blush bedroom suite with wavy wall treatments and custom glass wardrobes.",
+        "Fully-fitted modular kitchen with fluted quartz island and premium built-in appliances.",
+        "Luxury dressing vanity station with rounded smart LED mirrors and grey marble tilework."
       ]
     }
   },
   {
     id: "elite-fitness",
     name: "Elite Fitness Gym",
-    category: "Gym project",
+    category: "Commercial Fitness Club",
     year: "2026",
     location: "DELHI NCR",
     area: "5,000 sq. ft.",
-    image: "/elite/converted_webp_images/GYM FINAL (1).jpg.webp",
+    image: "/elite/converted_webp_images/DSC09852.webp",
     videoUrl: "https://drive.google.com/file/d/1_my4zUyHORXQN5ERDciHEYvQ2YJVJl-z/view?usp=share_link",
     videoEmbedUrl: "https://drive.google.com/file/d/1_my4zUyHORXQN5ERDciHEYvQ2YJVJl-z/preview",
     floorPlanPdf: "/elite/elite_fitness_floorplan_bw.pdf",
     floorPlanImg: "/elite/elite_fitness_floorplan_bw.png",
     tagline: "High-octane luxury fitness and recovery hub with futuristic wellness design.",
-    description: "A state-of-the-art 5,000 sq. ft. commercial gym and wellness club with panoramic cardio bays, functional agility rigs, dedicated cardio room, and glass executive office suites.",
+    description: "A state-of-the-art 5,000 sq. ft. commercial gym and wellness club featuring professional cardio lines, strength training arena, dedicated aerobics studio, and executive glass suites.",
     gallery: [
       {
-        src: "/elite/converted_webp_images/GYM FINAL (1).jpg.webp",
-        title: "Main Fitness & Boxing Arena",
-        caption: "Dynamic multi-discipline floor featuring heavy punch bags, stationary dummy, cardio line, and expansive floor-to-ceiling skyline views.",
-        category: "TRAINING FLOOR"
+        src: "/elite/converted_webp_images/DSC09852.webp",
+        title: "Cardio & Spinning Arena",
+        caption: "Dynamic cardio training floor equipped with commercial stair climbers, cross-trainers, indoor spin bikes, and illuminated Elite Fitness Club brand signage with biophilic greenery.",
+        category: "CARDIO & SPIN"
       },
       {
-        src: "/elite/converted_webp_images/GYM FINAL (2).jpg.webp",
-        title: "Panoramic Skyline Treadmill Bay",
-        caption: "State-of-the-art commercial treadmills and stairmasters framed by floor-to-ceiling panoramic city views, suspended linear light tracks, and monkey bar rigs.",
-        category: "CARDIO BAY"
+        src: "/elite/converted_webp_images/DSC09860.webp",
+        title: "Heavy Strength & Free Weights Zone",
+        caption: "Comprehensive strength training arena featuring commercial dumbbell racks, flat and incline benches, smith machine, Olympic weight stations, and shock-absorbent rubber fleck flooring.",
+        category: "STRENGTH ZONE"
       },
       {
-        src: "/elite/converted_webp_images/GYM FINAL (3).jpg.webp",
-        title: "Cross-Trainer & Elliptical Suite",
-        caption: "High-end ellipticals aligned with warm backlit curved mirrors, functional accessory display niches, and fluted acoustic wall paneling.",
-        category: "CARDIO SUITE"
+        src: "/elite/converted_webp_images/DSC09856.webp",
+        title: "Open Aerobics & Agility Studio",
+        caption: "Spacious multi-functional workout hall featuring hardwood aerobics floor, overhead industrial cable trays, spin bikes, functional accessories rack, and panoramic window treadmills bay.",
+        category: "AEROBICS STUDIO"
       },
       {
-        src: "/elite/converted_webp_images/GYM FINAL (4).jpg.webp",
-        title: "Functional Training & Agility Rig",
-        caption: "Custom Swedish ladder wall, heavy boxing bag, freestanding target dummy, and tire flip conditioning zone.",
-        category: "FUNCTIONAL RIG"
-      },
-      {
-        src: "/elite/converted_webp_images/GYM FINAL (5).jpg.webp",
-        title: "Spinning & Agility Studio",
-        caption: "Dedicated indoor cycling station with floor agility markers, curved illuminated arch mirrors, and branded club accent wall.",
-        category: "SPIN STUDIO"
-      },
-      {
-        src: "/elite/converted_webp_images/GYM FINAL (6).jpg.webp",
-        title: "Member Lounge & Biophilic Planter Wall",
-        caption: "Lush integrated indoor planter wall, custom seating lounge, refreshment bar, and illuminated Elite Fitness brand backdrop.",
-        category: "LOUNGE & FOYER"
-      },
-      {
-        src: "/elite/converted_webp_images/GYM FINAL (7).jpg.webp",
-        title: "Cardio Room & Member Locker Bay",
-        caption: "Dedicated cardio workout wing with digital numeric member storage lockers, motivational feature graphics, and equipment display.",
-        category: "CARDIO ROOM"
-      },
-      {
-        src: "/elite/converted_webp_images/GYM FINAL (8).jpg.webp",
-        title: "Executive Office Glass Cabin",
-        caption: "Sleek acoustic glass-partitioned private cabin with frosted confidentiality glazing, refreshment station, and locker access.",
-        category: "OFFICE"
-      },
-      {
-        src: "/elite/converted_webp_images/GYM FINAL (9).jpg.webp",
-        title: "Consultation & Conference Office",
-        caption: "Contemporary meeting cabin featuring concrete limewash walls, black marble desk, and ergonomic consultation seating.",
-        category: "OFFICE"
-      },
-      {
-        src: "/elite/converted_webp_images/GYM FINAL (10).jpg.webp",
-        title: "Private Executive Consultation Suite",
-        caption: "Private client appraisal and management cabin with custom fluted acoustic wall, white marble executive desk, and climate control.",
-        category: "OFFICE"
+        src: "/elite/converted_webp_images/DSC09854.webp",
+        title: "Functional Conditioning & Stretching Bay",
+        caption: "Dedicated floor conditioning zone with aerobic step platforms, swiss gym balls, hydration station, backlit club regulations wall, and glass-partitioned executive office cabin.",
+        category: "FUNCTIONAL TRAINING"
       }
     ],
     clientExpectations: {
       headline: "A boutique fitness destination that marries high-performance energy with 5-star hotel luxury.",
-      scenario: "The founders of Elite Fitness envisioned a premier luxury training facility that sets a new national standard. They wanted to move away from conventional industrial gyms and instead create a high-end wellness sanctuary. Key demands included high-impact shock-absorbent flooring, panoramic skyline cardio bays, dedicated cardio and functional training rooms, soundproof executive offices, and luxury member amenities.",
+      scenario: "The founders of Elite Fitness envisioned a premier luxury training facility that sets a new national standard. They wanted to move away from conventional industrial gyms and instead create a high-end wellness sanctuary. Key demands included high-impact shock-absorbent flooring, panoramic cardio bays, dedicated aerobics and functional training spaces, soundproof executive offices, and luxury member amenities.",
       requirements: [
         "Heavy-duty vibration damping and acoustic soundproofing across all free-weight and cardio zones.",
-        "Dynamic programmable RGBW + 3000K warm gold LED linear ceiling light tracks.",
-        "Dedicated cardio room and functional agility training rig.",
-        "Executive glass-partitioned consultation offices and member lounge.",
-        "Integrated biophilic greenery planters and custom brand signage."
+        "Dynamic overhead linear lighting tracks and backlit curved mirror portals.",
+        "Dedicated aerobics studio and functional agility conditioning bay.",
+        "Executive glass-partitioned consultation offices and member hydration stations.",
+        "Integrated biophilic greenery planters and custom illuminated brand signage."
       ]
     },
     whatWeDelivered: {
-      headline: "High-performance acoustic engineering, dynamic architectural lighting, and 5-star wellness suites.",
-      scenario: "Preeti Sethi Designs delivered a turnkey commercial masterpiece across 5,000 sq. ft. We installed high-density acoustic flooring, panoramic floor-to-ceiling cardio zones with suspended linear track illumination, custom backlit arched mirror portals, an agility training floor, a dedicated cardio room with member locker bays, and executive glass consultation suites.",
+      headline: "High-performance acoustic engineering, dynamic linear lighting, and 5-star wellness suites.",
+      scenario: "Preeti Sethi Designs delivered a turnkey commercial transformation across 5,000 sq. ft. We installed high-density shock-absorbent acoustic flooring, panoramic cardio zones, custom backlit arched mirror portals, an agility training floor, a dedicated aerobics zone, and executive glass consultation suites.",
       deliverables: [
         "Acoustic floor and ceiling engineering with multi-zone sound isolation.",
-        "Programmable architectural linear lighting tracks calibrated for workout intensity.",
-        "Dedicated cardio room, functional boxing station, and indoor spinning studio.",
-        "Private executive consultation office cabins with acoustic fluted paneling.",
-        "Bespoke member lounge featuring indoor biophilic planters and illuminated signage."
+        "Commercial linear lighting tracks calibrated for workout intensity.",
+        "Dedicated cardio room, free-weights arena, and indoor spinning studio.",
+        "Private executive consultation office cabins with acoustic privacy glazing.",
+        "Bespoke member lounge area featuring indoor biophilic planters and illuminated signage."
       ]
     }
   },
   {
     id: "rajouri",
     name: "Rajouri Garden",
-    category: "NEO-CLASSICAL MANSION",
+    category: "Luxury Residence",
     year: "2025",
     location: "RAJOURI GARDEN, WEST DELHI",
     area: "5,500 sq. ft.",
-    image: "/rajouri/living.jpeg",
-    videoUrl: "https://drive.google.com/file/d/1vkgOaPftVjVHEeBEfVE-9206pjpvblSM/view?usp=share_link",
-    videoEmbedUrl: "https://drive.google.com/file/d/1vkgOaPftVjVHEeBEfVE-9206pjpvblSM/preview",
+    image: "/rajouri/Bright Modern Luxury Living Room.webp",
+    videoUrl: "https://drive.google.com/file/d/10F1_HMQWj9c7d8GO-M4-SvZMKrshAJjP/view?usp=sharing",
+    videoEmbedUrl: "https://drive.google.com/file/d/10F1_HMQWj9c7d8GO-M4-SvZMKrshAJjP/preview",
     floorPlanPdf: "/rajouri/Mr ARUN FURNITURE LAYOUT.pdf",
     floorPlanImg: "/rajouri/mr_arun_furniture_floor.png",
-    tagline: "Regal neo-classical heritage reimagined for high-profile modern luxury.",
-    description: "A monumental residence boasting intricate classical mouldings, grand crystal chandelier centerpieces, customized gold leafing, and rich velvet suites.",
+    tagline: "Artful harmony of bespoke materials, sacred sanctum, and modern palatial luxury.",
+    description: "An expansive luxury residence featuring fluid curved living lounges, custom split-marble dining, a hand-carved illuminated temple sanctuary, and bespoke artisanal wall murals.",
     gallery: [
       {
-        src: "/rajouri/living.jpeg",
-        title: "Palatial Drawing Room",
-        caption: "Classical French boiserie paneling with delicate gold foil accents, crystal chandelier centerpieces, and custom velvet seating.",
-        category: "DRAWING ROOM"
+        src: "/rajouri/Bright Modern Luxury Living Room.webp",
+        title: "Palatial Living Lounge",
+        caption: "Expansive formal drawing lounge featuring curved ivory bouclé sofas, organic marble and brass coffee tables, coffered cove ceiling, and hand-painted peacock landscape mural.",
+        category: "LIVING ROOM"
       },
       {
-        src: "/rajouri/dining-hall.jpeg",
-        title: "Grand Dining Hall & Double-Height Foyer",
-        caption: "Opulent honey onyx dining centerpiece surrounded by bespoke royal velvet chairs and double-height architectural lighting.",
-        category: "DINING & FOYER"
-      },
-      {
-        src: "/rajouri/sitting.jpeg",
-        title: "Royal Velvet Lounge",
-        caption: "Tailored high-back velvet lounge seating paired with classical boiserie and bespoke brushed bronze accents.",
+        src: "/rajouri/Luxe Curved Living Room with Peacock Mural.webp",
+        title: "Signature Peacock Mural & Seating",
+        caption: "Curved modular seating ensemble paired with an illuminated organic wave feature wall framing a bespoke hand-painted peacock and regal heritage palace mural.",
         category: "LOUNGE"
       },
       {
-        src: "/rajouri/tv-console.jpeg",
-        title: "Classical Boiserie TV Console",
-        caption: "Ornate wall mouldings framing a modern media console with ambient backlight integration and brass inlays.",
+        src: "/rajouri/Luminous Modern TV Feature Wall.webp",
+        title: "Curved Floating TV Feature Wall",
+        caption: "Sculptural floating entertainment console with fluid curved ivory paneling, fluted timber acoustic backdrop, warm ambient LED glow, and low profile storage credenza.",
         category: "ENTERTAINMENT"
       },
       {
-        src: "/rajouri/mandir.jpeg",
-        title: "Sacred Temple Sanctuary",
-        caption: "Ornate traditional home mandir with intricate carvings, brass bells, and warm spiritual illumination.",
+        src: "/rajouri/Elegant Luxury Dining Room Interior.webp",
+        title: "Two-Tone Split Marble Dining Suite",
+        caption: "Statement dining table crafted with dramatic emerald-black and white book-matched marble, sculptural cream chairs with walnut legs, and 3D spiral wall panels with cove lighting.",
+        category: "DINING ROOM"
+      },
+      {
+        src: "/rajouri/Bright Luxury Dining Kitchen Interior.webp",
+        title: "Dining & Modular Kitchen Suite",
+        caption: "Open-concept dining transition connecting into a high-gloss modular kitchen with breakfast counter, backlit acoustic wave wall treatments, and polished Italian marble flooring.",
+        category: "DINING & KITCHEN"
+      },
+      {
+        src: "/rajouri/Luminous Luxury Living and Dining Room.webp",
+        title: "Open-Plan Living & Dining Perspective",
+        caption: "Panoramic perspective from the dining salon showcasing contemporary gold cluster chandelier, wooden sliding portal, and serene home mandir.",
+        category: "OPEN LIVING"
+      },
+      {
+        src: "/rajouri/Elegant Illuminated Home Shrine.webp",
+        title: "Bespoke Illuminated Pooja Mandir",
+        caption: "Intricately carved white marble temple shrine featuring backlit elephant engravings, floral arch pillars, warm interior illumination, and sculptural textured wave wall.",
         category: "SANCTUARY"
       },
       {
-        src: "/rajouri/buddha-sculpture.jpeg",
-        title: "Heritage Sculptural Wall Feature",
-        caption: "Zen-inspired backlit stone carving creating a serene focal point within the palatial hallway.",
-        category: "HERITAGE ACCENT"
+        src: "/rajouri/Serene Modern Puja Entryway.webp",
+        title: "Spiritual Foyer & Sandstone Fountain",
+        caption: "Tranquil entryway foyer adorned with a hand-carved seated Buddha stone water fountain, dark curved console buffet, Roman numeral wall clock, and warm cove lighting.",
+        category: "FOYER & SANCTUARY"
+      },
+      {
+        src: "/rajouri/Luxurious Warm-Toned Open-Plan Interior.webp",
+        title: "Grand Hallway & Foyer Transition",
+        caption: "Expansive foyer corridor leading seamlessly into the living quarters, highlighted by ambient multi-tier coves, decorative sculpture niches, and polished marble flooring.",
+        category: "FOYER & HALLWAY"
       }
     ],
     clientExpectations: {
-      headline: "An opulent mansion with royal classical flair, bespoke grandeur, and stately entertainment halls.",
-      scenario: "The client—a prominent business family in Rajouri Garden—wished to create a generational family residence that radiates heritage grandeur, classical European proportions, and luxury craftsmanship. They requested ornate wall mouldings, French boiserie detailing, custom gold leaf accents, double-height chandelier anchor points, and a palatial dining salon capable of seating 14 guests with custom-carved luxury chairs and polished marble flooring.",
+      headline: "An opulent family residence designed for timeless serenity, artistic elegance, and grand entertainment.",
+      scenario: "The client—a prominent business family in Rajouri Garden—wished to create a generational family residence that radiates warmth, bespoke luxury, and modern elegance. They requested fluid curved lounge seating, a hand-painted heritage peacock mural, a statement split-marble dining table, an intricately carved illuminated temple shrine, and a serene entry foyer featuring a stone water fountain.",
       requirements: [
-        "Authentic neo-classical wall paneling (Boiserie) with hand-applied gold foil accents.",
-        "Grand double-height foyer with structural reinforcement for monumental chandeliers.",
-        "Stately 14-seater dining hall featuring customized onyx tabletop and royal velvet seating.",
-        "Private royal master dressing room with backlit glass wardrobes and jewelry island."
+        "Open-concept formal drawing lounge with curved bouclé sofas and coffered ceiling illumination.",
+        "Bespoke artisan-painted heritage peacock landscape mural with illuminated wave profiles.",
+        "Statement dining table finished in dual-contrast split marble with custom curved seating.",
+        "Dedicated carved temple shrine with warm backlighting and elephant motifs.",
+        "Tranquil foyer featuring an authentic hand-carved Buddha stone water fountain."
       ]
     },
     whatWeDelivered: {
-      headline: "European classical boiserie, gold-accented plasterwork, and palatial stone halls.",
-      scenario: "Preeti Sethi Designs combined artisanal heritage craftsmanship with modern engineering. Our artisans spent weeks crafting hand-carved classical moulding profiles, crowned with subtle 24k gold leafing. We installed an opulent backlit honey onyx dining centerpiece surrounded by custom velvet high-back chairs. The master suite features an expansive walk-in dressing salon with tinted bronze glass wardrobes, velvet jewelry drawers, and perimeter warm uplighting, creating a regal lifestyle experience.",
+      headline: "Bespoke curved millwork, book-matched split marble, and hand-crafted spiritual sanctums.",
+      scenario: "Preeti Sethi Designs orchestrated a seamless turnkey transformation. We curated fluid curved furniture arrangements, engineered custom backlit wave acoustic paneling, and installed a hand-painted palatial peacock mural. The dining salon was anchored by a two-tone split marble table, while the mandir and entryway were elevated with custom white corian carvings and a sandstone water feature.",
       deliverables: [
-        "Handcrafted classical boiserie paneling with subtle champagne gold leaf accents.",
-        "Custom 14-seater honey onyx dining table with bespoke brushed bronze base.",
-        "High-capacity master walk-in wardrobe with climate control and security vaults.",
-        "Double-height foyer crystal chandelier installation with smart architectural dimming."
+        "Turnkey interior restructuring for fluid open-plan circulation between living and dining.",
+        "Custom curved ivory bouclé modular sofas with organic brass and marble tables.",
+        "Artisan hand-painted peacock and royal palace mural with integrated cove lighting.",
+        "Statement split-marble dining table with walnut-legged sculpted chairs.",
+        "Intricately carved illuminated temple shrine with backlit elephant relief panels.",
+        "Serene entrance foyer featuring a seated Buddha water fountain and custom buffet credenza."
       ]
     }
   },
   {
     id: "la-makeup-academy",
-    name: "LA Makeup Academy",
-    category: "Commercial Studio",
+    name: "LA International Makeup Academy",
+    category: "Commercial Beauty Studio",
     year: "2026",
     location: "DELHI NCR",
     area: "2,500 sq. ft.",
-    image: "/la_makeup/masterclass.jpeg",
-    tagline: "Haute couture beauty academy uniting high-CRI shadowless illumination and bespoke vanity craftsmanship.",
-    description: "A state-of-the-art beauty academy featuring professional 95+ CRI daylight-balanced vanity stations, curved fluted reception architecture, a tiered masterclass auditorium, and dedicated student training suites.",
+    image: "/la_makeup/reception.jpeg",
+    tagline: "Haute couture beauty academy uniting shadowless illumination and bespoke vanity craftsmanship.",
+    description: "A state-of-the-art beauty academy featuring professional daylight-balanced arched vanity stations, curved marble reception foyer, practical treatment suites, and industrial product display shelving.",
     gallery: [
       {
-        src: "/la_makeup/masterclass.jpeg",
-        title: "Masterclass Demonstration Arena",
-        caption: "Tiered auditorium arena calibrated with glare-free overhead studio lighting tracks and acoustic baffles for live demonstrations.",
-        category: "MASTERCLASS ARENA"
-      },
-      {
         src: "/la_makeup/reception.jpeg",
-        title: "Editorial Reception & Lounge",
-        caption: "Sculptural reception foyer featuring curved fluted paneling, warm champagne bronze accents, and indirect architectural cove lighting.",
+        title: "Academy Grand Reception & Brand Feature",
+        caption: "Curved natural marble reception counter with 3D black acrylic logo, sparkling silver textured feature wall with 3D academy signage, and warm indirect cove ceiling illumination.",
         category: "RECEPTION & FOYER"
       },
       {
+        src: "/la_makeup/masterclass.jpeg",
+        title: "High-CRI Arched Vanity Styling Studio",
+        caption: "Professional makeup workstations with arched mirrors illuminated by daylight-balanced Hollywood globes, black director styling chairs, glass countertops, and adjustable overhead track lights.",
+        category: "STYLING STUDIO"
+      },
+      {
         src: "/la_makeup/studio.jpeg",
-        title: "Bespoke Styling & Vanity Studio",
-        caption: "Full-height vanity mirrors with shadowless 4000K neutral daylight illumination and ergonomic custom seating for precision application.",
+        title: "Styling Studio & Bespoke Cabinetry",
+        caption: "Academy training bay with trio of arched illuminated vanity mirrors, professional director seating, ceiling spotlight tracks, and custom cream cabinetry with arched fluted detailing.",
         category: "STYLING STUDIO"
       },
       {
         src: "/la_makeup/training.jpeg",
-        title: "Student Practical Training Stations",
-        caption: "Individual workstations featuring stain-resistant sintered stone countertops, integrated cosmetic organizers, and personalized task lighting.",
-        category: "TRAINING ZONE"
+        title: "Cosmetology & Treatment Suite",
+        caption: "Dedicated practical treatment room featuring ergonomic cushioned treatment beds, mobile utility service carts, wash station, and sanitary neutral wall paneling.",
+        category: "TREATMENT SUITE"
       },
       {
         src: "/la_makeup/display.jpeg",
-        title: "Cosmetic Showcase & Retail Gallery",
-        caption: "Custom backlit display niches showcasing luxury cosmetic lines with concealed linear LED profiles and satin brass framing.",
-        category: "PRODUCT GALLERY"
+        title: "Workstation Islands & Industrial Wall Display",
+        caption: "Curved white fluted training desks with storage alongside wall-mounted industrial pipe-frame glass display shelves and directional track spotlights.",
+        category: "PRACTICAL TRAINING & DISPLAY"
       }
     ],
     clientExpectations: {
       headline: "A cutting-edge commercial beauty sanctuary combining editorial luxury with academy-grade training precision.",
-      scenario: "The visionary founders of LA Makeup Academy approached Preeti Sethi Designs to engineer an international-standard beauty and cosmetology academy in Delhi NCR. Their mandate demanded a space that immediately inspires confidence and creative glamour. Critical requirements included true-to-life color rendering with 95+ CRI studio lighting across all stations, heavy-duty stain-resistant materials capable of withstanding cosmetic pigments and daily sanitization, acoustic sound absorption for live seminar recordings, and an unforgettable reception area that sets a high-fashion editorial tone.",
+      scenario: "The visionary founders of LA International Makeup Academy approached Preeti Sethi Designs to design an international-standard beauty and cosmetology academy in Delhi NCR. Their mandate demanded a space that immediately inspires confidence and creative glamour. Critical requirements included true-to-life color rendering with daylight studio lighting across all stations, stain-resistant materials capable of withstanding cosmetic pigments and daily sanitization, practical cosmetology treatment suites, and an unforgettable reception area that sets a high-fashion editorial tone.",
       requirements: [
-        "Calibrated shadowless vanity lighting (4000K neutral daylight, CRI 95+) for true pigment accuracy.",
-        "Acoustically treated tiered masterclass auditorium for live video broadcasts and demonstrations.",
-        "Custom curved reception desk with fluted millwork, champagne brass profiles, and ambient coves.",
-        "Stain-resistant sintered stone makeup surfaces and organized storage for cosmetology equipment.",
-        "Architectural display shelving with concealed backlighting for luxury cosmetics and certifications."
+        "Calibrated shadowless vanity lighting (neutral daylight Hollywood bulbs) for true pigment accuracy.",
+        "Arched vanity stations equipped with professional director chairs and overhead spotlights.",
+        "Custom curved reception desk with natural marble face, silver sparkle wall, and 3D brand logo.",
+        "Dedicated cosmetology treatment suite with cushioned therapy beds and mobile utility stations.",
+        "Wall-mounted industrial pipe glass shelving and fluted island workstations for students."
       ]
     },
     whatWeDelivered: {
       headline: "Color-calibrated studio illumination, custom fluted millwork, and high-durability luxury finishes.",
-      scenario: "Preeti Sethi Designs delivered a turnkey commercial transformation that sets a new benchmark for professional beauty academies. We engineered optical-grade lighting grids that eliminate harsh shadows and skin color distortions. Each vanity station was custom-built with satin brass mirror frames, push-to-open acoustic drawers, and non-porous sintered stone tops impervious to oils and pigments. The reception foyer was transformed into an editorial showpiece with curved textured fluted walls and warm indirect backlighting, creating a truly magnetic first impression.",
+      scenario: "Preeti Sethi Designs delivered a turnkey commercial transformation that sets a new benchmark for professional beauty academies. We installed calibrated lighting grids that eliminate harsh shadows and skin color distortions. Each vanity station was built with arched mirror frames and Hollywood globes. The reception foyer was transformed into an editorial showpiece with a curved marble desk and glittering textured wall, creating a truly magnetic first impression.",
       deliverables: [
         "Custom shadowless high-CRI vanity illumination engineered for professional color calibration.",
-        "Turnkey spatial layout separating reception lounge, training floor, and masterclass studio.",
-        "Bespoke curved fluted reception desk with champagne gold brushed accents and concealed LEDs.",
-        "Stain-resistant sintered stone countertops and custom modular storage cabinetry.",
-        "Acoustic ceiling treatments and sound-dampening wall panels for masterclass recordings.",
-        "Architectural backlit cosmetic display walls with integrated satin brass profiles."
+        "Turnkey spatial layout separating reception lounge, training floor, and treatment suites.",
+        "Bespoke curved natural marble reception desk with silver textured feature wall and 3D signage.",
+        "Ergonomic treatment suites with mobile utility carts and wash facilities.",
+        "Curved fluted student workstation desks and industrial glass product display shelves."
       ]
     }
   },
   {
     id: "sector-25",
     name: "Sector 25",
-    category: "CONTEMPORARY RESIDENCE",
+    category: "Luxury Residence",
     year: "2026",
     location: "SECTOR 25, ROHINI, DELHI",
     area: "2,600 sq. ft.",
     image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1200",
+    videoUrl: "https://drive.google.com/file/d/1IKw1cVrw-3k8sHzdJiCuAyztYPJyFp81/view?usp=sharing",
+    videoEmbedUrl: "https://drive.google.com/file/d/1IKw1cVrw-3k8sHzdJiCuAyztYPJyFp81/preview",
     tagline: "Artful harmony of bespoke materials and warm contemporary elegance.",
     description: "An innovative residential transformation featuring customized walnut wall paneling, champagne gold trims, and tailored culinary and living environments.",
     clientExpectations: {
-      headline: "A vibrant yet sophisticated urban apartment designed for multi-functional modern living.",
-      scenario: "The homeowners wanted to transform their newly acquired apartment into an upscale modern home that balances intimate family evenings with vibrant social gatherings. They requested an open culinary island that doubles as a breakfast bar, high-durability luxury finishes that resist wear from young children, and custom master bedrooms that evoke the ambiance of a 5-star presidential suite with layered textures, headboard paneling, and warm illumination.",
+      headline: "A vibrant yet sophisticated urban home designed for multi-functional modern living.",
+      scenario: "The homeowners wanted to transform their newly acquired residence into an upscale modern home that balances intimate family evenings with vibrant social gatherings. They requested an open culinary island that doubles as a breakfast bar, high-durability luxury finishes that resist wear from young children, and custom master bedrooms that evoke the ambiance of a 5-star presidential suite with layered textures, headboard paneling, and warm illumination.",
       requirements: [
         "Multi-functional open-plan kitchen with sintered stone breakfast island and concealed appliances.",
         "Master bedroom suite with bespoke acoustic headboard wall and reading sconces.",
@@ -353,19 +343,20 @@ export const projectsData = [
     },
     whatWeDelivered: {
       headline: "Precision modular carpentry, sintered stone finishes, and tailored master suites.",
-      scenario: "Preeti Sethi Designs executed a complete turnkey overhaul. We engineered a sleek culinary island with Italian sintered stone surfaces and concealed push-to-open German hardware. In the master suite, we fabricated an 11-foot wide velvet-and-bronze fluted headboard accent wall paired with dimmable gooseneck reading fixtures. The children's zone received an ergonomic custom study station with built-in book niches. Every inch was calibrated for maximum utility, refined proportion, and visual elegance.",
+      scenario: "Preeti Sethi Designs executed a complete turnkey overhaul. We designed a sleek culinary island with Italian sintered stone surfaces and concealed push-to-open German hardware. In the master suite, we fabricated an 11-foot wide velvet-and-bronze fluted headboard accent wall paired with dimmable gooseneck reading fixtures. The children's zone received an ergonomic custom study station with built-in book niches. Every inch was calibrated for maximum utility, refined proportion, and visual elegance.",
       deliverables: [
         "Custom culinary island with integrated induction, wine cellar niche, and breakfast bar.",
         "Full-height acoustic upholstered headboards and custom walnut accent walls.",
         "Smart ergonomics throughout work-from-home and children study zones.",
-        "Ambient multi-layer lighting with accent downlights and brass wall sconces."
+        "Ambient multi-layer lighting with accent downlights and brass wall sconces.",
+        "Cinematic full video walkthrough capturing spatial transitions and bespoke detailing."
       ]
     }
   },
   {
     id: "sector-22",
     name: "Sector 22",
-    category: "Builder Floor",
+    category: "Luxury Builder Floor",
     year: "2025",
     location: "SECTOR 22, ROHINI, DELHI",
     area: "1,500 sq. ft.",
@@ -459,7 +450,7 @@ export const projectsData = [
         "Master bedroom suite with book-matched marble feature wall and tufted headboard.",
         "Mother's bedroom with custom vanity, textured walls, and soothing lighting.",
         "Kid's bedroom with study desk, arched butterfly motif headboard, and storage.",
-        "Zero-clutter concealed storage and multi-layered architectural cove illumination."
+        "Zero-clutter concealed storage and multi-layered ambient cove illumination."
       ]
     },
     whatWeDelivered: {
@@ -471,7 +462,7 @@ export const projectsData = [
         "Master bedroom suite with book-matched marble and fluted timber wall accents.",
         "Mother's bedroom suite with vanity dresser and custom sliding wardrobes.",
         "Kid's bedroom with study station, butterfly headboard, and display niches.",
-        "Complete smart automation for architectural coves, tracks, and ambient audio."
+        "Complete smart automation for ambient coves, tracks, and ambient audio."
       ]
     }
   }

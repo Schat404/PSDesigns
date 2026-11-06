@@ -11,20 +11,19 @@ function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [lastSubmittedUrl, setLastSubmittedUrl] = useState('');
 
+  const WHATSAPP_PHONE = "919211040483"; // +91 92110 40483
   const GOOGLE_FORM_URL = "https://forms.gle/Awjx7mH9VbFLgkae7";
   const GOOGLE_FORM_ACTION = "https://docs.google.com/forms/d/e/1FAIpQLSeSVBk2-NXF74NONdqEeVn1e8sEIijFYtuHT90b_mITbSxj2Q/formResponse";
+  const MAPS_LOCATION_URL = "https://maps.app.goo.gl/rpQ1vKZArSL7VQJw8";
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Silent background sync to Google Form so inquiries are safely stored
     try {
-      // Map fields to Google Form entries:
-      // entry.1224683238 -> Name
-      // entry.17492699   -> Phone Number / WhatsApp Number
-      // entry.1588450503 -> Project Type
-      // entry.1328396079 -> Message (includes Email for complete record)
       const formPayload = new URLSearchParams();
       formPayload.append('entry.1224683238', formData.name);
       formPayload.append('entry.17492699', formData.phone);
@@ -35,31 +34,42 @@ function Contact() {
         : formData.message;
       formPayload.append('entry.1328396079', fullMessage);
 
-      // Submit to Google Form endpoint
-      await fetch(GOOGLE_FORM_ACTION, {
+      fetch(GOOGLE_FORM_ACTION, {
         method: 'POST',
         mode: 'no-cors',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
         },
         body: formPayload.toString()
-      });
-
-      setSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        projectType: 'Residential design',
-        message: ''
-      });
+      }).catch(() => {});
     } catch (err) {
-      console.error('Error submitting form:', err);
-      // Fallback: still show confirmation and allow user to open Google Form directly
-      setSubmitted(true);
-    } finally {
-      setIsSubmitting(false);
+      // ignore silent sync errors
     }
+
+    // Format WhatsApp inquiry text
+    const textLines = [
+      `*New Design Inquiry — Preeti Sethi Designs*`,
+      ``,
+      `*Name:* ${formData.name}`,
+      formData.email ? `*Email:* ${formData.email}` : null,
+      `*Phone / WhatsApp:* ${formData.phone}`,
+      `*Project Type:* ${formData.projectType}`,
+      ``,
+      `*Requirements:*`,
+      formData.message
+    ].filter(Boolean).join('\n');
+
+    const whatsappApiUrl = `https://api.whatsapp.com/send?phone=${WHATSAPP_PHONE}&text=${encodeURIComponent(textLines)}`;
+    setLastSubmittedUrl(whatsappApiUrl);
+
+    // Direct redirect using WhatsApp API
+    const opened = window.open(whatsappApiUrl, '_blank');
+    if (!opened) {
+      window.location.href = whatsappApiUrl;
+    }
+
+    setSubmitted(true);
+    setIsSubmitting(false);
   };
 
   const handleChange = (e) => {
@@ -91,7 +101,7 @@ function Contact() {
                 <Phone className="info-icon" size={24} />
                 <div>
                   <h4>Call Us</h4>
-                  <p>+91 92110 40483</p>
+                  <p><a href="tel:+919211040483" style={{ color: 'inherit', textDecoration: 'none' }}>+91 92110 40483</a></p>
                 </div>
               </div>
               <div className="info-item">
@@ -108,6 +118,15 @@ function Contact() {
                 <div>
                   <h4>Our Studio</h4>
                   <p>23, Pocket 19, Sector 24, Rohini - 110085</p>
+                  <a 
+                    href={MAPS_LOCATION_URL} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    style={{ fontSize: '0.82rem', color: 'var(--text-gold)', display: 'inline-flex', alignItems: 'center', gap: '4px', marginTop: '6px', textDecoration: 'none', fontWeight: 500 }}
+                  >
+                    <span>Get Directions on Google Maps</span>
+                    <ExternalLink size={12} />
+                  </a>
                 </div>
               </div>
             </div>
@@ -138,25 +157,37 @@ function Contact() {
             {submitted ? (
               <div className="success-message animate-fade-in">
                 <Check size={48} className="success-icon" />
-                <h3>Thank You!</h3>
-                <p>Your inquiry has been submitted directly to our design executive team. Preeti Sethi or our senior consultation architect will reach out shortly.</p>
+                <h3>Redirecting to WhatsApp!</h3>
+                <p>Your inquiry details have been formatted for direct consultation with our lead designers on WhatsApp (+91 92110 40483).</p>
                 <div style={{ marginTop: '1.5rem', display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+                  {lastSubmittedUrl && (
+                    <a 
+                      href={lastSubmittedUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="submit-gold-btn" 
+                      style={{ padding: '0.75rem 1.6rem', display: 'inline-flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}
+                    >
+                      <span>OPEN WHATSAPP CHAT</span>
+                      <ExternalLink size={15} />
+                    </a>
+                  )}
                   <button 
-                    onClick={() => setSubmitted(false)} 
-                    className="submit-gold-btn" 
-                    style={{ padding: '0.6rem 1.4rem' }}
+                    onClick={() => {
+                      setSubmitted(false);
+                      setFormData({
+                        name: '',
+                        email: '',
+                        phone: '',
+                        projectType: 'Residential design',
+                        message: ''
+                      });
+                    }} 
+                    className="gform-direct-btn" 
+                    style={{ padding: '0.75rem 1.6rem' }}
                   >
-                    SUBMIT ANOTHER INQUIRY
+                    SEND ANOTHER INQUIRY
                   </button>
-                  <a 
-                    href={GOOGLE_FORM_URL} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="gform-direct-btn"
-                    style={{ display: 'inline-flex', alignItems: 'center' }}
-                  >
-                    VIEW GOOGLE FORM <ExternalLink size={14} style={{ marginLeft: '6px' }} />
-                  </a>
                 </div>
               </div>
             ) : (
@@ -209,7 +240,7 @@ function Contact() {
                     <option value="Bespoke furniture">Bespoke furniture</option>
                     <option value="3D visualization">3D visualization</option>
                     <option value="Renovation & consultation">Renovation & consultation</option>
-                    <option value="space planning">space planning</option>
+                    <option value="Space planning">Space planning</option>
                   </select>
                 </div>
                 <div className="form-group">
@@ -229,13 +260,13 @@ function Contact() {
                   className="submit-gold-btn" 
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'SUBMITTING...' : (
+                  {isSubmitting ? 'CONNECTING...' : (
                     <>SEND INQUIRY <Send size={16} /></>
                   )}
                 </button>
 
                 <p className="form-destination-note">
-                  All inquiries are automatically recorded to our official Google Consultation portal: <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer">forms.gle/Awjx7mH9VbFLgkae7</a>
+                  Direct WhatsApp consultation: <a href={`https://api.whatsapp.com/send?phone=${WHATSAPP_PHONE}`} target="_blank" rel="noopener noreferrer">+91 92110 40483</a> | Form records to: <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer">forms.gle/Awjx7mH9VbFLgkae7</a>
                 </p>
               </form>
             )}
@@ -248,14 +279,27 @@ function Contact() {
         <h3 className="section-title text-center mb-4">VISIT OUR DESIGN LAB</h3>
         <div className="map-frame-wrapper">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.4687595353147!2d77.10091391508493!3d28.735467482377317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03de0b6754ad%3A0xea2be10cbf83dbcf!2sRohini%20Sector%2024%2C%20Delhi%20110085!5e0!3m2!1sen!2sin!4v1629890000000!5m2!1sen!2sin" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.0140784136456!2d77.0941795758367!3d28.724776479035687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d07897199ac93%3A0xb629b04768b95d48!2spreetisethidesgins!5e0!3m2!1sen!2sin!4v1730900000000!5m2!1sen!2sin" 
             width="100%" 
             height="450" 
-            style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) grayscale(80%)' }} 
+            style={{ border: 0 }} 
             allowFullScreen="" 
             loading="lazy"
-            title="Preeti Sethi Designs Delhi Studio Map"
+            title="Preeti Sethi Designs Studio Location on Google Maps"
           ></iframe>
+        </div>
+        <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+          <a 
+            href={MAPS_LOCATION_URL} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="gform-direct-btn"
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '0.8rem 1.8rem', textDecoration: 'none' }}
+          >
+            <MapPin size={16} />
+            <span>OPEN IN GOOGLE MAPS</span>
+            <ExternalLink size={14} />
+          </a>
         </div>
       </section>
     </div>
