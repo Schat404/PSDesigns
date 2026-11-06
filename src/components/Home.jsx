@@ -35,14 +35,14 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
 
   return (
     <div className="home-container">
-      
+
       {/* SECTION 1: Full-Screen loop video with text overlay at bottom */}
       <section className="hero-section">
         <div className="hero-video-container">
-          <video 
-            autoPlay 
-            loop 
-            muted 
+          <video
+            autoPlay
+            loop
+            muted
             playsInline
             className="hero-video"
             src="/hero-video.mp4"
@@ -55,7 +55,7 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
         {/* Brand statement overlapping the video at the bottom */}
         <div className="hero-statement-overlay">
           <div className="brand-intro-content">
-            <h2 className="brand-intro-title">Paradise for those who connect</h2>
+            <h2 className="brand-intro-title">PARADISE FOR THOSE WHO CONNECT</h2>
             <p className="brand-intro-body">
               Preeti Sethi Designs is an elite interior design studio specializing in bespoke luxury homes and premium residential environments. We orchestrate materials, styling, and custom furniture layout overlays to elevate spaces into living poetry.
             </p>
@@ -72,8 +72,8 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
 
           <div className="featured-projects-grid">
             {featuredProjects.map((p) => (
-              <div 
-                key={p.id} 
+              <div
+                key={p.id}
                 className="featured-project-card scroll-reveal"
                 onClick={() => onNavigate('project-detail', p)}
               >
@@ -193,15 +193,15 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
       <section className="home-compact-section testimonials-section">
         <div className="testimonials-section-inner">
           <h2 className="section-title text-center scroll-reveal">TESTIMONIALS</h2>
-          
+
           <div className="carousel-outer-wrapper scroll-reveal">
             <button className="carousel-arrow left" onClick={handlePrevSlide} aria-label="Previous review">
               <ChevronLeft size={22} />
             </button>
-            
+
             <div className="carousel-viewport">
-              <div 
-                className="carousel-track" 
+              <div
+                className="carousel-track"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
               >
                 {testimonials.map((t, idx) => {
@@ -236,16 +236,16 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
       <section className="home-compact-section">
         <div className="awards-section-wrapper">
           <h2 className="section-title text-center scroll-reveal">AWARDS</h2>
-          
+
           <div className="awards-feature-grid scroll-reveal">
             {/* Photo on Left (Desktop) / Top (Mobile) */}
             <div className="awards-image-column">
               <div className="awards-image-frame">
-                <img 
-                  src="/awardphoto.JPG" 
-                  alt="Preeti Sethi Designs awarded by Shilpa Shetty at International Dazzling Awards" 
-                  className="awards-main-photo" 
-                  loading="lazy" 
+                <img
+                  src="/awardphoto.JPG"
+                  alt="Preeti Sethi Designs awarded by Shilpa Shetty at International Dazzling Awards"
+                  className="awards-main-photo"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -302,11 +302,11 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
       <section className="home-compact-section">
         <div className="contact-section-inner scroll-reveal">
           <h2 className="section-title text-center">START YOUR JOURNEY</h2>
-          
+
           <div className="google-form-inquiry-box">
             <h4>CONSULTATION FORM</h4>
             <p>We invite you to share details regarding your structural blueprint layout, space dimensions, and stylistic goals.</p>
-            <button 
+            <button
               className="external-form-btn"
               onClick={() => window.open('https://docs.google.com/forms', '_blank')}
             >
@@ -324,12 +324,12 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
             23, Pocket 19, Sector 24, Rohini - 110085, New Delhi
           </p>
           <div className="map-frame-wrapper">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.4687595353147!2d77.10091391508493!3d28.735467482377317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03de0b6754ad%3A0xea2be10cbf83dbcf!2sRohini%20Sector%2024%2C%20Delhi%20110085!5e0!3m2!1sen!2sin!4v1629890000000!5m2!1sen!2sin" 
-              width="100%" 
-              height="420" 
-              style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) grayscale(80%)' }} 
-              allowFullScreen="" 
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.4687595353147!2d77.10091391508493!3d28.735467482377317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03de0b6754ad%3A0xea2be10cbf83dbcf!2sRohini%20Sector%2024%2C%20Delhi%20110085!5e0!3m2!1sen!2sin!4v1629890000000!5m2!1sen!2sin"
+              width="100%"
+              height="420"
+              style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) grayscale(80%)' }}
+              allowFullScreen=""
               loading="lazy"
               title="Preeti Sethi Designs Delhi Studio Map"
             ></iframe>
