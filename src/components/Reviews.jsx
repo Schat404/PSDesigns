@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ResponsiveDrivePlayer from './ResponsiveDrivePlayer';
 import { Play, ExternalLink, ChevronLeft, ChevronRight, Quote, Video, Star } from 'lucide-react';
 
 function Reviews() {
@@ -74,10 +75,10 @@ function Reviews() {
               <Video size={16} />
               <span>FEATURED VIDEO WALKTHROUGH & TESTIMONIAL</span>
             </div>
-            <a 
-              href={GOOGLE_DRIVE_FOLDER} 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href={GOOGLE_DRIVE_FOLDER}
+              target="_blank"
+              rel="noopener noreferrer"
               className="video-folder-link-btn"
             >
               OPEN IN GOOGLE DRIVE <ExternalLink size={14} style={{ marginLeft: '6px' }} />
@@ -85,13 +86,11 @@ function Reviews() {
           </div>
 
           <div className="video-player-aspect-wrapper">
-            <iframe 
-              src={VIDEO_PREVIEW_URL} 
-              className="video-preview-iframe"
-              allow="autoplay; encrypted-media; fullscreen"
-              allowFullScreen
+            <ResponsiveDrivePlayer
+              src={VIDEO_PREVIEW_URL}
               title="Client Video Testimonial - Preeti Sethi Designs"
-            ></iframe>
+              className="video-preview-iframe"
+            />
           </div>
 
           <div className="video-review-caption">
@@ -101,10 +100,10 @@ function Reviews() {
                 Watch an unfiltered walkthrough and first-hand client review showcasing the precision carpentry, atmospheric cove lighting, and turnkey finish delivered by Preeti Sethi Designs.
               </p>
             </div>
-            <a 
-              href={GOOGLE_DRIVE_FOLDER} 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href={GOOGLE_DRIVE_FOLDER}
+              target="_blank"
+              rel="noopener noreferrer"
               className="video-cta-pill"
             >
               <Play size={15} style={{ fill: 'currentColor' }} /> WATCH FULL HIGH-RES VIDEO
@@ -114,7 +113,7 @@ function Reviews() {
       </section>
 
       {/* AUTO-SCROLLING TEXT REVIEWS CAROUSEL */}
-      <section 
+      <section
         className="reviews-autoscroll-section"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
@@ -133,8 +132,8 @@ function Reviews() {
           </button>
 
           <div className="autoscroll-viewport">
-            <div 
-              className="autoscroll-track" 
+            <div
+              className="autoscroll-track"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
               {testimonials.map((t, idx) => (

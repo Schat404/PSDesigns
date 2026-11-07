@@ -304,13 +304,13 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
           <h2 className="section-title text-center">START YOUR JOURNEY</h2>
 
           <div className="google-form-inquiry-box">
-            <h4>CONSULTATION FORM</h4>
-            <p>We invite you to share details regarding your structural blueprint layout, space dimensions, and stylistic goals.</p>
+            <h4>CONSULTATION & FEEDBACK FORM</h4>
+            <p>We invite you to share details regarding your structural blueprint layout, space dimensions, feedback, and stylistic goals.</p>
             <button
               className="external-form-btn"
-              onClick={() => window.open('https://docs.google.com/forms', '_blank')}
+              onClick={() => window.open('https://forms.gle/Awjx7mH9VbFLgkae7', '_blank')}
             >
-              OPEN INQUIRY FORM <ArrowRight size={18} />
+              OPEN GOOGLE FORM <ArrowRight size={18} />
             </button>
           </div>
         </div>
@@ -320,20 +320,32 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
       <section className="home-map-section scroll-reveal">
         <div className="process-section-inner">
           <h3 className="section-title text-center mb-4">VISIT OUR DESIGN LAB</h3>
-          <p className="section-subtitle text-center mb-4" style={{ color: 'var(--accent-bronze)', marginBottom: '2rem' }}>
-            23, Pocket 19, Sector 24, Rohini - 110085, New Delhi
-          </p>
-          <div className="map-frame-wrapper">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.4687595353147!2d77.10091391508493!3d28.735467482377317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03de0b6754ad%3A0xea2be10cbf83dbcf!2sRohini%20Sector%2024%2C%20Delhi%20110085!5e0!3m2!1sen!2sin!4v1629890000000!5m2!1sen!2sin"
-              width="100%"
-              height="420"
-              style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) grayscale(80%)' }}
-              allowFullScreen=""
-              loading="lazy"
-              title="Preeti Sethi Designs Delhi Studio Map"
-            ></iframe>
-          </div>
+            <p className="section-subtitle text-center mb-4" style={{ color: 'var(--accent-bronze)', marginBottom: '1.5rem' }}>
+              23, Pocket 19, Sector 24, Rohini - 110085, New Delhi
+            </p>
+            <div className="map-frame-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.0140784136456!2d77.0941795758367!3d28.724776479035687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d07897199ac93%3A0xb629b04768b95d48!2spreetisethidesgins!5e0!3m2!1sen!2sin!4v1730900000000!5m2!1sen!2sin"
+                width="100%"
+                height="420"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                title="Preeti Sethi Designs Studio Location on Google Maps"
+              ></iframe>
+            </div>
+            <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+              <a
+                href="https://maps.app.goo.gl/rpQ1vKZArSL7VQJw8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gform-direct-btn"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '0.8rem 1.8rem', textDecoration: 'none' }}
+              >
+                <span>OPEN IN GOOGLE MAPS</span>
+                <ArrowRight size={14} />
+              </a>
+            </div>
         </div>
       </section>
 

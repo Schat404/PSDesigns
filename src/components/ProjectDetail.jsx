@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
-import { 
-  Award, 
-  CheckCircle2, 
-  Compass, 
-  MapPin, 
-  Calendar, 
-  Layers, 
+import ResponsiveDrivePlayer from './ResponsiveDrivePlayer';
+import {
+  Award,
+  CheckCircle2,
+  Compass,
+  MapPin,
+  Calendar,
+  Layers,
   ArrowUpRight,
   X,
   ZoomIn,
   ChevronLeft,
   ChevronRight,
-  FileText
+  FileText,
+  Play
 } from 'lucide-react';
 
 function ProjectDetail({ project, onNavigate }) {
@@ -26,14 +28,14 @@ function ProjectDetail({ project, onNavigate }) {
       {/* 1. TOP HERO IMAGE & HEADER SPECIFICATION */}
       <section className="detail-hero-showcase">
         <div className="detail-hero-frame">
-          <img 
-            src={project.image} 
-            alt={project.name} 
-            className="detail-hero-main-img" 
+          <img
+            src={project.image}
+            alt={project.name}
+            className="detail-hero-main-img"
             loading="eager"
           />
           <div className="detail-hero-gradient-overlay"></div>
-          
+
           <div className="detail-hero-floating-caption">
             <div className="detail-hero-badge">{project.category}</div>
             <h1 className="detail-hero-title">{project.name}</h1>
@@ -66,7 +68,7 @@ function ProjectDetail({ project, onNavigate }) {
       {/* 2. SECTION: WHAT THE CLIENT EXPECTED (Floor plan on Left, Text on Right; Mobile: Floor Plan on top, Text below) */}
       <section className="detail-narrative-section client-expected-section">
         <h2 className="narrative-heading">What The Client Expected</h2>
-        
+
         <div className="client-expected-grid-layout">
           {/* Left Column (Desktop) / Top (Mobile): Floor Plan */}
           {project.floorPlanImg && (
@@ -77,9 +79,9 @@ function ProjectDetail({ project, onNavigate }) {
                   <span>FURNITURE & SPATIAL BLUEPRINT</span>
                 </div>
                 <div className="floorplan-image-viewport">
-                  <img 
-                    src={project.floorPlanImg} 
-                    alt={`${project.name} Interior Floor Plan`} 
+                  <img
+                    src={project.floorPlanImg}
+                    alt={`${project.name} Interior Floor Plan`}
                     className="floorplan-preview-img"
                     loading="lazy"
                   />
@@ -91,10 +93,10 @@ function ProjectDetail({ project, onNavigate }) {
                 </div>
                 {project.floorPlanPdf && (
                   <div className="floorplan-footer-action">
-                    <a 
-                      href={project.floorPlanPdf} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href={project.floorPlanPdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="floorplan-pdf-download-link"
                       onClick={(e) => e.stopPropagation()}
                     >
@@ -172,8 +174,8 @@ function ProjectDetail({ project, onNavigate }) {
 
           <div className="project-gallery-grid">
             {project.gallery.map((item, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="gallery-item-card"
                 onClick={() => setActiveImageIndex(idx)}
               >
@@ -208,24 +210,25 @@ function ProjectDetail({ project, onNavigate }) {
           </div>
 
           <div className="custom-drive-video-container">
-            <div className="drive-video-responsive-frame">
-              <iframe
-                src={project.videoEmbedUrl}
-                title={`${project.name} Video Tour`}
-                className="drive-video-iframe"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowFullScreen
-              ></iframe>
-            </div>
+            <ResponsiveDrivePlayer
+              src={project.videoEmbedUrl}
+              title={`${project.name} Video Tour`}
+              className="drive-video-responsive-frame"
+            />
             <div className="drive-video-external-bar">
-              <a 
-                href={project.videoUrl || project.videoEmbedUrl} 
-                target="_blank" 
+              <div className="drive-video-bar-info">
+                <span className="drive-video-bar-tag">FULL HD WALKTHROUGH</span>
+                <span className="drive-video-bar-note">For native player controls (pause, speed, scrubbing), open in Google Drive:</span>
+              </div>
+              <a
+                href={project.videoUrl || project.videoEmbedUrl}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="drive-video-link-btn"
               >
-                <span>OPEN VIDEO IN GOOGLE DRIVE</span>
-                <ArrowUpRight size={16} />
+                <Play size={14} style={{ fill: 'currentColor' }} />
+                <span>OPEN IN GOOGLE DRIVE APP / PLAYER</span>
+                <ArrowUpRight size={15} />
               </a>
             </div>
           </div>
@@ -244,11 +247,11 @@ function ProjectDetail({ project, onNavigate }) {
         <div className="founder-card-inner">
           <div className="founder-image-side">
             <div className="founder-img-wrapper">
-              <img 
-                src="/preetisethi.png" 
-                alt="Preeti Sethi Founder & Creative Director" 
-                className="founder-portrait-img" 
-                loading="lazy" 
+              <img
+                src="/preetisethi.png"
+                alt="Preeti Sethi Founder & Creative Director"
+                className="founder-portrait-img"
+                loading="lazy"
               />
               <div className="founder-award-badge">
                 <Award size={18} />
@@ -260,7 +263,7 @@ function ProjectDetail({ project, onNavigate }) {
           <div className="founder-bio-side">
             <span className="founder-sub-label">FOUNDER & CREATIVE DIRECTOR</span>
             <h2 className="founder-name-heading">Preeti Sethi</h2>
-            
+
             <p className="founder-bio-p">
               Preeti leads the creative vision of <strong>Preeti Sethi Designs</strong>. Her approach begins with understanding the client—their personality, lifestyle, aspirations, and the way they want their space to feel.
             </p>
@@ -272,13 +275,13 @@ function ProjectDetail({ project, onNavigate }) {
             </p>
 
             <div className="founder-cta-row">
-              <button 
+              <button
                 className="cta-gold-btn"
                 onClick={() => onNavigate && onNavigate('contact')}
               >
                 CONNECT WITH PREETI
               </button>
-              <button 
+              <button
                 className="back-to-projects-btn"
                 onClick={() => onNavigate && onNavigate('about')}
               >
@@ -292,11 +295,11 @@ function ProjectDetail({ project, onNavigate }) {
         <div className="founder-card-inner" style={{ marginTop: '3.5rem' }}>
           <div className="founder-image-side">
             <div className="founder-img-wrapper">
-              <img 
-                src="/shivamnagpal.jpeg" 
-                alt="Shivam Nagpal Co-Founder & Managing Director" 
-                className="founder-portrait-img" 
-                loading="lazy" 
+              <img
+                src="/shivamnagpal.jpeg"
+                alt="Shivam Nagpal Co-Founder & Managing Director"
+                className="founder-portrait-img"
+                loading="lazy"
               />
               <div className="founder-award-badge">
                 <Award size={18} />
@@ -308,7 +311,7 @@ function ProjectDetail({ project, onNavigate }) {
           <div className="founder-bio-side">
             <span className="founder-sub-label">CO-FOUNDER & MANAGING DIRECTOR</span>
             <h2 className="founder-name-heading">Shivam Nagpal</h2>
-            
+
             <p className="founder-bio-p">
               Shivam spearheads operations, execution, project management, and on-site engineering at <strong>Preeti Sethi Designs</strong>.
             </p>
@@ -320,13 +323,13 @@ function ProjectDetail({ project, onNavigate }) {
             </p>
 
             <div className="founder-cta-row">
-              <button 
+              <button
                 className="cta-gold-btn"
                 onClick={() => onNavigate && onNavigate('contact')}
               >
                 CONNECT WITH SHIVAM
               </button>
-              <button 
+              <button
                 className="back-to-projects-btn"
                 onClick={() => onNavigate && onNavigate('about')}
               >
@@ -346,17 +349,17 @@ function ProjectDetail({ project, onNavigate }) {
 
           <div className="socials-buttons-grid">
             {/* Instagram */}
-            <a 
-              href="https://www.instagram.com/preetisethidesigns/" 
-              target="_blank" 
+            <a
+              href="https://www.instagram.com/preetisethidesigns/"
+              target="_blank"
               rel="noopener noreferrer"
               className="social-platform-card instagram-card"
             >
               <div className="social-icon-box">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                 </svg>
               </div>
               <div className="social-text-box">
@@ -367,9 +370,9 @@ function ProjectDetail({ project, onNavigate }) {
             </a>
 
             {/* Threads */}
-            <a 
-              href="https://www.threads.com/@preetisethidesigns?xmt=AQG0pjPRTbLIsdHqNzWFU5NGoLSzIJ_XHp46IlGdY_Q4HGg" 
-              target="_blank" 
+            <a
+              href="https://www.threads.com/@preetisethidesigns?xmt=AQG0pjPRTbLIsdHqNzWFU5NGoLSzIJ_XHp46IlGdY_Q4HGg"
+              target="_blank"
               rel="noopener noreferrer"
               className="social-platform-card threads-card"
             >
@@ -386,15 +389,15 @@ function ProjectDetail({ project, onNavigate }) {
             </a>
 
             {/* Facebook */}
-            <a 
-              href="https://www.facebook.com/people/PSdisenos/100093298519140/?rdid=MXIcwbfLuhT1EWbj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16FVh5xVsoV%2F" 
-              target="_blank" 
+            <a
+              href="https://www.facebook.com/people/PSdisenos/100093298519140/?rdid=MXIcwbfLuhT1EWbj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16FVh5xVsoV%2F"
+              target="_blank"
               rel="noopener noreferrer"
               className="social-platform-card facebook-card"
             >
               <div className="social-icon-box">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                 </svg>
               </div>
               <div className="social-text-box">
@@ -411,8 +414,8 @@ function ProjectDetail({ project, onNavigate }) {
       {project.gallery && activeImageIndex !== null && (
         <div className="gallery-lightbox-backdrop" onClick={() => setActiveImageIndex(null)}>
           <div className="gallery-lightbox-container" onClick={(e) => e.stopPropagation()}>
-            <button 
-              className="lightbox-close-btn" 
+            <button
+              className="lightbox-close-btn"
               onClick={() => setActiveImageIndex(null)}
               aria-label="Close photo modal"
             >
@@ -420,7 +423,7 @@ function ProjectDetail({ project, onNavigate }) {
             </button>
 
             {/* Prev Image Button */}
-            <button 
+            <button
               className="lightbox-nav-btn prev-btn"
               onClick={() => setActiveImageIndex((prev) => (prev > 0 ? prev - 1 : project.gallery.length - 1))}
               aria-label="Previous space photo"
@@ -430,9 +433,9 @@ function ProjectDetail({ project, onNavigate }) {
 
             {/* Image Frame */}
             <div className="lightbox-image-wrapper">
-              <img 
-                src={project.gallery[activeImageIndex].src} 
-                alt={project.gallery[activeImageIndex].title} 
+              <img
+                src={project.gallery[activeImageIndex].src}
+                alt={project.gallery[activeImageIndex].title}
                 className="lightbox-active-img"
               />
               <div className="lightbox-caption-bar">
@@ -446,7 +449,7 @@ function ProjectDetail({ project, onNavigate }) {
             </div>
 
             {/* Next Image Button */}
-            <button 
+            <button
               className="lightbox-nav-btn next-btn"
               onClick={() => setActiveImageIndex((prev) => (prev < project.gallery.length - 1 ? prev + 1 : 0))}
               aria-label="Next space photo"
@@ -461,8 +464,8 @@ function ProjectDetail({ project, onNavigate }) {
       {isFloorPlanModalOpen && project.floorPlanImg && (
         <div className="gallery-lightbox-backdrop" onClick={() => setIsFloorPlanModalOpen(false)}>
           <div className="gallery-lightbox-container floorplan-lightbox-container" onClick={(e) => e.stopPropagation()}>
-            <button 
-              className="lightbox-close-btn" 
+            <button
+              className="lightbox-close-btn"
               onClick={() => setIsFloorPlanModalOpen(false)}
               aria-label="Close floor plan modal"
             >
@@ -470,9 +473,9 @@ function ProjectDetail({ project, onNavigate }) {
             </button>
 
             <div className="lightbox-image-wrapper floorplan-modal-wrapper">
-              <img 
-                src={project.floorPlanImg} 
-                alt={`${project.name} Interior Blueprint`} 
+              <img
+                src={project.floorPlanImg}
+                alt={`${project.name} Interior Blueprint`}
                 className="lightbox-active-img floorplan-modal-img"
               />
               <div className="lightbox-caption-bar">
@@ -483,10 +486,10 @@ function ProjectDetail({ project, onNavigate }) {
                 <h3 className="lightbox-img-title">{project.name} — Spatial Floor Layout</h3>
                 {project.floorPlanPdf && (
                   <div style={{ marginTop: '0.8rem' }}>
-                    <a 
-                      href={project.floorPlanPdf} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href={project.floorPlanPdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="floorplan-modal-pdf-link"
                     >
                       <FileText size={15} style={{ marginRight: '6px' }} />
