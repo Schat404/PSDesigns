@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ResponsiveDrivePlayer from './ResponsiveDrivePlayer';
+import UniversalVideoPlayer from './UniversalVideoPlayer';
 import {
   Award,
   CheckCircle2,
@@ -198,42 +198,52 @@ function ProjectDetail({ project, onNavigate }) {
         </section>
       )}
 
-      {/* 5. SECTION: GOOGLE DRIVE CINEMATIC WALKTHROUGH (If Video link exists) */}
-      {project.videoEmbedUrl && (
-        <section className="detail-video-showcase-section">
-          <div className="video-section-header">
-            <span className="narrative-pill video-pill">CINEMATIC WALKTHROUGH</span>
-            <h2 className="narrative-heading">Project Cinematic Tour</h2>
-            <p className="video-section-sub">
-              Watch the full walkthrough tour for {project.name} highlighting spatial transitions and bespoke materials.
-            </p>
-          </div>
-
-          <div className="custom-drive-video-container">
-            <ResponsiveDrivePlayer
-              src={project.videoEmbedUrl}
-              title={`${project.name} Video Tour`}
-              className="drive-video-responsive-frame"
-            />
-            <div className="drive-video-external-bar">
-              <div className="drive-video-bar-info">
-                <span className="drive-video-bar-tag">FULL HD WALKTHROUGH</span>
-                <span className="drive-video-bar-note">For native player controls (pause, speed, scrubbing), open in Google Drive:</span>
-              </div>
-              <a
-                href={project.videoUrl || project.videoEmbedUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="drive-video-link-btn"
-              >
-                <Play size={14} style={{ fill: 'currentColor' }} />
-                <span>OPEN IN GOOGLE DRIVE APP / PLAYER</span>
-                <ArrowUpRight size={15} />
-              </a>
+      {/* 5. SECTION: CINEMATIC WALKTHROUGH (If Video link exists) */}
+      {project.videoEmbedUrl && (() => {
+        const isYouTube = project.videoUrl?.includes('youtube.com') || project.videoUrl?.includes('youtu.be') || project.videoEmbedUrl?.includes('youtube');
+        const isShorts = project.videoUrl?.includes('/shorts/') || project.videoEmbedUrl?.includes('/shorts/');
+        
+        return (
+          <section className="detail-video-showcase-section">
+            <div className="video-section-header">
+              <span className="narrative-pill video-pill">CINEMATIC WALKTHROUGH</span>
+              <h2 className="narrative-heading">Project Cinematic Tour</h2>
+              <p className="video-section-sub">
+                Watch the full walkthrough tour for {project.name} highlighting spatial transitions and bespoke materials.
+              </p>
             </div>
-          </div>
-        </section>
-      )}
+
+            <div className={`custom-drive-video-container ${isShorts ? 'youtube-shorts-container' : ''}`}>
+              <UniversalVideoPlayer
+                src={project.videoEmbedUrl || project.videoUrl}
+                title={`${project.name} Video Tour`}
+                aspectRatio={isShorts ? '9:16' : '16:9'}
+                className="drive-video-responsive-frame"
+              />
+              <div className="drive-video-external-bar">
+                <div className="drive-video-bar-info">
+                  <span className="drive-video-bar-tag">{isShorts ? 'YOUTUBE SHORTS' : 'FULL HD WALKTHROUGH'}</span>
+                  <span className="drive-video-bar-note">
+                    {isYouTube 
+                      ? 'Stream directly in full HD with complete playback controls, or open on YouTube:' 
+                      : 'For native player controls (pause, speed, scrubbing), open in Google Drive:'}
+                  </span>
+                </div>
+                <a
+                  href={project.videoUrl || project.videoEmbedUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="drive-video-link-btn"
+                >
+                  <Play size={14} style={{ fill: 'currentColor' }} />
+                  <span>{isYouTube ? 'WATCH ON YOUTUBE' : 'OPEN IN GOOGLE DRIVE APP / PLAYER'}</span>
+                  <ArrowUpRight size={15} />
+                </a>
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       {/* 6. SECTION: ABOUT THE FOUNDERS */}
       <section className="detail-founder-section">
