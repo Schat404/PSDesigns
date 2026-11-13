@@ -45,7 +45,7 @@ function Home({ onNavigate, testimonials, currentSlide, setCurrentSlide, handleP
             muted
             playsInline
             className="hero-video"
-            src="/hero-video.mp4"
+            src="/NewHeroVideo.mp4"
           >
             Your browser does not support the video tag.
           </video>
